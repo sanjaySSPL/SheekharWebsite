@@ -4,12 +4,12 @@ import Image from 'next/image'
 import { redirect } from 'next/navigation';
 import Link from 'next/link';
 
-function Display_Cards( { data_image , data_text , data_detailed_link } ){
+function DisplayCards( { data_image , data_text , data_detailed_link } ){
 
     const[active , setActive] = useState(false);
 
   return (
-    <div className={`${active ? 'w-[320px] h-[384px]' : null } w-[250px] relative z-10 h-[300px] rounded-[5px]  transition-all ease-in-out duration-500 overflow-hidden `}
+    <div className={`${active ? 'w-[320px] h-[384px]' : null } w-[250px] relative  z-10 h-[300px] rounded-[5px]  transition-all ease-in-out duration-500 overflow-hidden `}
         onMouseEnter={() => setActive(true)}
         onMouseLeave={() => setActive(false)}
         onClick={() => redirect(data_detailed_link)}
@@ -24,4 +24,4 @@ function Display_Cards( { data_image , data_text , data_detailed_link } ){
   )
 }
 
-export default Display_Cards
+export default DisplayCards
