@@ -45,3 +45,21 @@ body {
     text-wrap: balance;
   }
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);  /* Move left by half the width (since we duplicated cards) */
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;  /* Adjust 30s to control speed */
+}
+
+/* Add this if you want to pause on hover */
+.animate-scroll:hover {
+  animation-play-state: paused;
+}

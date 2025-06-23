@@ -8,22 +8,23 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white/20 shadow-lg px-4 py-4 w-full fixed top-0 z-50">
+    // 
+    <nav className="bg-white/20 shadow-lg h-[60px] px-4 py-4 w-full fixed top-0 z-50 backdrop-blur-sm">
       <div className=" mx-auto ">
         
         <div className="flex justify-between">
           {/* Logo can go here */}
-          <h1 className='my-auto'>Logo</h1>
+          <h1 className='my-auto '>Logo</h1>
           
           {/* Primary Navbar items */}
-          <div className="hidden md:flex items-center space-x-18 gap-[16px]">
-        <Link href="/"><span className="py-4 px-2 text-white text-[20px] tracking-wider font- hover:text-medium_blue transition duration-300 cursor-pointer">Home</span></Link>
+          <div className="hidden h-full md:flex items-center space-x-18 gap-[16px] -mt-2">
+        <Link href="/"><span className="py-2 px-2 text-white text-[20px] tracking-wider  hover:text-medium_blue transition duration-300 cursor-pointer">Home</span></Link>
         <Link href="/aboutus"><span className="py-4 px-2 text-white text-[20px] tracking-wider font- hover:text-medium_blue transition duration-300 cursor-pointer">About Us</span></Link>
         <Link href="/products"><span className="py-4 px-2 text-white text-[20px] tracking-wider font- hover:text-medium_blue transition duration-300 cursor-pointer">Products</span></Link>
         <Link href="/our-service"><span className="py-4 px-2 text-white text-[20px] tracking-wider font- hover:text-medium_blue transition duration-300 cursor-pointer">Services</span></Link>
         <Link href="/career"><span className="py-4 px-2 text-white text-[20px] tracking-wider font- hover:text-medium_blue transition duration-300 cursor-pointer">Career</span></Link>
         <Link href="/contact"><span className="py-4 px-2 text-white text-[20px] tracking-wider font- hover:text-medium_blue transition duration-300 cursor-pointer">Contact</span></Link>
-        <Button button_link='https://google.com' customPaddingClass='py-[8px] px-[18.5px] tracking-widest mx-[20px]'>Talk to Experts</Button>
+        <Button button_link='https://google.com' customPaddingClass='py-[4px] px-[18.5px] tracking-widest mx-[20px]'>Talk to Experts</Button>
           </div>
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">

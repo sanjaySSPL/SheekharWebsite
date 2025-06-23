@@ -1,12 +1,16 @@
+// DisplayCards.tsx
 'use client'
-import React, { useState } from 'react'
+import React, { useState, forwardRef } from 'react'
 import Image from 'next/image'
-import { redirect } from 'next/navigation';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 
-function DisplayCards( { data_image , data_text , data_detailed_link } ){
+const DisplayCard = forwardRef(function DisplayCard(props, ref) {
+  const { data_image, data_text, data_detailed_link } = props
+  const [active, setActive] = useState(false)
+  const router = useRouter()
 
-    const[active , setActive] = useState(false);
+  const cardSize = active ? 'w-[320px] h-[384px]' : 'w-[250px] h-[300px]'
 
   return (
     <div className={`${active ? 'w-[320px] h-[384px]' : null } w-[250px] relative  z-10 h-[300px] rounded-[5px]  transition-all ease-in-out duration-500 overflow-hidden `}
@@ -22,6 +26,7 @@ function DisplayCards( { data_image , data_text , data_detailed_link } ){
         </div>}
     </div>
   )
-}
+})
 
-export default DisplayCards
+export default DisplayCard
+
