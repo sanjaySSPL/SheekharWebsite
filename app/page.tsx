@@ -3,7 +3,8 @@ import HomePage from './(pages)/HomePages/HomePage';
 import ProductScroll from './(pages)/HomePages/ProductScroll';
 import ChooseSheekharIngredient from './(pages)/HomePages/ChooseSheekharIngredient';
 import SolveIndustryStandard from './(pages)/HomePages/SolveIndustryStandard';
-import TestPage from './(pages)/HomePages/TestPage'
+import ContactUsPage from './(pages)/ContactUsPage';
+import Footer from './(pages)/Footer';
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
         <ProductScroll />
         <SolveIndustryStandard />
         <ChooseSheekharIngredient />
-        <TestPage />
+       <ContactUsPage />
+       <Footer />
       </main>
     </div>
   );

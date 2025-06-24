@@ -16,7 +16,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="w-full max-w-4xl mx-auto bg-white border border-gray-300 p-6 rounded-lg shadow-md space-y-6"
+      className="w-full max-w-4xl md:mx-0 mx-auto bg-white border border-gray-300 p-6 rounded-lg shadow-md space-y-6"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>

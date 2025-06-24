@@ -16,7 +16,7 @@ function SolveIndustryStandard() {
             {/* This is the div having the 3 cards for the solving challenges */}
             <div className='mt-[80px] md:mt-[118px] md:pl-[91px] bg-green-300 relative'>
                 {/* Solving Challenge Number 1 */}
-                <motion.div className='h-[500px] w-[90%] md:w-[816px] md:h-[214px] flex-col md:flex-row md:flex align-middle justify-around md:justify-center items-center  md:gap-[20.17px] md:mx-0 absolute left-[50%] -translate-x-[50%] md:-translate-x-[0%] md:left-[105px]'
+                <motion.div className='h-[500px] w-[90%] md:w-[816px] md:h-[214px] flex-col md:flex-row md:flex align-middle justify-around md:justify-center items-center  md:gap-[20.17px] md:mx-0 absolute left-[25px]  md:-translate-x-[0%] md:left-[105px]'
                     initial={{ opacity: 0, y: -20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
@@ -28,7 +28,7 @@ function SolveIndustryStandard() {
                         height={214}
                         className=' mx-auto md:mx-0'
                     />
-                    <div className='w-full md:w-[632px]  h-[230px]  md:h-full flex align-middle justify-center items-center md:items-start flex-col'>
+                    <div className='w-full md:w-[632px] h-[230px]  md:h-full flex align-middle justify-center items-center md:items-start flex-col'>
                         <h2 className='text-[24px] text-text_blue font-semiBold font-inter italic md:text-start text-center'>The Challenge Behind Every Recipe</h2>
                         <p className='md:text-[20px] font-inter text-text_blue'>
                             From poor texture to short shelf life, food brands face real <br className='md:flex hidden'/> product issues. Whether it’s dairy, beverages, or snacks — the <br className='md:flex hidden'/> problem is unique, and so is the solution it needs.
@@ -46,7 +46,7 @@ function SolveIndustryStandard() {
                     />
 
                 {/* Solving Challenge Number 2 */}
-                <motion.div className='h-[500px] w-[90%] md:w-[816px] md:h-[214px] flex-col md:flex-row md:flex align-middle justify-around md:justify-center items-center  md:gap-[20.17px] mx-auto md:mx-0 absolute top-[500px] lg:left-[200px] md:left-[320px] md:top-[423px] md:-translate-x-[0%] left-[50%] -translate-x-[50%]'
+                <motion.div className='h-[500px] w-[90%] md:w-[816px] md:h-[214px] flex-col md:flex-row md:flex align-middle justify-around md:justify-center items-center  md:gap-[20.17px] mx-auto md:mx-0 absolute top-[500px] lg:left-[200px] md:left-[320px] md:top-[423px] md:-translate-x-[0%] left-[25px] -translate-x-[50%]'
                     initial={{ opacity: 0, y: -20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
@@ -76,7 +76,7 @@ function SolveIndustryStandard() {
                     />
 
                 {/* Solving Challenge Number 3 */}
-                <motion.div className='h-[500px] w-[90%] md:w-[816px] md:h-[214px] flex-col md:flex-row md:flex align-middle justify-around md:justify-center items-center  md:gap-[20.17px] mx-auto md:mx-0 absolute top-[1000px] md:left-[105px] md:top-[845px] md:-translate-x-[0%] left-[50%] -translate-x-[50%]'
+                <motion.div className='h-[500px] w-[90%] md:w-[816px] md:h-[214px] flex-col md:flex-row md:flex align-middle justify-around md:justify-center items-center  md:gap-[20.17px] mx-auto md:mx-0 absolute top-[1000px] md:left-[105px] md:top-[845px] md:-translate-x-[0%] left-[25px] -translate-x-[50%]'
                     initial={{ opacity: 0, y: -20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
