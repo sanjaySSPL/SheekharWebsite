@@ -38,7 +38,7 @@ function ProductScroll() {
   ]
 
    return (
-    <div className="h-[568px] w-[100dvw] overflow-hidden">
+    <div className="h-[560px] w-[100dvw] overflow-hidden">
       <h1 className="md:text-[36px] sm:text-[20px] text-[30px] text-center text-text_blue font-inter italic mx-10 md:mt-[65px] mt-[50px] mb-[50px] md:mb-[40px]">
         Tried, Tested, Trusted Ingredients
       </h1>
