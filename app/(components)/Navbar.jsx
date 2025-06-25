@@ -40,7 +40,7 @@ export default function Navbar() {
       <Link href="/"><div className="block text-sm px-2 py-4 hover:text-medium_blue transition duration-300 cursor-pointer">Home</div></Link>
       <Link href="/about"><div className="block text-sm px-2 py-4 hover:text-medium_blue transition duration-300 cursor-pointer">About Us</div></Link>
       <Link href="/products"><div className="block text-sm px-2 py-4 hover:text-medium_blue transition duration-300 cursor-pointer">Products</div></Link>
-      <Link href="/services"><div className="block text-sm px-2 py-4 hover:text-medium_blue transition duration-300 cursor-pointer">Services</div></Link>
+      <Link href="/our-service"><div className="block text-sm px-2 py-4 hover:text-medium_blue transition duration-300 cursor-pointer">Services</div></Link>
       <Link href="/career"><div className="block text-sm px-2 py-4 hover:text-medium_blue transition duration-300 cursor-pointer">Career</div></Link>
       <Link href="/contact"><div className="block text-sm px-2 py-4 hover:text-medium_blue transition duration-300 cursor-pointer">Contact</div></Link>
       <Button button_link='https://google.com' customPaddingClass='py-[10px] px-[10px] w-[90dvw]' >Hello world</Button>
