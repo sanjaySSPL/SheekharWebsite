@@ -1,13 +1,15 @@
 import React from 'react'
 import SecondHeroSection from '../(pages)/SecondHeroSection'
-import ContactUsPage from '../(pages)/ContactUsPage'
+
+import ContactUsPage2 from '../(pages)/ContactUsPage2'
 import Footer from '../(pages)/Footer'
 
 function page() {
   return (
     <div className='w-full h-full'>
       <SecondHeroSection />
-      <ContactUsPage />
+    
+      <ContactUsPage2 />
       <Footer />
       
     </div>
