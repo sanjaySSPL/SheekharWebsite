@@ -11,7 +11,7 @@ function ContactForm2() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="w-[90vw] max-w-[605px] h-auto min-h-[456px] bg-white rounded-[10px] p-6 flex flex-col gap-6 md:w-[605px] md:h-[656px] justify-center mx-auto"
+      className="w-[90vw] max-w-[605px] h-auto min-h-[456px] bg-white rounded-[10px] p-6 flex flex-col gap-6 md:w-[605px] md:h-[656px] justify-center mx-auto border border-gray-300 shadow-lg"
     >
       <div className="flex flex-col gap-6">
         <div className="flex flex-col gap-2">

@@ -1,8 +1,11 @@
 import React from 'react'
+import ProductCard from '../(components)/ProductCard'
 
 function page() {
   return (
-    <div>product page</div>
+    <div className='w-full h-[100dvh] flex flex-col gap-4 pt-[100px]'>
+      <ProductCard />
+    </div>
   )
 }
 

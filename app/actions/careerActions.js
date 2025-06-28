@@ -1,0 +1,55 @@
+'use server';
+
+export async function submitCareerApplication(formData) {
+  try {
+    // Extract form data
+    const name = formData.get('name');
+    const surname = formData.get('surname');
+    const email = formData.get('email');
+    const designation = formData.get('designation');
+
+    // Validate required fields
+    if (!name || !surname || !email || !designation) {
+      return {
+        success: false,
+        message: 'All fields are required'
+      };
+    }
+
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return {
+        success: false,
+        message: 'Please enter a valid email address'
+      };
+    }
+
+    // Here you would typically:
+    // 1. Save to database
+    // 2. Send email notification
+    // 3. Log the application
+    console.log('Career application received via Server Action:', {
+      name,
+      surname,
+      email,
+      designation,
+      timestamp: new Date().toISOString()
+    });
+
+    // Simulate processing time
+    await new Promise(resolve => setTimeout(resolve, 500));
+
+    return {
+      success: true,
+      message: 'Application submitted successfully! We will get back to you soon.'
+    };
+
+  } catch (error) {
+    console.error('Career form submission error:', error);
+    return {
+      success: false,
+      message: 'Internal server error. Please try again later.'
+    };
+  }
+} 
