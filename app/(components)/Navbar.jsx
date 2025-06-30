@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     // 
-    <nav className="bg-black/50 shadow-lg h-[60px] px-4 py-4 w-full fixed top-0 z-50 backdrop-blur-sm">
+    <nav className="bg-red/50 shadow-lg h-[60px] px-4 py-4 w-full fixed top-0 z-50 backdrop-blur-sm">
       <div className=" mx-auto ">
         
         <div className="flex justify-between">
