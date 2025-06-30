@@ -115,7 +115,10 @@ function ChooseSheekharIngredient() {
                   : { x: -130, y: -100, opacity: 1 }
               }
               
-              transition={{ duration: 1, delay: idx * 0.1, ease: "easeInOut" }}
+              transition={{ duration: 1, delay: idx * 0.1, ease: "easeInOut"
+
+                
+               }}
               className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
             >
               <Image

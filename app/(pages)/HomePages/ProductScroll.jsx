@@ -1,5 +1,5 @@
 // ProductScroll.tsx
-'use client'
+
 import React from 'react'
 import DisplayCard from '../../(components)/DisplayCards'
 
