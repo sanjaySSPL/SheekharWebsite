@@ -8,7 +8,7 @@ function AboutSheekharr() {
             <div className="md:w-[821px] md:p-0 p-4 text-[20px] text-text_blue">
                 <p className=''>At Sheekharr, we turn natural raw materials into smart, functional ingredients that solve real problems for food and personal care brands. Based in Navi Mumbai, we specialize in the science of starches, fibres, sweeteners, and plant-based innovations—helping manufacturers create products that perform better, feel better, and last longer.</p>
                     <br/>
-                <p classname=''>Since 2012, we've worked closely with businesses across the food, beverage, personal care, and industrial sectors, delivering clean-label, non-GMO, gluten-free, and health-forward ingredient solutions tailored to their needs</p>
+                <p classname=''>Since 2012, we have worked closely with businesses across the food, beverage, personal care, and industrial sectors, delivering clean-label, non-GMO, gluten-free, and health-forward ingredient solutions tailored to their needs</p>
             </div>
 
         </div>
