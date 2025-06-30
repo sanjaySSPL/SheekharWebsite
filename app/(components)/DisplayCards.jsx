@@ -4,7 +4,7 @@ import React, { useState, forwardRef } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import redirect from 'next/navigation'
+
 
 const DisplayCard = forwardRef(function DisplayCard(props) {
   const { data_image, data_text, data_detailed_link } = props
@@ -16,7 +16,7 @@ const DisplayCard = forwardRef(function DisplayCard(props) {
     <div className={`${active ? 'w-[320px] h-[384px]' : null } w-[250px] relative  z-10 h-[300px] rounded-[5px]  transition-all ease-in-out duration-500 overflow-hidden `}
         onMouseEnter={() => setActive(true)}
         onMouseLeave={() => setActive(false)}
-        onClick={() => redirect.push(data_detailed_link)}
+        onClick={() => router.push(data_detailed_link)}
         >
         <Image className='w-[250px] h-[300px] rounded-[5px] relative z-10' src={data_image} alt="" objectFit='cover' layout='fill' placeholder='blur' blurDataURL='/brain.jpg'/>
         {active && <div className='w-[277px] h-[343px] bg-light_orange opacity-[83%] rounded-[5px] absolute z-30 bottom-0 left-0 flex align-middle justify-start  items-start flex-col backdrop-blur-sm md:pt-[12px] pt-[10px]'
