@@ -58,9 +58,9 @@ function ProductScroll() {
         Tried, Tested, Trusted Ingredients
       </h1>
       
-      <div className="relative w-full h-[384px] mb-10 overflow-hidden">
+      <div className="relative w-full h-[384px] mb-10 overflow-hidden ">
         {/* Animation container */}
-        <div className="animate-scroll flex gap-10 absolute">
+        <div className="animate-scroll h-fit flex gap-10 absolute my-auto">
           {/* Original cards */}
           {displayCardInformation.map((item, index) => (
             <DisplayCard

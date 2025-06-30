@@ -1,10 +1,19 @@
 'use client'
-import React from 'react'
+import React, { useRef } from 'react'
 import Image from 'next/image'
-import {motion} from 'framer-motion'
+import {motion, useInView} from 'framer-motion'
 
 function SolveIndustryStandard() {
 
+
+    const card1Ref = useRef();
+    const card1InView = useInView(card1Ref, { once: true, margin: "-120px" });
+
+    const card2Ref = useRef();
+    const card2InView = useInView(card2Ref, { once: true, margin: "-120px" });
+
+    const card3Ref = useRef();
+    const card3InView = useInView(card3Ref, { once: false, margin: "-120px" });
 
   return (
     <div className='mt-20 w-[100%] h-fit md:px-[110px] flex align-middle justify-center items-center'>
@@ -17,9 +26,10 @@ function SolveIndustryStandard() {
             <div className='mt-[80px] md:mt-[118px] md:pl-[91px] bg-green-300 relative'>
                 {/* Solving Challenge Number 1 */}
                 <motion.div className='h-[500px] w-[90%] md:w-[816px] md:h-[214px] flex-col md:flex-row md:flex align-middle justify-around md:justify-center items-center  md:gap-[20.17px] md:mx-0 absolute left-[25px]  md:-translate-x-[0%] md:left-[105px]'
+                    ref={card1Ref}
                     initial={{ opacity: 0, y: -50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.6, delay: 0.6 }}
+                    animate={card1InView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 1, delay: 0.2}}
                 >
                     <Image 
                         src={'https://res.cloudinary.com/dipc3ow9z/image/upload/v1750668396/solveChallengeOne_t2eu0x.svg'}
@@ -47,9 +57,10 @@ function SolveIndustryStandard() {
 
                 {/* Solving Challenge Number 2 */}
                 <motion.div className='h-[500px] w-[90%] md:w-[816px] md:h-[214px] flex-col md:flex-row md:flex align-middle justify-around md:justify-center items-center  md:gap-[20.17px] mx-auto md:mx-0 absolute top-[500px] lg:left-[200px] md:left-[320px] md:top-[423px] md:-translate-x-[0%] left-[25px] -translate-x-[50%]'
-                    initial={{ opacity: 0, y: -20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6 }}
+                    ref={card2Ref}
+                    initial={{ opacity: 0, y: -50 }}
+                    animate={card2InView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 1, delay: 0.2}}
                 >
                     <Image 
                         src={'https://res.cloudinary.com/dipc3ow9z/image/upload/v1750668396/solveChallengeTwo_jivb8b.svg'}
@@ -77,10 +88,10 @@ function SolveIndustryStandard() {
 
                 {/* Solving Challenge Number 3 */}
                 <motion.div className='h-[500px] w-[90%] md:w-[816px] md:h-[214px] flex-col md:flex-row md:flex align-middle justify-around md:justify-center items-center  md:gap-[20.17px] mx-auto md:mx-0 absolute top-[1000px] md:left-[105px] md:top-[845px] md:-translate-x-[0%] left-[25px] -translate-x-[50%]'
-                    initial={{ opacity: 
-                        0, y: -20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6 }}
+                    ref={card3Ref}
+                    initial={{ opacity: 0, y: -50 }}
+                    animate={card3InView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 1, delay: 0.2}}
                 >
                     <Image 
                         src={'https://res.cloudinary.com/dipc3ow9z/image/upload/v1750673668/solveChallengeThree_ijzwkf.svg'}

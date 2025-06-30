@@ -20,72 +20,90 @@ function ChooseSheekharIngredient() {
     {
       src: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1750747225/processCompatibility_ahj5na.svg',
       alt: 'Process Compatibility',
-      x: isMobile ? 90 : 280,
-      y: isMobile ? -250 : -300,
-      color:'#EFF9FF'
+      x: isMobile ? 90 : -600,
+      y: isMobile ? -250 : -350,
+      color:'#EFF9FF',
+      ht:'145',
+      wt:'339'
     },
     {
       src: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1750747226/ImprovedStability_Appearance_we31ol.svg',
       alt: 'Improved Stability',
-      x: isMobile ? -150 : -510,
-      y: isMobile ? -280 : -350,
-      color:"#EFF9FF"
+      x: isMobile ? -150 : -120,
+      y: isMobile ? -280 : -400,
+      color:"#EFF9FF",
+      ht:'167',
+      wt:'251'
     },
     {
       src: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1750747225/goodQuality_fl7kns.svg',
       alt: 'Good Quality',
-      x: isMobile ? 120 : -90,
-      y: isMobile ? -100 : -400,
-      color:"#FFEFFA"
+      x: isMobile ? 120 : 290,
+      y: isMobile ? -100 : -380,
+      color:"#FFEFFA",
+      ht:'153',
+      wt:'252'
     },
     {
       src: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1750747225/HigherYieldLowerWastage_orrobj.svg',
       alt: 'Higher Yield Lower Wastage',
-      x: isMobile ? -90 : -550,
+      x: isMobile ? -90 : -700,
       y: isMobile ? -30 : -100,
-      color:"#f4ffef"
+      color:"#f4ffef",
+      ht:'156',
+      wt:'272'
     },
     {
       src: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1750747224/BetterTexture_Mouthfeel_bgmb4n.svg',
       alt: 'Better Texture & Mouthfeel',
       x: isMobile ? 80 : 360,
       y: isMobile ? 10 : -130,
-      color:"#F2FFEF"
+      color:"#F2FFEF",
+      ht:'204',
+      wt:'136'
     },
     {
       src: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1750747223/CustomizedProblemSpecificSOlutions_sezw6p.svg',
       alt: 'Customized, Problem-Specific Solutions',
-      x: isMobile ? -70 : -500,
+      x: isMobile ? -70 : -700,
       y: isMobile ? 100 : 150,
-      color:"#F9EFFF"
+      color:"#F9EFFF",
+      ht:'225',
+      wt:'225'
     },
     {
       src: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1750747224/StrongerConsumerRespomse_RevenueUplift_t1fwyp.svg',
       alt: 'Stronger Consumer Response & Revenue Uplift',
-      x: isMobile ? 60 : 500,
-      y: isMobile ? 160 : 500,
-      color:"#ffefef"
+      x: isMobile ? 60 : 300,
+      y: isMobile ? 160 : 230,
+      color:"#ffefef",
+      ht:'182',
+      wt:'317'
     },
     {
       src: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1750747223/CleanLabel_HealthFocused_vnqzqu.svg',
       alt: 'Clean Label & Health-Focused',
-      x: isMobile ? -40 : -120,
+      x: isMobile ? -40 : -300,
       y: isMobile ? 160 : 300,
-      color:"#f0effe"
+      color:"#f0effe",
+      ht:'192',
+      wt:'287'
     },
     {
       src: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1750747223/PremiumProduct_ecxrf8.svg',
       alt: 'Premium Product',
-      x: isMobile ? 30 : 300,
-      y: isMobile ? 220 : 200,
-      color:"#feffef"
+      x: isMobile ? 30 : 30,
+      y: isMobile ? 220 : 180,
+      color:"#feffef",
+      ht:'179',
+      wt:'238'
     },
   ];
 
   return (
-    <div ref={ref} className="h-[100dvh] md:h-[1000px] relative overflow-hidden">
+    <div ref={ref} className="h-[100dvh] md:h-[1100px] relative overflow-hidden">
       <div className="absolute inset-0 z-20">
-        <div className="relative h-full w-full">
+        <div className="relative h-full w-full ">
           {items.map((item, idx) => (
             <motion.div
               key={idx}
@@ -93,17 +111,18 @@ function ChooseSheekharIngredient() {
               animate={
                 inView
                   ? { x: item.x, y: item.y, opacity: 1 }
-                  : { x: 0, y: 0, opacity: 0 }
+                  // ? { x: item.x, y: item.y, opacity: 1 }
+                  : { x: -130, y: -100, opacity: 1 }
               }
               
-              transition={{ duration: 1, delay: idx * 0.1 }}
+              transition={{ duration: 1, delay: idx * 0.1, ease: "easeInOut" }}
               className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
             >
               <Image
                 src={item.src}
                 alt={item.alt}
-                width={isMobile ? 100 : 150}
-                height={isMobile ? 80 : 100}
+                width={isMobile ? 100 : item.wt }
+                height={isMobile ? 80 : item.ht }
                 className="rounded shadow-md mx-auto hover:scale-110 transition-all duration-1000"
               />
               <p 
@@ -117,9 +136,9 @@ function ChooseSheekharIngredient() {
         </div>
       </div>
 
-      <div className="w-full md:w-[688px] absolute z-10 top-1/2 -translate-y-1/2 md:left-1/2 md:top-1/2 md:-translate-y-1/2 transform md:-translate-x-1/2">
-        <h2 className="md:text-[36px] sm:text-[20px] text-[30px] text-center text-text_blue font-inter italic mx-10 md:mt-[32px] mt-[50px] mb-[50px] md:mb-[40px]">
-          Choose Sheekhar Ingredient
+      <div className="w-full md:w-[600px]  absolute z-10 top-1/2 -translate-y-1/2 md:left-1/2 md:top-1/2 md:-translate-y-1/2 transform md:-translate-x-1/2">
+        <h2 className="md:text-[36px] md:w-full sm:text-[20px] text-[30px] text-center text-text_blue font-inter italic mx-10 md:mt-[32px] mt-[50px] mb-[50px] md:mb-[40px]">
+          Why Choose Sheekhar Ingredient
         </h2>
 
         <p className="text-end md:text-[20px] px-4">
