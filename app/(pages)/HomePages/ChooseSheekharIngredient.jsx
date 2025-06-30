@@ -7,7 +7,7 @@ import Image from 'next/image';
 function ChooseSheekharIngredient() {
   const [isMobile, setIsMobile] = useState(false);
   const ref = useRef(null);
-  const inView = useInView(ref, { once: true, amount: 0.5 });
+  const inView = useInView(ref, { once: false, amount: 0.5 });
 
   useEffect(() => {
     const checkSize = () => setIsMobile(window.innerWidth < 768);
@@ -101,31 +101,27 @@ function ChooseSheekharIngredient() {
   ];
 
   return (
-    <div ref={ref} className="h-[100dvh] md:h-[1100px] relative overflow-hidden">
-      <div className="absolute inset-0 z-20">
+    <div ref={ref} className="h-[100dvh] md:h-[1100px] relative overflow-hidden ">
+      {/* Desktop floating images */}
+      <div className="absolute inset-0 z-20 hidden md:block">
         <div className="relative h-full w-full ">
           {items.map((item, idx) => (
             <motion.div
               key={idx}
-              initial={{ x: 0, y: 0, opacity: 1 }}
+              initial={{ x: -500, y: -500, opacity: 1, scale:0.5 }}
               animate={
                 inView
-                  ? { x: item.x, y: item.y, opacity: 1 }
-                  // ? { x: item.x, y: item.y, opacity: 1 }
-                  : { x: -130, y: -100, opacity: 1 }
+                  ? { x: item.x, y: item.y, opacity: 1, scale:1 }
+                  : { x: -120, y: -100, opacity: 1, scale:0.5 }
               }
-              
-              transition={{ duration: 1, delay: idx * 0.1, ease: "easeInOut"
-
-                
-               }}
+              transition={{ duration: idx * 0.5, delay: 0.1, ease: "easeInOut" }}
               className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
             >
               <Image
                 src={item.src}
                 alt={item.alt}
-                width={isMobile ? 100 : item.wt }
-                height={isMobile ? 80 : item.ht }
+                width={item.wt}
+                height={item.ht}
                 className="rounded shadow-md mx-auto hover:scale-110 transition-all duration-1000"
               />
               <p 
@@ -139,7 +135,34 @@ function ChooseSheekharIngredient() {
         </div>
       </div>
 
-      <div className="w-full md:w-[600px]  absolute z-10 top-1/2 -translate-y-1/2 md:left-1/2 md:top-1/2 md:-translate-y-1/2 transform md:-translate-x-1/2">
+      {/* Mobile carousel images */}
+      <div className="block md:hidden w-full absolute z-20 top-2/3 left-0 h-fit flex items-center justify-center">
+        <div className="w-full overflow-x-auto scrollbar-hide">
+          <div className="flex flex-row gap-6 px-6 py-8 min-w-full">
+            {items.map((item, idx) => (
+              <div key={idx} className=" flex flex-col items-center min-w-[220px] max-w-[220px] flex-shrink-0 h-[200px] justify-center">
+                <div className="flex-1 flex items-center justify-center w-full">
+                  <Image
+                    src={item.src}
+                    alt={item.alt}
+                    width={180}
+                    height={140}
+                    className="rounded shadow-md mx-auto w-full h-auto max-h-[140px] object-contain"
+                  />
+                </div>
+                <p
+                  className="text-center text-[14px] px-3 py-1 rounded-full mt-2"
+                  style={{ backgroundColor: item.color }}
+                >
+                  {item.alt}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full md:w-[600px]  absolute z-10 top-1/3 -translate-y-[250px] md:left-1/2 md:top-1/2 md:-translate-y-1/2 transform md:-translate-x-1/2">
         <h2 className="md:text-[36px] md:w-full sm:text-[20px] text-[30px] text-center text-text_blue font-inter italic mx-10 md:mt-[32px] mt-[50px] mb-[50px] md:mb-[40px]">
           Why Choose Sheekhar Ingredient
         </h2>
