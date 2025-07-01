@@ -51,18 +51,37 @@ const sizeGrid = [
 ];
 
 // Animation variants
-const getVariant = (rowIndex ) => {
+const getVariant = (colIndex ) => {
   return {
     hidden: {
-      y: rowIndex % 2 === 0 ? -100 : 100,
+      y: colIndex % 2 === 0 ? -200 : 200,
       opacity: 0.5,
     },
     visible: {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 3.6,
+        duration: 0.8,
         ease: 'easeOut',
+      },
+    },
+  };
+};
+
+// Animation Variant for Column 2 - staggered animation
+const getVariant2 = (rowIndex) => {
+  return {
+    hidden: {
+      y: rowIndex === 0 ? 200 : rowIndex === 1 ? -200 : 200, // First image comes from below, second from above, third from below
+      opacity: 0.5,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        ease: 'easeOut',
+        delay: rowIndex * 0.2, // Stagger the animations
       },
     },
   };
@@ -76,7 +95,7 @@ const ImageGridWithAnimations = () => {
           {column.map((img, rowIndex) => (
             <motion.div
               key={rowIndex}
-              variants={getVariant(rowIndex)}
+              variants={colIndex === 1 ? getVariant2(rowIndex) : getVariant(colIndex)}
               initial="hidden"
               whileInView="visible" // Use whileInView to trigger animation when in view
               viewport={{ once: true }} // Ensure animation runs only once
