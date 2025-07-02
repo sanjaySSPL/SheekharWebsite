@@ -6,7 +6,7 @@ import {motion} from 'framer-motion'
 function Card({illustrations , title , paragraph}) {
   // console.log(illustrations)
   return (
-    <motion.div className="w-[90dvw]  md:w-[359px] h-[279px] bg-bg_light_blue rounded-[8px] p-[1px] hover:bg-blue-100 transition-all duration-300 "
+    <motion.div className="w-[90dvw] md:w-[359px] h-[279px] md:h-[350px] bg-bg_light_blue rounded-[8px] p-6 hover:bg-[#343884] hover:text-white transition-all duration-300 group flex flex-col items-center justify-start"
       initial={{ opacity: 0, y: -50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.5 }}
@@ -16,17 +16,16 @@ function Card({illustrations , title , paragraph}) {
             alt='illustration'
             width={44}
             height={44}
-            className='mt-[20px] mx-auto '
+            className='mb-6 group-hover:brightness-0 group-hover:invert transition-all duration-300'
         />
-        <h2 className='text-[24px] fomt-semibold mt-[23px] ml-[20px] text-text_blue md:text-center text-center'>
+        <h2 className='text-[24px] font-semibold mb-6 text-center group-hover:text-white transition-all duration-300'>
             {title}
         </h2>
-        <div className='w-[90%] md:w-[319px] h-[120px] mt-[23px] mb-[20px] ml-[20px] text-text_blue md:text-center text-center
-        '>
-            {paragraph}
+        <div className='text-center group-hover:text-white transition-all duration-300 flex-1 flex items-center'>
+            <div className='text-[20px]'>
+                {paragraph}
+            </div>
         </div>
-
-
     </motion.div>
   )
 }

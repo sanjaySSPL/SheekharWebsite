@@ -106,8 +106,8 @@ export default function Navbar() {
             </motion.div>
             {/* Products Dropdown */}
             <motion.div className="relative group" variants={itemVariants}>
-              <span className="py-4 px-2 text-white text-[20px] tracking-wider hover:font-semibold hover:italic transition duration-300 cursor-pointer group-hover:text-medium_blue group-hover:bg-white group-hover:font-semibold group-hover:italic group-focus:bg-white group-focus:font-semibold group-focus:italic rounded">
-                Products
+              <span className="py-4 px-2  text-white text-[20px] tracking-widest hover:font-semibold hover:italic transition duration-300 cursor-pointer group-hover:text-medium_blue group-hover:bg-white group-hover:font-semibold group-hover:italic group-focus:bg-white group-focus:font-semibold group-focus:italic rounded">
+                Ingredients
               </span>
               {/* Dropdown menu */}
               <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-[500px] bg-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-200 z-50 p-6 flex flex-col">

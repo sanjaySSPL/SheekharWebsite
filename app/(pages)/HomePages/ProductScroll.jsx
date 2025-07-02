@@ -22,7 +22,7 @@ function ProductScroll() {
       data_image: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751089466/unsplash_CBwoyP69nAU_flajpz.svg',
       data_text: 'A solution designed for smoother fermented dairy drinks — enhancing body and taste while preventing whey separation. Keeps traditional flavors fresh with modern consistency',
       data_detailed_link: '',
-      title:'Sour'
+      title:'Lassi'
     },
     {
       data_image: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751089466/unsplash_v2XfTVtDK_o_jywjvx.svg',
@@ -40,7 +40,7 @@ function ProductScroll() {
       data_image: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751089463/unsplash_1WVjdMmzrik_yxlift.svg',
       data_text: 'Enhances richness and body in dairy creams — delivering a silky, smooth mouthfeel with excellent consistency. Built to retain texture under varied conditions.',
       data_detailed_link: '',
-      title:'Sorbets'
+      title:'Cream'
     },
     {
       data_image: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751089465/unsplash_cd1PW0FAi-E_txtvtx.svg',
@@ -52,7 +52,7 @@ function ProductScroll() {
       data_image: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751089468/unsplash_wZjJYDw39o4_fzh67w.svg',
       data_text: 'Soft, uniform, and always indulgent — just mix and fry. Perfect for quick prep without compromising tradition',
       data_detailed_link: '',
-      title:'Fried'
+      title:'Gulab Jamun'
     },
     {
       data_image: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751089464/unsplash_5etk9qHwNNE_ttdtbc.svg',

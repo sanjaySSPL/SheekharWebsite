@@ -20,7 +20,7 @@ function ContactUsPage2() {
                 WORKING HOURS
             </h2>
             <div className='flex flex-col gap-2 text-gray-500 md:my-2 mt-2 '>
-                <p>Saturday: 9:00 AM - 1:00 PM</p>
+                <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
                 <p>Sunday: Closed</p>
             </div>
             <h2 className='text-xl font-semibold mt-10'>
