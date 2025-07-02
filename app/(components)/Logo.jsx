@@ -19,7 +19,7 @@ function Logo({ startAnimation = false }) {
   const sheekharrVariants = {
     hidden: { 
       opacity: 0, 
-      y: 150,  // Start 50px above
+      y: 50,  // Start 50px above
       scale: 0.9
     },
     visible: { 
@@ -38,7 +38,7 @@ function Logo({ startAnimation = false }) {
   const punchlineVariants = {
     hidden: { 
       opacity: 0, 
-      y: -150,   // Start 50px below
+      y: -50,   // Start 50px below
       scale: 0.9
 
     },
