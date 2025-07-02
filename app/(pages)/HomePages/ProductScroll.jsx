@@ -2,8 +2,7 @@
 'use client'
 import React from 'react'
 import DisplayCard from '../../(components)/DisplayCards'
-import { motion , useInView} from 'framer-motion'
-import { useRef } from 'react'
+
 
 function ProductScroll() {
   const displayCardInformation = [
@@ -63,18 +62,10 @@ function ProductScroll() {
     },
   ]
 
-  const ref = useRef(null)
-  const inView = useInView(ref,{once:true,amount:0.2})
 
    return (
-    <motion.div className="h-[560px] w-[100dvw] overflow-hidden"
-      initial={{opacity:0 }}
-      animate={inView ? {opacity:1 , y:0} : {}}
-      transition={{
-        duration: 0.7,
-        ease: [0.22, 1, 0.36, 1]       // Higher = slower, lower = faster
-      }}
-      ref={ref}
+    <div className="h-[560px] w-[100dvw] overflow-hidden"
+      
       >
       <h1 className="md:text-[36px] sm:text-[20px] text-[30px] text-center text-text_blue font-inter italic mx-10 md:mt-[65px] mt-[50px] mb-[50px] md:mb-[40px]">
         Tried, Tested, Trusted Ingredients
@@ -106,7 +97,7 @@ function ProductScroll() {
           ))}
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }
 
