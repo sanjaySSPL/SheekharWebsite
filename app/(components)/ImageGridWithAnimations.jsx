@@ -128,6 +128,7 @@ const AnimatedGrid = () => (
               priority
               placeholder='blur' 
               blurDataURL={img}
+              style={{height: "auto"}}
             />
           </motion.div>
         ))}

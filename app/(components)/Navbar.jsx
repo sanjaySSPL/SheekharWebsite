@@ -144,7 +144,7 @@ export default function Navbar() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <button className="outline-none mobile-menu-button" onClick={() => setIsOpen(!isOpen)}>
+            <button name='mobile-menu-button' className="outline-none mobile-menu-button" onClick={() => setIsOpen(!isOpen)}>
               {/* Hamburger Icon */}
               <RxHamburgerMenu />
             </button>

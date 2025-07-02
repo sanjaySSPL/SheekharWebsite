@@ -5,13 +5,13 @@ import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 
-const DisplayCard = forwardRef(function DisplayCard(props) {
+const DisplayCard = forwardRef(function DisplayCard(props, ref) {
   const { data_image, data_text, data_detailed_link, data_title } = props
   const [active, setActive] = useState(false)
   const router = useRouter()
   
   return (
-    <div className={`${active ? 'w-[320px] h-[384px]' : null } w-[250px] relative  z-10 h-[300px] rounded-[5px]  transition-all ease-in-out duration-500 overflow-hidden `}
+    <div ref={ref} className={`${active ? 'w-[320px] h-[384px]' : null } w-[250px] relative  z-10 h-[300px] rounded-[5px]  transition-all ease-in-out duration-500 overflow-hidden `}
         onMouseEnter={() => setActive(true)}
         onMouseLeave={() => setActive(false)}
         onClick={() => router.push(data_detailed_link)}
