@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Logo from '../(components)/Logo'
+import StaticLogo from '../(components)/StaticLogo'
 
 function SecondHeroSection() {
   return (
@@ -21,9 +21,7 @@ function SecondHeroSection() {
 
         {/* Content div */}
         <div className="absolute inset-0 z-30 flex items-center justify-center text-center text-white px-4 h-full w-full top-0 left-0">
-            <div className='absolute md:left-10 left-[50%] translate-x-[-50%] md:translate-x-[0%] md:top-50% '>
-                <Logo />
-            </div>
+            <StaticLogo />
         </div>
     </div>
   )

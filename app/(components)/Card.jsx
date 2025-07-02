@@ -6,7 +6,7 @@ import {motion} from 'framer-motion'
 function Card({illustrations , title , paragraph}) {
   // console.log(illustrations)
   return (
-    <motion.div className="w-[90dvw] md:w-[359px] h-[279px] md:h-[350px] bg-bg_light_blue rounded-[8px] p-6 hover:bg-[#343884] hover:text-white transition-all duration-300 group flex flex-col items-center justify-start"
+    <motion.div className="w-[90dvw] md:w-[359px] h-[379px] md:h-[350px] bg-bg_light_blue rounded-[8px] p-6 hover:bg-[#343884] hover:text-white transition-all duration-300 group flex flex-col items-center justify-start"
       initial={{ opacity: 0, y: -50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.5 }}

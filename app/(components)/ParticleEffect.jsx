@@ -8,7 +8,7 @@ const ParticleEffect = ({ startAnimation = false }) => {
   useEffect(() => {
     if (startAnimation) {
       // Create particles
-      const newParticles = Array.from({ length: 200 }, (_, i) => ({
+      const newParticles = Array.from({ length: 10 }, (_, i) => ({
         id: i,
         x: Math.random() * window.innerWidth,
         y: Math.random() * window.innerHeight,
