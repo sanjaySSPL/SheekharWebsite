@@ -112,13 +112,13 @@ export default function Navbar() {
               {/* Dropdown menu */}
               <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-[500px] bg-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-200 z-50 p-6 flex flex-col">
                 <div className="grid grid-cols-2 gap-x-8 gap-y-3">
-                  <Link href="/products/dairy-ingredients"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Dairy Ingredients</span></Link>
-                  <Link href="/products/premixes"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Premixes</span></Link>
-                  <Link href="/products/dessert-ingredients"><span className="block px-2 py-2 rounded hover:bg-purple-100 cursor-pointer text-gray-800">Dessert Ingredients</span></Link>
-                  <Link href="/products/plating-agents"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Plating Agents</span></Link>
-                  <Link href="/products/stabilizers"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Stabilizers</span></Link>
+                  <Link href="/products#dairy-products"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Dairy Products</span></Link>
+                  <Link href="/products#premixes"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Premixes</span></Link>
+                  <Link href="/products#dairy-based-dessert"><span className="block px-2 py-2 rounded hover:bg-purple-100 cursor-pointer text-gray-800">Dairy Based Dessert</span></Link>
+                  <Link href="/products#plating-agents"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Plating Agents</span></Link>
+                  <Link href="/products#advanced-stabilizers"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Advanced Stabilizers</span></Link>
                   <span className="block px-2 py-2 rounded text-gray-400 cursor-not-allowed">Menu item</span>
-                  <Link href="/products/sauces-and-snacks"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">sauces and snacks</span></Link>
+                  <Link href="/products#sauces-snacks"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Sauces & Snacks</span></Link>
                   <span className="block px-2 py-2 rounded text-gray-400 cursor-not-allowed">Menu item</span>
                 </div>
               </div>

@@ -1,28 +1,80 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
+import { motion, AnimatePresence } from 'framer-motion'
 
-function ProductCard({image = '/brain.jpg' , title = 'Paneer' , ingredient = 'SC900' , description = 'We offer ingredient systems that improve paneer yield, softness, and structure. Our solutions reduce breakage and retain moisture during cooking or storage. Result: better texture, higher output, and cost-effective production' }) {
+function ProductCard({
+  image = '/brain.jpg',
+  title = 'Paneer',
+  description = '',
+  description1 = '',
+  keybenefits = [],
+  onClick,
+  expanded = false,
+  onExpand,
+  onCollapse,
+  isMobile = false,
+}) {
   return (
-    <div className='w-[617px] h-[348px] flex flex-col md:flex-row gap-0 border border-gray-200 rounded-lg bg-[#f9f8fe] p-4 md:p-6 mx-auto overflow-hidden flex-shrink-0'>
+    <motion.div
+      layout
+      className="w-full max-w-[617px] flex flex-col md:flex-row gap-0 border border-gray-200 rounded-lg bg-[#f9f8fe] p-3 md:p-6 mx-auto overflow-hidden flex-shrink-0 mb-2 md:mb-0 cursor-pointer"
+      onClick={isMobile ? undefined : onClick}
+      whileHover={!isMobile ? { scale: 1.02 } : {}}
+      transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+    >
       {/* Left: Image */}
-      <div className='w-full md:w-[45%] flex items-center justify-center bg-red-400 rounded-md mb-4 md:mb-0 h-[120px] md:h-full'>
+      <div className='w-full md:w-[45%] relative rounded-md mb-3 md:mb-0 h-[180px] md:h-full overflow-hidden'>
         <Image 
           src={image} 
-          alt='Paneer Product' 
-          className='h-[100px] md:h-[220px] w-auto rounded-md object-cover shadow-sm' 
-          height={220}
-          width={200}
+          alt={title} 
+          fill
+          className='object-cover w-full h-full rounded-md shadow-sm' 
+          sizes="(max-width: 768px) 100vw, 45vw"
         />
       </div>
       {/* Right: Product Info */}
-      <div className='w-full md:w-[55%] flex flex-col justify-center md:pl-6 h-[120px] md:h-full'>
-        <div className='text-xl md:text-2xl font-bold italic text-[#3b4381]'>{title}</div>
-        <div className='text-base md:text-lg font-medium text-[#3b4381] my-2 md:my-[10px]'>{ingredient}</div>
+      <div className='w-full md:w-[55%] flex flex-col justify-center md:pl-6 h-auto md:h-full'>
+        <div className='text-lg md:text-2xl font-bold italic text-[#3b4381] mb-2 md:mb-[20px]'>{title}</div>
         <div className='text-[#3b4381] text-sm md:text-base leading-relaxed whitespace-pre-line overflow-y-auto'>
           {description}
         </div>
+        {/* Mobile: See More/Collapse */}
+        {isMobile && (
+          <button
+            className="text-[#3b4381] text-sm md:text-base leading-relaxed hover:underline cursor-pointer mt-2 md:mt-[10px] text-left"
+            onClick={expanded ? onCollapse : onExpand}
+            type="button"
+          >
+            {expanded ? 'See Less' : 'See More'}
+          </button>
+        )}
+        {/* Mobile: Expanded content */}
+        <AnimatePresence>
+          {isMobile && expanded && (
+            <motion.div
+              key="expand"
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: 'auto', opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="overflow-hidden"
+            >
+              {description1 && (
+                <div className="mt-2 text-[#3b4381] text-sm md:text-base">{description1}</div>
+              )}
+              {keybenefits && keybenefits.length > 0 && (
+                <ul className="mt-2 list-disc pl-5 text-[#3b4381] text-sm md:text-base">
+                  {keybenefits.map((benefit, i) => (
+                    <li key={i}>{benefit}</li>
+                  ))}
+                </ul>
+              )}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
