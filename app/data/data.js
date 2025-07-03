@@ -177,7 +177,74 @@ const AdvancedStabilizers = [
         ],
         image: "https://res.cloudinary.com/dipc3ow9z/image/upload/v1751528176/cream_q4evwa.webp"
     },
+    {
+        title:"Sofyty",
+        description:"This stabilizer helps create light, creamy soft-serve with excellent swirl definition and smooth dispensing",
+        description1:" It supports high overrun, melt resistance, and texture stability — perfect for vending, QSRs, and high-traffic frozen dessert formats.",
+        keybenefits:["Supports high overrun and smooth body","Enhances creaminess without excess solids",
+                    "Maintains swirl structure and reduces melt-drip",
+                    "Performs well under continuous machine cycling",
+                    "Clean-label and cost-efficient",
+                    "Compatible with dairy and plant-based softy bases"
+
+        ],
+        image:""
+    },
+    {
+        title:"Rabdi",
+        description:"This Rabdi formulation integrates Sheekharr’s Advanced Stabilizers to deliver traditional richness combined with modern stability technology. The stabilizers control water migration and prevent phase separation, preserving the creamy, dense texture that defines authentic Rabdi.",
+        description1:"Designed for industrial and commercial use, it maintains product integrity through processing, packaging, and storage while reducing spoilage and syneresis. The formulation supports consistent sensory quality with a smooth mouthfeel and a clean, indulgent finish.",
+        keybenefits:[
+            "Maintains creamy, dense texture typical of authentic Rabdi",
+            "Prevents whey separation and reduces syneresis during storage",
+            "Enhances shelf life and product stability in varied conditions",
+            "Supports consistent taste and mouthfeel batch after batch",
+            "Suitable for industrial scale production and retail packaging",
+            "Compatible with standard dairy processing methods"
+        ],
+        image:""
+    },
+    {
+        title:"Sweet Base",
+        description:"The Sweet Base is crafted to deliver a smooth, creamy foundation with uniform sweetness and texture, suitable for a wide range of dairy desserts and confectionery products. It ensures excellent stability during processing and storage, minimizing crystallization and phase separation",
+        description1:"Formulated for industrial and commercial use, the sweet base supports consistent product quality and enhances the sensory experience of the final dessert. It can be easily adapted for different flavorings or mix-ins, making it a flexible ingredient for manufacturers seeking dependable and scalable sweet dessert solutions.",
+        keybenefits:[
+            "Provides consistent sweetness and creamy texture",
+            "Enhances stability and prevents crystallization",
+            "Suitable for diverse dairy dessert applications",
+            "Supports smooth processing and extended shelf life",
+            "Flexible for flavor customization and mix-ins",
+            "Ideal for commercial-scale production"
+        ]
+    },
+    {
+        title:"Sorbet",
+        description:"This sorbet base is formulated to highlight bright, natural fruit flavors while providing a smooth, fine texture and excellent melt resistance. It offers a clean, refreshing taste that appeals to a wide range of consumers.",
+        description1:"Designed for commercial production, the base maintains consistency during freezing and storage, preventing large ice crystal formation and ensuring superior scoopability. Its balanced formulation supports customization with various fruit purees and flavorings, making it a versatile choice for frozen dessert manufacturers.",
+        keybenefits:[
+            "Enhances natural fruit flavors with a smooth, crisp texture",
+            "Prevents large ice crystal formation for better scoopability",
+            "Offers excellent melt resistance and stability",
+            "Supports flavor customization and diverse recipes",
+            "Ideal for commercial and artisanal frozen dessert production"
+        ]
+    }
+]
+const SaucesSnacks = [
+     {
+        title: "Mayonnaise ",
+        description: "This mayonnaise formulation offers a balanced blend of oils, emulsifiers, and stabilizers to create a rich, creamy texture with a clean, tangy flavor profile. It ensures excellent emulsion stability and resistance to separation, making it suitable for sauces, dips, and snack applications.",
+        description1:"Designed for commercial manufacturing, the mayonnaise maintains its texture and flavor under varied storage and usage conditions. It is adaptable for further customization with herbs, spices, and other flavorings, supporting diverse culinary needs in both retail and foodservice markets",
+        keybenefits: [
+            "Consistent creamy texture and flavor",
+            "Excellent emulsion and stability under various conditions",
+            "Enhances sauces, dressings, and snack coatings",
+            "Supports flavor customization",
+            "Suitable for commercial production and large-scale use",
+        ],
+        image: "https://res.cloudinary.com/dipc3ow9z/image/upload/v1751528176/cream_q4evwa.webp"
+    },
 ]
 
 
-export {DairyProduct,DairyBasedDessert , AdvancedStabilizers}
+export {DairyProduct,DairyBasedDessert , AdvancedStabilizers, SaucesSnacks}
