@@ -31,6 +31,8 @@ function ProductCard({
           fill
           className='object-cover w-full h-full rounded-md shadow-sm' 
           sizes="(max-width: 768px) 100vw, 45vw"
+          placeholder='blur'
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/w8AAn8B9p6Q2wAAAABJRU5ErkJggg=="
         />
       </div>
       {/* Right: Product Info */}
