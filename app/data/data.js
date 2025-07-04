@@ -74,7 +74,6 @@ const DairyProduct = [
         image:'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751532218/lassi-chaas-shrikhand_uywocl.webp'
     }
 ];
-
 const DairyBasedDessert = [
     {
         title: "Cream",
@@ -133,7 +132,6 @@ const DairyBasedDessert = [
         image:'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751528176/sweetbase_v6bh7d.webp'
     }
 ];
-
 const AdvancedStabilizers = [
     {
         title: "Ice Cream",
@@ -147,7 +145,7 @@ const AdvancedStabilizers = [
             "Stabilizes product during storage and transport",
             "Works across dairy, low-fat, and plant-based ice creams"
         ],
-        image: "https://res.cloudinary.com/dipc3ow9z/image/upload/v1751528176/cream_q4evwa.webp"
+        image: "https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605108/unsplash_iT4qcNMhYTQ_xb6uwm.webp"
     },
     {
         title: "Frozen dessert  ",
@@ -161,7 +159,7 @@ const AdvancedStabilizers = [
             "Clean-label friendly and scalable across formats.",
             "Simplifies formulation in high-output production lines."
         ],
-        image: "https://res.cloudinary.com/dipc3ow9z/image/upload/v1751528176/cream_q4evwa.webp"
+        image: "https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605108/unsplash_-pMouvVX0Ok_qkdm4a.webp"
     },
     {
         title: "Kulfi",
@@ -175,10 +173,10 @@ const AdvancedStabilizers = [
             "Clean-label friendly and scalable across formats.",
             "Simplifies formulation in high-output production lines."
         ],
-        image: "https://res.cloudinary.com/dipc3ow9z/image/upload/v1751528176/cream_q4evwa.webp"
+        image: "https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605109/unsplash__IozwVfscJc_tbmiks.webp"
     },
     {
-        title:"Sofyty",
+        title:"Softy",
         description:"This stabilizer helps create light, creamy soft-serve with excellent swirl definition and smooth dispensing",
         description1:" It supports high overrun, melt resistance, and texture stability — perfect for vending, QSRs, and high-traffic frozen dessert formats.",
         keybenefits:["Supports high overrun and smooth body","Enhances creaminess without excess solids",
@@ -188,7 +186,7 @@ const AdvancedStabilizers = [
                     "Compatible with dairy and plant-based softy bases"
 
         ],
-        image:""
+        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605108/unsplash_p-cvyczoWco_d7k9sj.webp"
     },
     {
         title:"Rabdi",
@@ -202,7 +200,7 @@ const AdvancedStabilizers = [
             "Suitable for industrial scale production and retail packaging",
             "Compatible with standard dairy processing methods"
         ],
-        image:""
+        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751528176/rabdi_eyhe9d.webp"
     },
     {
         title:"Sweet Base",
@@ -215,7 +213,8 @@ const AdvancedStabilizers = [
             "Supports smooth processing and extended shelf life",
             "Flexible for flavor customization and mix-ins",
             "Ideal for commercial-scale production"
-        ]
+        ],
+        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605109/unsplash_CBwoyP69nAU_ky42xe.webp"
     },
     {
         title:"Sorbet",
@@ -227,7 +226,8 @@ const AdvancedStabilizers = [
             "Offers excellent melt resistance and stability",
             "Supports flavor customization and diverse recipes",
             "Ideal for commercial and artisanal frozen dessert production"
-        ]
+        ],
+        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605108/unsplash_HXLoDsNjB4w_hqo3h6.webp"
     }
 ]
 const SaucesSnacks = [
@@ -242,9 +242,202 @@ const SaucesSnacks = [
             "Supports flavor customization",
             "Suitable for commercial production and large-scale use",
         ],
-        image: "https://res.cloudinary.com/dipc3ow9z/image/upload/v1751528176/cream_q4evwa.webp"
+        image: "https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605108/unsplash_q3rcbc6vQWo_ex3otx.webp"
     },
+    {
+        title:"Sauces",
+        description:"These sauce bases are crafted to provide smooth consistency and stability during processing and storage. Suitable for a wide range of applications including dips, dressings, and snack toppings, they support flavor customization and maintain quality throughout shelf life.",
+        description1:"Designed for commercial production, these sauces ensure reliable performance, enhancing both the sensory appeal and convenience of finished products",
+        keybenefits:[
+            "Consistent flavor and smooth texture",
+            "Stable during processing and storage",
+            "Versatile for dips, dressings, snacks, and meals",
+            "Supports flavor customization",
+            "Suitable for large-scale manufacturing"
+        ],
+        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605107/unsplash_DYVVuq3J-Zg_zsaxgs.webp"
+    },
+    {
+        title:"Snacks",
+        description:"Our snack-focused ingredient blends are developed to optimize texture, mouthfeel, and structural quality in a wide range of snack applications—such as chips, puffs, namkeen, and coated snacks. These systems support uniform crispiness, enhance seasoning adhesion, and contribute to a light, crunchy bite.",
+        description1:"Engineered for high-performance in commercial production, they maintain product stability across various cooking and handling conditions. Whether the final product is fried, baked, or extruded, these ingredients ensure consistent results that meet consumer expectations",
+        keybenefits:[
+            "Enhances crunch and lasting crispiness",
+            "Reduces oil absorption in fried products",
+            "Supports uniform coating and seasoning retention",
+            "Improves texture and bite across snack formats",
+            "Suitable for large-scale frying, baking, and extrusion",
+            "Delivers consistent performance and product quality"
+        ],
+        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605108/unsplash_L1ltnmBlA14_wfd62h.webp"
+    }
+];
+const Premixes = [
+    {
+        title:"Mayonnaise",
+        description:"This mayonnaise premix combines emulsifiers, stabilizers, and functional ingredients in an optimized ratio to streamline production and ensure batch-to-batch consistency. It delivers excellent emulsification, smooth body, and rich texture—ideal for classic mayonnaise, flavored variants, or creamy dips.",
+        description1:"The premix offers versatility in oil ratios and flavor profiles, allowing easy customization while reducing formulation errors and processing time. It ensures product stability under varied storage and distribution conditions, making it suitable for both foodservice and retail applications.",
+        keybenefits:[
+            "Ensures stable, creamy emulsion with consistent results",
+            "Reduces formulation time and simplifies production",
+            "Customizable with oils, seasonings, and flavors",
+            "Maintains texture and stability during storage",
+            "Ideal for mayonnaise, dips, and dressings",
+            "Suitable for high-volume commercial use"
+        ],
+        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605045/unsplash_4caIPcmVDII_d3eafo.webp"
+    },
+    {
+        title:"Gulab Jamun",
+        description:"This Gulab Jamun is formulated using premium dairy ingredients and stabilizers to achieve uniform softness, balanced sweetness, and excellent syrup retention. The texture remains spongy and moist over time, making it suitable for chilled, frozen, or ambient formats.",
+        description1:"Crafted for industrial kitchens, sweet manufacturers, and large-scale dessert lines, it ensures consistent size, shape, and taste with every batch. Whether used in pre-packaged servings or bulk catering, it offers long shelf life without compromising on traditional quality and mouthfeel.",
+        keybenefits:[
+            "Soft, spongy texture with excellent syrup absorption",
+            "Consistent shape and size during cooking",
+            "Maintains moisture and sweetness over shelf life",
+            "Suitable for chilled, frozen, or ambient storage",
+            "Ready for retail, catering, and industrial applications",
+            "Authentic flavor with modern production efficiency"
+        ],
+        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605045/unsplash_W50inNOVUdU_jm2rkf.webp"
+    },
+    {
+        title:"Rabdi",
+        description:"Crafted from premium milk solids and functional ingredients, this rabdi delivers a thick, indulgent consistency with a naturally sweet, caramelized flavor. It maintains uniform texture without curdling or separation, even under chilled or ambient conditions.",
+        description1:"Designed for commercial kitchens, dessert manufacturers, and sweet shops, it offers excellent handling properties, extended shelf life, and a homemade taste. Whether used in festive sweets, layered desserts, or ready-to-eat formats, it brings tradition and convenience together in every serving",
+        keybenefits:[
+            "Thick, creamy texture with authentic flavor",
+            "Stable under chilled and ambient conditions",
+            "Maintains smoothness without separation",
+            "Versatile for sweets, plated desserts, and fusion recipes",
+            "Consistent batch quality for commercial use",
+            "Ready-to-use format reduces prep time"
+        ],
+        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605046/unsplash_hsYpr6KcGZw_tpgkpp.webp"
+    },
+    {
+        title:"Creamy Sauces",
+        description:"This creamy sauce formulation combines emulsifiers and stabilizers to create a rich, velvety mouthfeel with a consistent, pourable body. It resists separation and retains its smooth texture across heating, chilling, and holding conditions.",
+        description1:"Perfect for commercial kitchens, QSRs, and processed food manufacturers, the sauce can be customized with flavors like garlic, cheese, or pepper. It blends well into various formats—whether served hot or cold—making it ideal for pasta bases, sandwich spreads, dips, or coating sauces.",
+        keybenefits:[
+            "Smooth, creamy consistency with excellent mouthfeel",
+            "Stable under heat, chill, and storage conditions",
+            "Versatile base for custom flavor infusions",
+            "Suitable for pastas, dips, spreads, and coatings",
+            "Supports batch consistency and commercial-scale use"
+        ],
+        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605045/unsplash_5etk9qHwNNE_c6n4mu.webp"
+    },
+    {
+        title:"ice cream",
+        description:"This ice cream base is carefully developed with emulsifiers and stabilizers that support aeration, prevent ice crystal formation, and maintain a smooth, creamy mouthfeel throughout shelf life. It offers flexibility for a wide range of flavor profiles, inclusions, and fat contents — from classic vanilla to rich chocolate or fruit-based variants.",
+        description1:"Perfect for high-volume production, this base delivers batch-to-batch consistency, excellent melt resistance, and a satisfying, clean finish. It performs well across gravity-fed and pressure-fed machines, making it suitable for packaged ice cream, scoops, tubs, and novelty formats.",
+        keybenefits:[
+            "Smooth, creamy texture with excellent melt resistance",
+            "Supports high overrun and uniform aeration",
+            "Prevents ice crystal formation for a clean finish",
+            "Flexible for flavoring and mix-in customization",
+            "Performs well in various production equipment",
+            "Suitable for tubs, cones, scoops, and novelty products"
+        ],
+        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605045/unsplash_xs32jGtAOv4_zj358y.webp"
+    },
+    {
+        title:"Frozen Desserts",
+        description:"This frozen dessert base combines specialty fats, emulsifiers, and stabilizers to achieve a creamy, scoopable texture with clean melt and extended shelf life. It offers excellent aeration, controls ice crystal formation, and delivers a satisfying eating experience similar to traditional ice cream.",
+        description1:"Optimized for large-scale production, this base supports a variety of flavor additions, inclusions, and customization. Whether used in tubs, cones, or novelty formats, it ensures uniform quality and dependable processing under varied equipment and storage conditions.",
+        keybenefits:[
+            "Smooth, creamy texture with high overrun",
+            "Stable structure and clean melt",
+            "Prevents ice crystal growth over time",
+            "Cost-effective and dairy-alternative compatible",
+            "Flexible for flavoring, inclusions, and various formats",
+            "Suitable for commercial-scale frozen dessert production"
+        ],
+        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605045/unsplash_H2O9ARmAsIg_lcwidn.webp"
+    },
+    {
+        title:"Kulfy",
+        description:"This kulfi formulation is made using a blend of premium milk solids, stabilizers, and emulsifiers to achieve a thick, creamy consistency and rich mouthfeel. It offers excellent shape retention and melt resistance, making it ideal for molded kulfis and stick formats.",
+        description1:"Designed for commercial production, it supports consistent texture, clean finish, and authentic kulfi flavor. The base allows easy incorporation of traditional inclusions like cardamom, saffron, pistachio, or almond — and performs well across freezing, storage, and distribution.",
+        keybenefits:[
+            "Dense, creamy texture with traditional taste",
+            "Slow melt and excellent shape retention",
+            "Smooth mouthfeel and rich finish",
+            "Compatible with inclusions like dry fruits and spices",
+            "Suitable for molded, stick, and cup formats",
+            "Consistent quality for commercial-scale production",
+        ],
+        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605045/unsplash_fk2Cx9Cce7Y_focgc2.webp"
+    },
+    {
+        title:"Softy",
+        description:"This stabilizer formulation delivers consistent volume and silky texture in soft-serve ice creams. It enhances aeration, improves dispensing behavior, and maintains swirl stability under varied serving conditions",
+        description1:"Suitable for use in both gravity-fed and pressure machines, it reduces melting and dripping while improving shelf performance.",
+        keybenefits:[
+            "Supports high overrun and smooth body",
+            "Enhances creaminess without excess solids",
+            "Maintains swirl structure and reduces melt drip",
+            "Performs well under continuous machine cycling",
+            "Clean-label and cost-efficient",
+            "Compatible with dairy and plant-based softy bases"
+        ],
+        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605857/unsplash_bO6CH7IQLJo_hvgiit.webp"
+    },
+    {
+        title:"Ketchup",
+        description:"This ketchup formulation combines quality tomato concentrates, natural acids, and stabilizers to provide a balanced sweet-tangy flavor with a vibrant red hue. It maintains viscosity and prevents separation during storage and handling, making it suitable for retail and foodservice applications.",
+        description1:"Customizable with spices and heat levels, the ketchup base supports a wide range of culinary uses and ensures consistent batch-to-batch quality in commercial production.",
+        keybenefits:[
+            "Consistent tangy-sweet flavor and bright color",
+            "Thick, smooth, and pourable texture",
+            "Stable against separation and sedimentation",
+            "Customizable for spice and heat levels",
+            "Suitable for retail packaging and foodservice"
+        ],
+        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605046/unsplash_YD85fEjRrQo_j0wvxm.webp"
+    },
+]
+const PlatingAgents = [
+    {
+        title:"SorbTee B1 ",
+        description:"Sorbtec B1 is a food-grade plating agent with superior oil-holding capacity, making it ideal for flavor encapsulation in spice blends and instant mixes. It ensures uniform absorption of liquid ingredients without clumping, improving blend consistency and shelf life",
+        description1:"Its fine particle size and high surface area help retain flavor strength while allowing for smooth processing in automated systems.",
+        keybenefits:[
+            "High oil and flavor absorption",
+            "Converts liquids into dry, flowable powders",
+            "Improves mix consistency and storage stability",
+            "Enhances dispersion in seasonings and dry mixes",
+            "Suitable for automated processing lines"
+        ],
+        image:""
+    },
+    {
+        title:"SorbTee BR1",
+        description:"Sorbtec BR1 is specially formulated to handle high-viscosity or aromatic oils used in rich, complex seasoning systems. It provides even plating, minimizes segregation, and ensures that flavors are evenly distributed across the blend.",
+        description1:"Its optimized particle structure supports stable, free-flowing powder formulations that are easy to handle, pack, and store.",
+        keybenefits:[
+            "Handles dense oils and rich flavor systems",
+            "Maintains dry flow and uniform dispersion",
+            "Prevents clumping and ingredient separation",
+            "Improves performance in spice-heavy mixes",
+            "Supports clean, consistent final appearance"
+        ],
+        image:""
+    },
+    {
+        title:"SorbTee NP1",
+        description:"Sorbtec NP1 offers a neutral sensory profile, making it ideal for delicate flavor systems or color-sensitive applications. It absorbs a wide range of liquid ingredients—flavors, extracts, oils—while maintaining clarity and consistency in the final powder blend",
+        description1:"NP1 is well-suited for clean-label and mild-flavored products where base interference must be minimal.",
+        keybenefits:[
+            "Neutral taste and appearance",
+            "Wide compatibility with liquid actives",
+            "Supports clean-label and mild formulations",
+            "Stable and uniform powder output",
+            "Ideal for delicate seasonings and flavored blends"
+        ]
+    }
 ]
 
 
-export {DairyProduct,DairyBasedDessert , AdvancedStabilizers, SaucesSnacks}
+export {DairyProduct,DairyBasedDessert , AdvancedStabilizers, SaucesSnacks, Premixes, PlatingAgents}
