@@ -1,8 +1,12 @@
 import { Resend } from 'resend';
 
 // Debug: Check if API key is loaded
+console.log('=== ENVIRONMENT VARIABLE DEBUG ===');
+console.log('process.env.RESEND_API_KEY:', process.env.RESEND_API_KEY);
 console.log('API Key loaded:', process.env.RESEND_API_KEY ? 'Yes' : 'No');
 console.log('API Key length:', process.env.RESEND_API_KEY?.length || 0);
+console.log('All env vars:', Object.keys(process.env).filter(key => key.includes('RESEND')));
+console.log('==================================');
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
