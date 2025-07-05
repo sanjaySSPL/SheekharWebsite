@@ -16,9 +16,9 @@ export default function Home() {
         <ProductScroll />
         <SolveIndustryStandard />
         <ChooseSheekharIngredient />
-       <ContactUsPage />
-       <Certificate />
-       <Footer />
+        <ContactUsPage />
+        <Certificate />
+        <Footer />
       </main>
     </div>
   );

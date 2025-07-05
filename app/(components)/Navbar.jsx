@@ -144,7 +144,14 @@ export default function Navbar() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <button name='mobile-menu-button' className="outline-none mobile-menu-button" onClick={() => setIsOpen(!isOpen)}>
+            <button 
+              name='mobile-menu-button' 
+              className="outline-none mobile-menu-button" 
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
+            >
               {/* Hamburger Icon */}
               <RxHamburgerMenu />
             </button>
@@ -154,10 +161,12 @@ export default function Navbar() {
       
       {/* Mobile Menu */}
       <motion.div 
+        id="mobile-menu"
         className={`md:hidden w-[100dvw] absolute bg-white z-50`}
         variants={mobileMenuVariants}
         initial="hidden"
         animate={isOpen ? "visible" : "hidden"}
+        aria-hidden={!isOpen}
       >
         <motion.div variants={mobileItemVariants}>
           <Link href="/"><div className="block text-sm px-2 py-4 hover:text-medium_blue transition duration-300 cursor-pointer">Home</div></Link>
