@@ -61,6 +61,55 @@ export async function sendContactEmail(formData) {
   }
 }
 
+export async function sendCareerEmail(formData) {
+  try {
+    // Extract form data
+    const name = formData.get('name') || formData.name;
+    const surname = formData.get('surname') || formData.surname;
+    const email = formData.get('email') || formData.email;
+    const designation = formData.get('designation') || formData.designation;
+
+    // Create email content
+    const emailContent = `
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+        <h2 style="color: #333; border-bottom: 2px solid #007bff; padding-bottom: 10px;">
+          New Career Application Submission
+        </h2>
+        
+        <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
+          <h3 style="color: #007bff; margin-top: 0;">Applicant Information</h3>
+          <p><strong>Name:</strong> ${name} ${surname || ''}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Designation:</strong> ${designation}</p>
+        </div>
+        
+        <div style="background-color: #e9ecef; padding: 15px; border-radius: 5px; font-size: 12px; color: #6c757d;">
+          <p><strong>Submitted:</strong> ${new Date().toLocaleString()}</p>
+          <p><strong>Source:</strong> Sheekharr Website Career Form</p>
+        </div>
+      </div>
+    `;
+
+    // Send email
+    const data = await resend.emails.send({
+      from: 'onboarding@resend.dev',
+      to: 'it1@sheekharr.com',
+      subject: `New Career Application - ${name} ${surname}`,
+      html: emailContent,
+    });
+
+    console.log('Career email sent successfully:', data);
+    return { success: true, data };
+
+  } catch (error) {
+    console.error('Error sending career email:', error);
+    return { 
+      success: false, 
+      message: error.message || 'Failed to send email' 
+    };
+  }
+}
+
 // For testing purposes
 export async function sendTestEmail() {
   try {

@@ -1,5 +1,7 @@
 'use server';
 
+import { sendCareerEmail } from '@/app/lib/emailService';
+
 export async function submitCareerApplication(formData) {
   try {
     // Extract form data
@@ -25,20 +27,25 @@ export async function submitCareerApplication(formData) {
       };
     }
 
-    // Here you would typically:
-    // 1. Save to database
-    // 2. Send email notification
-    // 3. Log the application
-    console.log('Career application received via Server Action:', {
+    // Send email notification
+    const emailResult = await sendCareerEmail(formData);
+    
+    if (!emailResult.success) {
+      console.error('Failed to send career email:', emailResult.message);
+      return {
+        success: false,
+        message: 'Failed to send application notification. Please try again later.'
+      };
+    }
+
+    // Log the application
+    console.log('Career application received and email sent:', {
       name,
       surname,
       email,
       designation,
       timestamp: new Date().toISOString()
     });
-
-    // Simulate processing time
-    await new Promise(resolve => setTimeout(resolve, 500));
 
     return {
       success: true,
