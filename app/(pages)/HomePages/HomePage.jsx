@@ -2,10 +2,10 @@
 import React from 'react'
 import Logo from '@/app/(components)/Logo'
 import Image from 'next/image'
-import ImageGridWithAnimations from '../../(components)/ImageGridWithAnimations'
 import { motion } from 'framer-motion'
 import { useAnimation } from '../../(components)/AnimationContext'
 import ParticleEffect from '../../(components)/ParticleEffect'
+import ImageGridWithAnimations from '../../(components)/ImageGridWithAnimations'
 
 function HomePage() {
   const { navbarAnimationComplete } = useAnimation();
@@ -35,6 +35,16 @@ function HomePage() {
       <div className="absolute inset-0 z-10  md:top-0 top-1/2 transform md:-translate-y-0 -translate-y-1/2 ">
 
         <ImageGridWithAnimations />
+
+        {/* Background Video */}
+        {/* <video
+          className="w-full h-full object-cover absolute inset-0"
+          src="https://res.cloudinary.com/dipc3ow9z/video/upload/v1751627653/8605841-hd_1080_1920_30fps_z80nef.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+        /> */}
 
         <Image
             src={"/home_img.png"} // Assuming the image is in the public directory

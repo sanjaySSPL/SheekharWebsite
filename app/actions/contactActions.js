@@ -1,5 +1,7 @@
 'use server';
 
+import { sendContactEmail } from '@/app/lib/emailService';
+
 export async function submitContactForm(formData) {
   try {
     // Extract form data
@@ -26,10 +28,17 @@ export async function submitContactForm(formData) {
       };
     }
 
-    // Here you would typically:
-    // 1. Save to database
-    // 2. Send email notification
-    // 3. Log the contact
+    // Send email using the email service
+    const emailResult = await sendContactEmail(formData);
+    
+    if (!emailResult.success) {
+      return {
+        success: false,
+        message: 'Failed to send email. Please try again later.'
+      };
+    }
+
+    // Log the contact for debugging
     console.log('Contact form received via Server Action:', {
       name,
       surname,
@@ -38,9 +47,6 @@ export async function submitContactForm(formData) {
       query,
       timestamp: new Date().toISOString()
     });
-
-    // Simulate processing time
-    await new Promise(resolve => setTimeout(resolve, 500));
 
     return {
       success: true,

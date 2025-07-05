@@ -9,37 +9,37 @@ function ProductScroll() {
     {
       data_image: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751089467/unsplash_v-zpEVeWjy0_xgcrnh.svg',
       data_text: 'Built for premium performance in paneer processing — helps achieve soft texture, brighter appearance, and better cutting strength. Engineered for consistency across high-yield operations.',
-      data_detailed_link: 'https://www.google.com/',
+      data_detailed_link: `/products#dairy-products`,
       title:'Paneer'
     },
     {
       data_image: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751089465/unsplash_-cQ2kQqpEB8_epedni.svg',
       data_text: 'Delivers enhanced creaminess, melt resistance, and volume in frozen dairy products. Crafted for smooth scooping and lasting taste',
-      data_detailed_link: '',
+      data_detailed_link: '/products#dairy-based-dessert',
       title:'Cream'
     },
     {
       data_image: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751089466/unsplash_CBwoyP69nAU_flajpz.svg',
       data_text: 'A solution designed for smoother fermented dairy drinks — enhancing body and taste while preventing whey separation. Keeps traditional flavors fresh with modern consistency',
-      data_detailed_link: '',
+      data_detailed_link: '/products#dairy-products',
       title:'Lassi'
     },
     {
       data_image: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751089466/unsplash_v2XfTVtDK_o_jywjvx.svg',
       data_text: 'Adds crunch and bite retention to fried and baked snacks. Maintains texture from production to plate.',
-      data_detailed_link: '',
+      data_detailed_link: '/products#sauces-snacks',
       title:'Crunchy'
     },
     {
       data_image: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751089463/unsplash_8bPrY855BIc_efegqi.svg',
       data_text: 'Built for creamy textures and smooth finishes — this solution stabilizes emulsions in mayonnaise and dips. Performs in cold-process and low-fat formats.',
-      data_detailed_link: '',
+      data_detailed_link: 'products#sauces-snacks',
       title:'Mayonnaise'
     },
     {
       data_image: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751089463/unsplash_1WVjdMmzrik_yxlift.svg',
       data_text: 'Enhances richness and body in dairy creams — delivering a silky, smooth mouthfeel with excellent consistency. Built to retain texture under varied conditions.',
-      data_detailed_link: '',
+      data_detailed_link: '/products#dairy-based-dessert',
       title:'Cream'
     },
     {
@@ -51,7 +51,7 @@ function ProductScroll() {
     {
       data_image: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751089468/unsplash_wZjJYDw39o4_fzh67w.svg',
       data_text: 'Soft, uniform, and always indulgent — just mix and fry. Perfect for quick prep without compromising tradition',
-      data_detailed_link: '',
+      data_detailed_link: '/products#premixes',
       title:'Gulab Jamun'
     },
     {
