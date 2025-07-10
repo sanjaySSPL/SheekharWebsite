@@ -15,7 +15,7 @@ function DairyProductsSection() {
       className="w-full min-h-[500px] bg-bg_light_blue"
     >
       <h2 className="text-[36px] font-semibold pl-[24px] pt-[32px] font-inter">Dairy Products</h2>
-      <div className="w-full flex flex-wrap gap-4 px-4 py-4 justify-center items-stretch">
+      <div className="w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-y-10 gap-x-8 px-4 py-8 items-stretch justify-items-center">
         {DairyProduct.map((item, idx) => {
           const isExpanded = selectedIdx === idx;
           return (
@@ -23,8 +23,8 @@ function DairyProductsSection() {
               key={idx}
               className={
                 isExpanded
-                  ? "w-full basis-full max-w-5xl mx-auto my-2 z-50 transition-all duration-500"
-                  : "flex-none w-[300px] md:w-[350px] lg:w-[400px] my-2 z-10 transition-all duration-500"
+                  ? "col-span-full w-full max-w-5xl mx-auto my-2 z-20 transition-all duration-500"
+                  : "w-full max-w-[600px] my-2 z-10 transition-all duration-500"
               }
               style={{
                 position: isExpanded ? "relative" : "static",
@@ -35,9 +35,7 @@ function DairyProductsSection() {
                 {...item}
                 onClick={() => setSelectedIdx(idx)}
                 expanded={isExpanded}
-                onExpand={() => setSelectedIdx(idx)
-                  
-                }
+                onExpand={() => setSelectedIdx(idx)}
                 onCollapse={() => setSelectedIdx(null)}
                 isMobile={isMobile}
               />

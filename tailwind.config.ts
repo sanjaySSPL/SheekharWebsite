@@ -26,6 +26,7 @@ const config: Config = {
         "light_orange" : "#FEF8D0",
         "text_blue":"#343884",
         "bg_light_blue":"#F2F1F8",
+        "secondary_blue_bg":"#F9F8FE"
       },
     },
   },
