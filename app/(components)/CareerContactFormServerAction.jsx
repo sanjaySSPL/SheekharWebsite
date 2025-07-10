@@ -104,7 +104,7 @@ export default function CareerContactFormServerAction() {
             disabled={isSubmitting}
             customPaddingClass="w-full py-3 px-6"
           >
-            {isSubmitting ? 'Submitting...' : 'Submit Application'}
+            {isSubmitting ? 'Submitting...' : 'Submit'}
           </SubmitButton>
         </div>
 

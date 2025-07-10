@@ -16,7 +16,7 @@ function ProductScroll() {
       data_image: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751089465/unsplash_-cQ2kQqpEB8_epedni.svg',
       data_text: 'Delivers enhanced creaminess, melt resistance, and volume in frozen dairy products. Crafted for smooth scooping and lasting taste',
       data_detailed_link: '/products#dairy-based-dessert',
-      title:'Cream'
+      title:'Ice Cream'
     },
     {
       data_image: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751089466/unsplash_CBwoyP69nAU_flajpz.svg',
@@ -46,7 +46,7 @@ function ProductScroll() {
       data_image: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751089465/unsplash_cd1PW0FAi-E_txtvtx.svg',
       data_text: 'Designed for clean, fruit-forward sorbets with excellent clarity and natural taste. Helps balance flavor sharpness with smooth texture',
       data_detailed_link: '',
-      title:'Soy'
+      title:'Sorbet'
     },
     {
       data_image: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751089468/unsplash_wZjJYDw39o4_fzh67w.svg',

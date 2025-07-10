@@ -18,13 +18,17 @@ function ProductCard({
   return (
     <motion.div
       layout
-      className="w-full max-w-[617px] flex flex-col md:flex-row gap-0 border border-gray-200 rounded-lg bg-[#f9f8fe] p-3 md:p-6 mx-auto overflow-hidden flex-shrink-0 mb-2 md:mb-0 cursor-pointer"
+      className={`w-full md:w-full flex flex-col md:flex-row gap-0 border border-gray-200 rounded-lg bg-[#f9f8fe] p-3 md:p-6 mx-auto overflow-hidden flex-shrink-0 mb-2 md:mb-0 cursor-pointer ${
+        expanded ? 'h-auto' : 'h-[350px]'
+      }`}
       onClick={isMobile ? undefined : onClick}
       whileHover={!isMobile ? { scale: 1.02 } : {}}
       transition={{ type: 'spring', stiffness: 300, damping: 30 }}
     >
       {/* Left: Image */}
-      <div className='w-full md:w-[45%] relative rounded-md mb-3 md:mb-0 h-[180px] md:h-full overflow-hidden'>
+      <div className={`w-full md:w-[45%] relative rounded-md mb-3 md:mb-0 overflow-hidden ${
+        expanded ? 'h-[220px] md:h-[500px]' : 'h-[180px] md:h-full'
+}`}>
         <Image 
           src={image} 
           alt={title} 
@@ -36,7 +40,7 @@ function ProductCard({
         />
       </div>
       {/* Right: Product Info */}
-      <div className='w-full md:w-[55%] flex flex-col justify-center md:pl-6 h-auto md:h-full'>
+      <div className='w-full md:w-[55%] flex flex-col justify-start items-start md:pl-6 h-auto md:h-full md:pt-[10px]'>
         <div className='text-lg md:text-2xl font-bold italic text-[#3b4381] mb-2 md:mb-[20px]'>{title}</div>
         <div className='text-[#3b4381] text-sm md:text-base leading-relaxed whitespace-pre-line overflow-y-auto'>
           {description}
@@ -51,9 +55,9 @@ function ProductCard({
             {expanded ? 'See Less' : 'See More'}
           </button>
         )}
-        {/* Mobile: Expanded content */}
+        {/* Expanded content (for both mobile and desktop) */}
         <AnimatePresence>
-          {isMobile && expanded && (
+          {expanded && (
             <motion.div
               key="expand"
               initial={{ height: 0, opacity: 0 }}

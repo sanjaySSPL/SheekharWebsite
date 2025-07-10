@@ -1,50 +1,47 @@
 'use client'
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 import { DairyProduct } from '../data/data';
 import ProductCard from '../(components)/ProductCard';
-import ExpandedProductCard from '../(components)/ExpandedProductCard';
 import { useMediaQuery } from 'react-responsive';
 
 function DairyProductsSection() {
   const [selectedIdx, setSelectedIdx] = useState(null);
   const isMobile = useMediaQuery({ maxWidth: 767 });
-  const sectionRef = useRef(null);
-
-  // Scroll to top of section when a new card is selected (desktop only)
-  useEffect(() => {
-    if (!isMobile && selectedIdx !== null && sectionRef.current) {
-      sectionRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }, [selectedIdx, isMobile]);
+  // Removed sectionRef and scroll-to-top effect
 
   return (
     <section
       id="dairy-products"
-      ref={sectionRef}
       className="w-full min-h-[500px] bg-bg_light_blue"
     >
       <h2 className="text-[36px] font-semibold pl-[24px] pt-[32px] font-inter">Dairy Products</h2>
       <div className="w-full flex flex-wrap gap-4 px-4 py-4 justify-center items-stretch">
-        {/* Desktop: Show expanded card at top */}
-        {!isMobile && selectedIdx !== null && (
-          <ExpandedProductCard
-            {...DairyProduct[selectedIdx]}
-            onClose={() => setSelectedIdx(null)}
-          />
-        )}
         {DairyProduct.map((item, idx) => {
-          // Desktop: Hide the selected card in the grid
-          if (!isMobile && selectedIdx === idx) return null;
+          const isExpanded = selectedIdx === idx;
           return (
-            <ProductCard
+            <div
               key={idx}
-              {...item}
-              onClick={() => setSelectedIdx(idx)}
-              expanded={isMobile && selectedIdx === idx}
-              onExpand={() => setSelectedIdx(idx)}
-              onCollapse={() => setSelectedIdx(null)}
-              isMobile={isMobile}
-            />
+              className={
+                isExpanded
+                  ? "w-full basis-full max-w-5xl mx-auto my-2 z-50 transition-all duration-500"
+                  : "flex-none w-[300px] md:w-[350px] lg:w-[400px] my-2 z-10 transition-all duration-500"
+              }
+              style={{
+                position: isExpanded ? "relative" : "static",
+                display: "block",
+              }}
+            >
+              <ProductCard
+                {...item}
+                onClick={() => setSelectedIdx(idx)}
+                expanded={isExpanded}
+                onExpand={() => setSelectedIdx(idx)
+                  
+                }
+                onCollapse={() => setSelectedIdx(null)}
+                isMobile={isMobile}
+              />
+            </div>
           );
         })}
       </div>
