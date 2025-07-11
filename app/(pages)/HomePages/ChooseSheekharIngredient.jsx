@@ -90,7 +90,7 @@ function ChooseSheekharIngredient() {
       wt:'287'
     },
     {
-      src: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1750747223/PremiumProduct_ecxrf8.svg',
+      src: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1752151408/unsplash_sw5qehkjlzI_1_c206ee.svg',
       alt: 'Premium Product',
       x: isMobile ? 30 : 30,
       y: isMobile ? 220 : 180,

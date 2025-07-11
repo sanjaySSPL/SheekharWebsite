@@ -23,10 +23,12 @@ const config: Config = {
         'medium_blue' : "#2092F6",
         "dark_blue": "#055CA0",
         "text_white":"#ffffff",
-        "light_orange" : "#FEF8D0",
+        "light_orange" :"#FEF8D0",
         "text_blue":"#343884",
         "bg_light_blue":"#F2F1F8",
-        "secondary_blue_bg":"#F9F8FE"
+        "secondary_blue_bg":"#F9F8FE",
+        "navbar_blue":"#1D4E7A",
+        "overflow-white":"#EBFAFE"
       },
     },
   },

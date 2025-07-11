@@ -2,7 +2,6 @@ import React from 'react'
 import SecondHeroSection from '../(pages)/SecondHeroSection'
 import CareerContactFormServerAction from '../(components)/CareerContactFormServerAction'
 import Footer from '../(pages)/Footer'
-
 import career from '../data/careerOpportunity'
 import CareerCard from '../(components)/CareerCard'
 
@@ -25,7 +24,7 @@ function page() {
         </div>
 
         <div className="w-[100dvw] -ml-4 md:-ml-20  mt-[50px] bg-secondary_blue_bg py-8">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 px-4">
             {career?.map((item, index) => (
               <CareerCard key={index} {...item} />
             ))}
