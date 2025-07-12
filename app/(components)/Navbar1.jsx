@@ -1,13 +1,24 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import Button from './Button'
+import { useAnimation } from './AnimationContext';
 
 function Navbar1() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isShrunk , setIsShrunk] = useState(false);
+    const { showNavbarName } = useAnimation();
+
+    useEffect(()=>{
+        const handleScroll = () => {
+            setIsShrunk(window.scrollY > 50);
+        }
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
   // Animation variants for staggering effect
   const containerVariants = {
@@ -73,7 +84,9 @@ function Navbar1() {
   };
 
   return (
-    <nav className='h-[117px] w-[100dvw] bg-navbar_blue  fixed top-0 z-50 flex align-middle justify-center items-center'>
+    <motion.nav className='h-[117px] w-[100dvw] bg-navbar_blue  fixed top-0 z-50 flex align-middle justify-center items-center'
+    animate={{ height: isShrunk ? 85 : 117 }}
+    transition={{ type: "spring", stiffness: 300, damping: 30 }} >
     <div className=" mx-auto w-full">
         
         <div className="flex justify-between">
@@ -89,7 +102,11 @@ function Navbar1() {
             <Image src="/logo_only_no_background.png" alt="logo" width={50} height={50} />
           </motion.div>
         
-              <p className='text-white text-[20px] tracking-wider font-semibold'>Sheekharr Starch Pvt Ltd</p>
+            {showNavbarName && (
+              <motion.span layoutId="brand-name" className="text-white text-[20px] tracking-wider font-semibold">
+                Sheekharr Starch Pvt Ltd
+              </motion.span>
+            )}
     
             </Link>
           
@@ -193,7 +210,7 @@ function Navbar1() {
         </motion.div>
         {/* <Link href="/talk-to-experts"><div className="block text-sm px-2 py-4 text-gray-700 font-semibold cursor-pointer">Talk to Experts</div></Link> */}
       </motion.div>    
-    </nav>
+    </motion.nav>
   )
 }
 

@@ -3,9 +3,9 @@ import React from "react";
 
 import Image from "next/image";
 import ParticleEffect from "./ParticleEffect";
-
 import { useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
+import { motion } from 'framer-motion';
 
 // Custom hook to detect mobile screen
 function useIsMobile(breakpoint = 768) {
@@ -20,7 +20,7 @@ function useIsMobile(breakpoint = 768) {
 }
 
 function HomeHeroSection() {
-  const { navbarAnimationComplete } = useAnimation();
+  const { navbarAnimationComplete, showHeroText, isTransitioning } = useAnimation();
   const isMobile = useIsMobile();
 
   // Animation variants for the description text
@@ -37,9 +37,12 @@ function HomeHeroSection() {
           quality={100}
         />
       </div>
-
-      {/* Overlay with SVG knockout text effect */}
-      <div className="absolute inset-0 z-20 pointer-events-none w-[100dvw] h-full">
+      {/* Overlay with SVG knockout text effect, now animated */}
+      <motion.div
+        className="absolute inset-0 z-20 pointer-events-none w-[100dvw] h-full"
+        animate={{ opacity: showHeroText ? 1 : 0 }}
+        transition={{ duration: 0.7, delay: 0.1 }}
+      >
         {/* Conditional rendering for desktop and mobile */}
         {isMobile ? (
           // Mobile SVG
@@ -127,10 +130,23 @@ function HomeHeroSection() {
               mask="url(#knockout-text-mask-desktop)"
             />
           </svg>
-        
         )}
-      </div>
-
+      </motion.div>
+      {/* Shared element brand name (centered, only if showHeroText) */}
+      {showHeroText && (
+        <motion.span
+          layoutId="brand-name"
+          className="absolute z-30 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-[40px] md:text-[80px] font-bold text-center"
+          animate={{
+            y: isTransitioning ? -100 : 0, // Move up by 200px (adjust as needed)
+            scale: isTransitioning ? 0.7 : 1, // Optionally shrink
+            opacity: isTransitioning ? 0.7 : 1, // Optionally fade a bit
+          }}
+          transition={{ duration: 0.7, ease: "easeInOut" }}
+        >
+          Sheekharr Starch
+        </motion.span>
+      )}
       {/* Particle Effect */}
       <ParticleEffect startAnimation={navbarAnimationComplete} />
     </div>

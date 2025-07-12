@@ -12,24 +12,27 @@ export const useAnimation = () => {
 };
 
 export const AnimationProvider = ({ children }) => {
-  const [navbarAnimationComplete, setNavbarAnimationComplete] = useState(false);
-  const [logoAnimationComplete, setLogoAnimationComplete] = useState(false);
+  // Hero-to-navbar animation state
+  const [showHeroText, setShowHeroText] = useState(true);
+  const [showNavbarName, setShowNavbarName] = useState(false);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
-  // Calculate navbar animation duration
-  // 0.2s delay + (7 items × 0.1s stagger) + 0.5s duration = ~1.4s total
+  // Animation sequence: 1s - start transition, 1.7s - show navbar name, 2s - hide hero text
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setNavbarAnimationComplete(true);
-    }, 400);
-
-    return () => clearTimeout(timer);
+    const timer1 = setTimeout(() => setIsTransitioning(true), 2000); // Start text move
+    const timer2 = setTimeout(() => setShowNavbarName(true), 1000); // Show navbar text
+    const timer3 = setTimeout(() => setShowHeroText(false), 3000); // Remove hero text/overlay
+    return () => {
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+      clearTimeout(timer3);
+    };
   }, []);
 
   const value = {
-    navbarAnimationComplete,
-    setNavbarAnimationComplete,
-    logoAnimationComplete,
-    setLogoAnimationComplete,
+    showHeroText,
+    showNavbarName,
+    isTransitioning,
   };
 
   return (
