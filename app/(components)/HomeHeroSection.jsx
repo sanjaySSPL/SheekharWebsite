@@ -29,13 +29,28 @@ function HomeHeroSection() {
     <div className="relative w-full h-[100dvh] z-20">
       {/* Background image */}
       <div className="absolute inset-0 z-10">
-        <Image
+        {/* <Image
           src={"/home_img.png"}
           alt="Home Image"
           layout="fill"
           objectFit="cover"
           quality={100}
-        />
+        /> */}
+        <video
+          className="w-full h-full object-cover absolute inset-0"
+          src="https://res.cloudinary.com/dipc3ow9z/video/upload/v1752736135/website_video_hc9zod.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata" // Add this to load only the metadata initially
+        >
+          <source
+            src="https://res.cloudinary.com/dipc3ow9z/video/upload/v1752736135/website_video_hc9zod.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
       </div>
       {/* Overlay with SVG knockout text effect, now animated */}
       <motion.div
