@@ -16,7 +16,7 @@ function SecondHeroSection() {
                 className = ''
             />
         </div>
-        <div className='h-full w-full absolute inset-0 z-30 flex items-center justify-center text-center text-white px-4 h-full w-full top-0 left-0'>
+        <div className='absolute inset-0 z-30 flex items-center justify-center text-center text-white px-4 h-full w-full top-0 left-0'>
 
         <Tagline />
         </div>
@@ -28,7 +28,7 @@ function SecondHeroSection() {
         {/* <div className="absolute inset-0 z-30 flex items-center justify-center text-center text-white px-4 h-full w-full top-0 left-0">
             <StaticLogo />
         </div> */}
-    </div>
+   </div>
   )
 }
 
