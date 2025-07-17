@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import StaticLogo from '../(components)/StaticLogo'
+
 import Tagline from '../(components)/Tagline'
 
 function SecondHeroSection() {
