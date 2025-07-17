@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-
-import Image from "next/image";
 import ParticleEffect from "./ParticleEffect";
 import { useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
