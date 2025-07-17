@@ -158,21 +158,21 @@ function Navbar1() {
           </motion.div>
           {/* Mobile menu button */}
           <motion.div 
-            className="md:hidden flex items-center"
+            className="md:hidden flex items-center mr-4"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <button 
               name='mobile-menu-button' 
-              className="outline-none mobile-menu-button" 
+              className="outline-none mobile-menu-button scale-150" 
               onClick={() => setIsOpen(!isOpen)}
               aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
               aria-expanded={isOpen}
               aria-controls="mobile-menu"
             >
               {/* Hamburger Icon */}
-              <RxHamburgerMenu  classname='bg-white'/>
+              <RxHamburgerMenu  classname='bg-white '/>
             </button>
           </motion.div>
         </div>
@@ -181,12 +181,13 @@ function Navbar1() {
       {/* Mobile Menu */}
       <motion.div 
         id="mobile-menu"
-        className={`md:hidden w-[100dvw] absolute top-[100px] bg-white z-50`}
+        className={`md:hidden w-[100dvw] absolute top-[100px] bg-gray-100 z-50 pb-10`}
         variants={mobileMenuVariants}
         initial="hidden"
         animate={isOpen ? "visible" : "hidden"}
         aria-hidden={!isOpen}
       >
+        <div className=" w-fit  mx-auto">
         <motion.div variants={mobileItemVariants}>
           <Link href="/"><div className="block text-sm px-2 py-4 hover:text-medium_blue transition duration-300 cursor-pointer">Home</div></Link>
         </motion.div>
@@ -205,8 +206,9 @@ function Navbar1() {
         <motion.div variants={mobileItemVariants}>
           <Link href="/contact"><div className="block text-sm px-2 py-4 hover:text-medium_blue transition duration-300 cursor-pointer">Contact</div></Link>
         </motion.div>
+        </div>
         <motion.div variants={mobileItemVariants}>
-          <Button button_link='https://google.com' customPaddingClass='py-[10px] px-[10px] w-[90dvw]' >Hello world</Button>
+          <Button button_link='/contact' customPaddingClass='py-[10px] px-[10px] w-fit mx-auto' >Contact Us</Button>
         </motion.div>
         {/* <Link href="/talk-to-experts"><div className="block text-sm px-2 py-4 text-gray-700 font-semibold cursor-pointer">Talk to Experts</div></Link> */}
       </motion.div>    
