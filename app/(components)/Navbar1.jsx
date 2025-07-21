@@ -208,7 +208,7 @@ function Navbar1() {
         </motion.div>
         </div>
         <motion.div variants={mobileItemVariants}>
-          <Button button_link='/contact' customPaddingClass='py-[10px] px-[10px] w-fit mx-auto' >Contact Us</Button>
+          <Button button_link='/contact' customPaddingClass='py-[10px] px-[10px] w-fit mx-auto' >Contact Expert</Button>
         </motion.div>
         {/* <Link href="/talk-to-experts"><div className="block text-sm px-2 py-4 text-gray-700 font-semibold cursor-pointer">Talk to Experts</div></Link> */}
       </motion.div>    
