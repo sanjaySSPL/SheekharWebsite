@@ -61,13 +61,23 @@ export async function sendContactEmail(formData) {
   }
 }
 
-export async function sendCareerEmail(formData) {
+export async function sendCareerEmail(formData, resume) {
   try {
     // Extract form data
     const name = formData.get('name') || formData.name;
     const surname = formData.get('surname') || formData.surname;
     const email = formData.get('email') || formData.email;
     const designation = formData.get('designation') || formData.designation;
+
+    // Prepare attachments array if resume is present
+    let attachments = [];
+    if (resume && typeof resume === 'object' && resume.name && resume.arrayBuffer) {
+      const buffer = Buffer.from(await resume.arrayBuffer());
+      attachments.push({
+        filename: resume.name,
+        content: buffer,
+      });
+    }
 
     // Create email content
     const emailContent = `
@@ -96,6 +106,7 @@ export async function sendCareerEmail(formData) {
       to: 'it1@sheekharr.com',
       subject: `New Career Application - ${name} ${surname}`,
       html: emailContent,
+      ...(attachments.length > 0 ? { attachments } : {}),
     });
 
     console.log('Career email sent successfully:', data);

@@ -16,10 +16,10 @@ function ContactForm2() {
 
   return (
     <form
-    ref={formRef}
+      ref={formRef}
       action={action}
       method="POST"
-      className="w-[90vw] max-w-[605px] h-auto min-h-[456px] bg-white rounded-[10px] p-6 flex flex-col gap-6 md:w-[605px] md:h-[656px] justify-center mx-auto border border-gray-300 shadow-lg"
+      className="w-[90vw] max-w-[605px] h-auto min-h-[456px] bg-white rounded-[10px] p-6 flex flex-col gap-6 md:w-[605px] md:h-[746px] justify-center mx-auto border border-gray-300 shadow-lg"
     >
       <div className="flex flex-col gap-6">
         <div className="flex flex-col gap-2">
@@ -29,7 +29,7 @@ function ContactForm2() {
             name="name"
             required
             className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-            placeholder="Enter your name"
+            placeholder="Value"
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -38,7 +38,17 @@ function ContactForm2() {
             id="surname"
             name="surname"
             className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-            placeholder="Enter your surname (optional)"
+            placeholder="Value"
+          />
+        </div>
+        <div className="flex flex-col gap-2">
+          <label htmlFor="company" className="text-gray-800">Company Name<span className="text-red-500">*</span></label>
+          <input
+            id="company"
+            name="company"
+            required
+            className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            placeholder="Value"
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -49,17 +59,16 @@ function ContactForm2() {
             type="email"
             required
             className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-            placeholder="Enter your email"
+            placeholder="Value"
           />
         </div>
         <div className="flex flex-col gap-2">
-          <label htmlFor="company" className="text-gray-800">Company Name<span className="text-red-500">*</span></label>
+          <label htmlFor="contactNumber" className="text-gray-800">Contact Number</label>
           <input
-            id="company"
-            name="company"
-            required
+            id="contactNumber"
+            name="contactNumber"
             className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-            placeholder="Enter your company name"
+            placeholder="Value"
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -67,8 +76,8 @@ function ContactForm2() {
           <textarea
             id="query"
             name="query"
-            className="p-3 border border-gray-300 rounded-lg h-24 resize-none focus:outline-none focus:ring-2 focus:ring-blue-400"
-            placeholder="Your message (optional)"
+            className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            placeholder="Frontend developer"
           />
         </div>
       </div>

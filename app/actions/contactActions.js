@@ -9,6 +9,8 @@ export async function submitContactForm(formData) {
     const surname = formData.get('surname'); // optional
     const email = formData.get('email');
     const company = formData.get('company');
+    const category = formData.get('category'); // optional
+    const contactNumber = formData.get('contactNumber'); // optional
     const query = formData.get('query'); // optional
 
     // Validate required fields
@@ -44,6 +46,8 @@ export async function submitContactForm(formData) {
       surname,
       email,
       company,
+      category,
+      contactNumber,
       query,
       timestamp: new Date().toISOString()
     });

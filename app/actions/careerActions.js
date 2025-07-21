@@ -9,6 +9,7 @@ export async function submitCareerApplication(formData) {
     const surname = formData.get('surname');
     const email = formData.get('email');
     const designation = formData.get('designation');
+    const resume = formData.get('resume'); // file
 
     // Validate required fields
     if (!name || !surname || !email || !designation) {
@@ -27,8 +28,8 @@ export async function submitCareerApplication(formData) {
       };
     }
 
-    // Send email notification
-    const emailResult = await sendCareerEmail(formData);
+    // Send email notification (pass resume file)
+    const emailResult = await sendCareerEmail(formData, resume);
     
     if (!emailResult.success) {
       console.error('Failed to send career email:', emailResult.message);
@@ -44,6 +45,7 @@ export async function submitCareerApplication(formData) {
       surname,
       email,
       designation,
+      hasResume: !!resume,
       timestamp: new Date().toISOString()
     });
 

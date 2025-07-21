@@ -153,7 +153,7 @@ function Navbar1() {
               <Link href="/contact"><span className="py-4 px-2 text-white text-[20px] tracking-wider font- hover:text-medium_blue transition duration-300 cursor-pointer">Contact</span></Link>
             </motion.div>
             <motion.div variants={itemVariants}>
-              <Button button_link='https://google.com' customPaddingClass='py-[4px] px-[18.5px] tracking-widest mx-[20px]'>Talk to Experts</Button>
+              <Button button_link='/contact' customPaddingClass='py-[4px] px-[18.5px] tracking-widest mx-[20px]'>Talk to Experts</Button>
             </motion.div>
           </motion.div>
           {/* Mobile menu button */}
