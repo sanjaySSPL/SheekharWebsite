@@ -58,48 +58,8 @@ function HomeHeroSection() {
       >
         {/* Conditional rendering for desktop and mobile */}
         {isMobile ? (
-          // Mobile SVG
-          <svg width="100%" height="100vh" viewBox="0 0 100 100" className="w-full h-full" preserveAspectRatio="none">
-            <defs>
-              <mask id="knockout-text-mask-mobile" x="0" y="0" width="100%" height="100%">
-                <rect x="0" y="0" width="100" height="100" fill="white" />
-                <text
-                  x="50"
-                  y="42"
-                  textAnchor="middle"
-                  fontSize="14"
-                  fontWeight="bold"
-                  fontFamily="inherit"
-                  fill="black"
-                  style={{ letterSpacing: '2px' }}
-                >
-                  sheekhar
-                </text>
-                <text
-                  x="50"
-                  y="58"
-                  textAnchor="middle"
-                  fontSize="14"
-                  fontWeight="bold"
-                  fontFamily="inherit"
-                  fill="black"
-                  style={{ letterSpacing: '1px' }}
-                >
-                  starch
-                </text>
-              </mask>
-            </defs>
-            <rect
-              x="0"
-              y="0"
-              width="100"
-              height="100"
-              className="bg-overflow-white/70"
-              fill="white"
-              fillOpacity="0.7"
-              mask="url(#knockout-text-mask-mobile)"
-            />
-          </svg>
+          // Mobile: no overlay or text effect
+          null
         ) : (
           // Desktop SVG
           <svg width="100%" height="100%" viewBox="0 0 200 100" className="w-full h-full" preserveAspectRatio="none">

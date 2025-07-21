@@ -3,7 +3,9 @@ import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { RxHamburgerMenu } from 'react-icons/rx'
+// import { RxHamburgerMenu } from 'react-icons/rx'
+import { GiHamburgerMenu } from "react-icons/gi";
+
 import Button from './Button'
 import { useAnimation } from './AnimationContext';
 
@@ -172,7 +174,8 @@ function Navbar1() {
               aria-controls="mobile-menu"
             >
               {/* Hamburger Icon */}
-              <RxHamburgerMenu  classname='bg-white '/>
+              {/* <RxHamburgerMenu  classname='bg-white '/> */}
+              <GiHamburgerMenu color="white" size={18}/>
             </button>
           </motion.div>
         </div>
