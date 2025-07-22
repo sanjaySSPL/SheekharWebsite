@@ -3,9 +3,8 @@ import ContactForm2 from '../(components)/ContactForm2'
 
 function ContactUsPage2() {
   return (
-    <div className='w-full md:h-[670px] flex flex-col md:flex-row justify-between items-center mb-10 gap-8 md:gap-2 px-6 md:px-12'>
+    <div className='w-full md:h-[750px] flex flex-col md:flex-row justify-between items-center mb-10 gap-8 md:gap-2 px-6 md:px-12'>
 
-      
         <div className='w-full md:w-1/3 h-[530px] md:h-fit flex flex-col justify-center md:pl-10'>
             <h2 className='text-xl font-semibold mb-6'>
                 OFFICE ADDRESS

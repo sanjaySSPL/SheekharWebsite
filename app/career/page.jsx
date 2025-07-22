@@ -6,7 +6,6 @@ import career from '../data/careerOpportunity'
 import CareerCard from '../(components)/CareerCard'
 
 function page() {
-  console.log('career is this : ' , career)
   return (
     <div className='h-full w-full'>
       <SecondHeroSection />

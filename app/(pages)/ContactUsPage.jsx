@@ -10,7 +10,7 @@ function ContactUsPage() {
     backgroundRepeat: 'no-repeat', // Add this to prevent repeating the image
   }}
     >
-        <h2 className="md:text-[36px] sm:text-[20px]  text-[30px] text-start md:ml-36 md:text-semibold text-text_blue font-inter italic mx-10 md:mt-[65px] mt-[50px] mb-[50px] md:mb-[40px]">Get your solution customized </h2>
+        <h2 className="md:text-[36px] sm:text-[20px]  text-[30px] text-start md:ml-36 md:font-semibold text-text_blue font-inter italic mx-10 md:mt-[65px] mt-[50px] mb-[50px] md:mb-[40px]">Get your solution customized </h2>
         <div className="md:h-[500px] md:w-[100dvw] md:flex md:align-middle md:justify-around md:items-center mt-20">
             <ContactForm />
             <div className="md:h-[500px] w-[350px] ">

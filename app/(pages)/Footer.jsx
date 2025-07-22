@@ -85,7 +85,7 @@ function Footer() {
       </div>
       {/* Bottom bar */}
       <div className="border-t border-white/20 w-full px-6 py-4 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto">
-        <span className="text-white text-sm text-center md:text-left">Copyright © {new Date().getFullYear()} <span className="font-bold">Sheekharr Starch Ingredients Pvt. Ltd.</span> All Rights Reserved.</span>
+        <span className="text-white text-sm text-center md:text-left">Copyright © {new Date().getFullYear()} <span className="font-bold">Sheekharr Ingredients Pvt. Ltd.</span> All Rights Reserved.</span>
         <a href="#" className="text-white text-sm mt-2 md:mt-0 hover:underline">Privacy Policy</a>
       </div>
     </footer>

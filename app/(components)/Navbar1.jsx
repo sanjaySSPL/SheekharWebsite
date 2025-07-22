@@ -86,8 +86,8 @@ function Navbar1() {
   };
 
   return (
-    <motion.nav className='h-[117px] w-[100dvw] bg-white  fixed top-0 z-50 flex align-middle justify-center items-center'
-    animate={{ height: isShrunk ? 85 : 117 }}
+    <motion.nav className='h-[100px] w-[100dvw] bg-white  fixed top-0 z-50 flex align-middle justify-center items-center'
+    animate={{ height: isShrunk ? 75 : 100 }}
     transition={{ type: "spring", stiffness: 300, damping: 30 }} >
     <div className=" mx-auto w-full">
         
