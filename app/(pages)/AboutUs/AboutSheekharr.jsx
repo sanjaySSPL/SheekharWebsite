@@ -10,6 +10,9 @@ function AboutSheekharr() {
                     <br/>
                 <p classname=''>Since 2012, we have worked closely with businesses across the food, beverage, personal care, and industrial sectors, delivering clean-label, non-GMO, gluten-free, and health-forward ingredient solutions tailored to their needs</p>
             </div>
+            <div className= 'md:w-[300px] h-full bg-red-400'>
+
+            </div>
 
         </div>
     </div>

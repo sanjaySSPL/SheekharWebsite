@@ -1,8 +1,9 @@
 import React from 'react'
+import PremixesSection from '../PremixesSection'
 
 function index() {
   return (
-    <div>premixes</div>
+    <PremixesSection />
   )
 }
 

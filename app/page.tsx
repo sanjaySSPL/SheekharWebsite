@@ -6,6 +6,7 @@ import ContactUsPage from './(pages)/ContactUsPage';
 import Footer from './(pages)/Footer';
 import Certificate from './(ui)/Certificate';
 import HomePage1 from './(pages)/HomePages/HomePage1';
+import AboutUsSection from './(pages)/AboutUs/AboutUsSection';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <HomePage1 />
         <ProductScroll />
         <SolveIndustryStandard />
+        <AboutUsSection />
         <ChooseSheekharIngredient />
         <ContactUsPage />
         <Certificate />

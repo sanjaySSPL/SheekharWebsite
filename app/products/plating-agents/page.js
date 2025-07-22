@@ -1,8 +1,9 @@
 import React from 'react'
+import PlatingAgentsSection from '../PlatingAgentsSection'
 
 function index() {
   return (
-    <div>plating agents</div>
+   <PlatingAgentsSection />
   )
 }
 

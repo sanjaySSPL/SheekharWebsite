@@ -25,9 +25,9 @@ const config: Config = {
         "text_white":"#ffffff",
         "light_orange" :"#FEF8D0",
         "text_blue":"#343884",
-        "bg_light_blue":"#F2F1F8",
+        "bg_light_blue":"#F7FBFF",
         "secondary_blue_bg":"#F9F8FE",
-        "navbar_blue":"#1D4E7A",
+        "navbar_blue":"#CAD0D6",
         "overflow-white":"#EBFAFE"
       },
     },

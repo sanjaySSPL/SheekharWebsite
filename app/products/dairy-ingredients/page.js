@@ -1,8 +1,9 @@
 import React from 'react'
+import DairyProductsSection from '../DairyProductsSection'
 
 function index() {
   return (
-    <div>dairy ingredients</div>
+    <DairyProductsSection />
   )
 }
 

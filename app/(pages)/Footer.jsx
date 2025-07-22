@@ -10,12 +10,10 @@ const quickLinks = [
 ];
 
 const products = [
-  { label: 'dari products', href: '/products/dairy-ingredients' },
-  { label: 'dairy based dessert', href: '/products/dessert-ingredients' },
-  { label: 'advanced stablilisers', href: '/products/stabilizers' },
-  { label: 'sauces and snacks', href: '/products/sauces-and-snacks' },
-  { label: 'premixes', href: '/products/premixes' },
-  { label: 'plating agents', href: '/products/plating-agents' },
+  { label: 'Dairy Products', href: '/products/dairy-ingredients' },
+  { label: 'Advanced Stablilisers', href: '/products/advance-stabilizers' },
+  { label: 'Premixes', href: '/products/premixes' },
+  { label: 'Plating Agents', href: '/products/plating-agents' },
 ];
 
 const industry = [
@@ -30,7 +28,7 @@ const industry = [
 
 function Footer() {
   return (
-    <footer className="w-full h-fit md:h-[497px] bg-[#1E164B] flex flex-col justify-between">
+    <footer className="w-full h-fit md:h-[497px] bg-[#1D4E7A] flex flex-col justify-between">
       <div className="grid grid-cols-2 gap-x-6 gap-y-10 md:flex md:flex-row md:justify-between w-full max-w-7xl mx-auto px-6 pt-16 pb-8 md:gap-0">
         {/* Quick Links */}
         <div className="min-w-[140px]">
@@ -40,7 +38,7 @@ function Footer() {
               <li key={item.label}>
                 <a
                   href={item.href}
-                  className={`text-white text-base hover:text-orange-400 transition-colors hover:underline`}
+                  className={`text-white text-base hover:text-yellow-300 transition-colors hover:underline`}
                 >
                   {item.label}
                 </a>
@@ -50,11 +48,11 @@ function Footer() {
         </div>
         {/* Industry */}
         <div className="min-w-[140px]">
-          <h3 className="text-white text-lg font-bold mb-4">Industry</h3>
+          <h3 className="text-white text-lg font-bold mb-4">Industries We Serve</h3>
           <ul className="space-y-[20px]">
             {industry.map((item) => (
               <li key={item.label}>
-                <a href={item.href} className="text-white text-base hover:text-orange-400 transition-colors hover:underline">
+                <a href={item.href} className="text-white text-base hover:text-yellow-300 transition-colors hover:underline">
                   {item.label}
                 </a>
               </li>
@@ -67,7 +65,7 @@ function Footer() {
           <ul className="space-y-[20px]">
             {products.map((item) => (
               <li key={item.label}>
-                <a href={item.href} className="text-white text-base hover:text-orange-400 transition-colors hover:underline hover:underline-offset-4">
+                <a href={item.href} className="text-white text-base hover:text-yellow-300 transition-colors hover:underline hover:underline-offset-4">
                   {item.label}
                 </a>
               </li>

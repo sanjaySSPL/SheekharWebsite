@@ -2,7 +2,7 @@ import React from 'react'
 import SecondHeroSection from '../(pages)/SecondHeroSection'
 import AboutSheekharr from '../(pages)/AboutUs/AboutSheekharr'
 import WhatWeDo from '../(pages)/AboutUs/WhatWeDo'
-import OurOffice from "../(pages)/AboutUs/OurOffice"
+// import OurOffice from "../(pages)/AboutUs/OurOffice"
 import Footer from "../(pages)/Footer"
 
 function page() {
@@ -11,7 +11,7 @@ function page() {
       <SecondHeroSection />
       <AboutSheekharr />
       <WhatWeDo />
-      <OurOffice />
+      {/* <OurOffice /> */}
       <Footer />
     </div>
   )

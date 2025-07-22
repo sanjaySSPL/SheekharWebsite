@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-import Tagline from '../(components)/Tagline'
+// import Tagline from '../(components)/Tagline'
 
 function SecondHeroSection() {
   return (
@@ -18,7 +18,7 @@ function SecondHeroSection() {
         </div>
         <div className='absolute inset-0 z-30 flex items-center justify-center text-center text-white px-4 h-full w-full top-0 left-0'>
 
-        <Tagline />
+        {/* <Tagline /> */}
         </div>
 
         {/* Overflow div */}

@@ -14,6 +14,7 @@ function ProductCard({
   onExpand,
   onCollapse,
   isMobile = false,
+  product='',
 }) {
   return (
     <motion.div
@@ -42,6 +43,7 @@ function ProductCard({
       {/* Right: Product Info */}
       <div className='w-full md:w-[55%] flex flex-col justify-start items-start md:pl-6 h-auto md:h-full md:pt-[10px]'>
         <div className='text-lg md:text-2xl font-bold italic text-[#3b4381] mb-2 md:mb-[20px]'>{title}</div>
+        {product && <div className='text-lg md:text-xl text-[#3b4381] mb-2 md:mb-[20px]'>{product}</div>}
         <div className='text-[#3b4381] text-sm md:text-base leading-relaxed whitespace-pre-line overflow-y-auto'>
           {description}
         </div>

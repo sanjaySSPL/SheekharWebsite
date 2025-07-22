@@ -86,7 +86,7 @@ function Navbar1() {
   };
 
   return (
-    <motion.nav className='h-[117px] w-[100dvw] bg-navbar_blue  fixed top-0 z-50 flex align-middle justify-center items-center'
+    <motion.nav className='h-[117px] w-[100dvw] bg-white  fixed top-0 z-50 flex align-middle justify-center items-center'
     animate={{ height: isShrunk ? 85 : 117 }}
     transition={{ type: "spring", stiffness: 300, damping: 30 }} >
     <div className=" mx-auto w-full">
@@ -105,8 +105,8 @@ function Navbar1() {
           </motion.div>
         
             {showNavbarName && (
-              <motion.span layoutId="brand-name" className="text-white text-[20px] tracking-wider font-semibold">
-                Sheekharr Starch Pvt Ltd
+              <motion.span layoutId="brand-name" className="text-text_blue text-[20px] tracking-wider font-semibold">
+                Sheekharr Ingredients Pvt Ltd
               </motion.span>
             )}
     
@@ -120,39 +120,67 @@ function Navbar1() {
             animate="visible"
           >
             <motion.div variants={itemVariants}>
-              <Link href="/"><span className="py-2 px-2 text-white text-[20px] tracking-wider  hover:text-medium_blue transition duration-300 cursor-pointer">Home</span></Link>
+              <Link href="/">
+                <span className="relative group py-2 px-2 text-text_blue text-[20px] tracking-wider hover:text-medium_blue transition duration-300 cursor-pointer">
+                  Home
+                  {/* <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full transition-all duration-300 group-hover:w-full"></span> */}
+                </span>
+              </Link>
             </motion.div>
             <motion.div variants={itemVariants}>
-              <Link href="/aboutus"><span className="py-4 px-2 text-white text-[20px] tracking-wider font- hover:text-medium_blue transition duration-300 cursor-pointer">About Us</span></Link>
+              <Link href="/aboutus">
+                <span className="relative group py-4 px-2 text-text_blue text-[20px] tracking-wider hover:text-medium_blue transition duration-300 cursor-pointer">
+                  About Us
+                  <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full transition-all duration-300 group-hover:w-full"></span>
+                </span>
+              </Link>
             </motion.div>
             {/* Products Dropdown */}
             <motion.div className="relative group" variants={itemVariants}>
-              <span className="py-4 px-2  text-white text-[20px] tracking-widest hover:font-semibold hover:italic transition duration-300 cursor-pointer group-hover:text-medium_blue group-hover:bg-white group-hover:font-semibold group-hover:italic group-focus:bg-white group-focus:font-semibold group-focus:italic rounded">
+              <span className="relative group py-4 px-2 text-text_blue text-[20px] tracking-widest transition duration-300 cursor-pointer group-hover:text-medium_blue group-hover:bg-white group-focus:bg-white rounded">
                 Ingredients
+                <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full transition-all duration-300 group-hover:w-full"></span>
               </span>
               {/* Dropdown menu */}
               <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-[500px] bg-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-200 z-50 p-6 flex flex-col">
                 <div className="grid grid-cols-2 gap-x-8 gap-y-3">
-                  <Link href="/products#dairy-products"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Dairy Products</span></Link>
-                  <Link href="/products#premixes"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Premixes</span></Link>
-                  <Link href="/products#dairy-based-dessert"><span className="block px-2 py-2 rounded hover:bg-purple-100 cursor-pointer text-gray-800">Dairy Based Dessert</span></Link>
-                  <Link href="/products#plating-agents"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Plating Agents</span></Link>
-                  <Link href="/products#advanced-stabilizers"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Advanced Stabilizers</span></Link>
+                  <Link href="/products"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">All Products</span></Link>
+                  <Link href="/products#dairy-products"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Best Sellers</span></Link>
+                  <Link href="/products/dairy-ingredients"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Dairy Products</span></Link>
+                  <Link href="/products/premixes"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Premixes</span></Link>
+                  <Link href="/products/dessert-ingredients"><span className="block px-2 py-2 rounded hover:bg-purple-100 cursor-pointer text-gray-800">Dairy Based Dessert</span></Link>
+                  <Link href="/products/plating-agents"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Plating Agents</span></Link>
+                  <Link href="/products/advance-stabilizers"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Advanced Stabilizers</span></Link>
                   {/* <span className="block px-2 py-2 rounded text-gray-400 cursor-not-allowed">Menu item</span> */}
-                  <Link href="/products#sauces-snacks"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Sauces & Snacks</span></Link>
+                  <Link href="/products/sauces-and-snacks"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Sauces & Snacks</span></Link>
                   {/* <span className="block px-2 py-2 rounded text-gray-400 cursor-not-allowed">Menu item</span> */}
                 </div>
               </div>
             </motion.div>
             {/* End Products Dropdown */}
             <motion.div variants={itemVariants}>
-              <Link href="/our-service"><span className="py-4 px-2 text-white text-[20px] tracking-wider font- hover:text-medium_blue transition duration-300 cursor-pointer">Services</span></Link>
+              <Link href="/our-service">
+                <span className="relative group py-4 px-2 text-text_blue text-[20px] tracking-wider hover:text-medium_blue transition duration-300 cursor-pointer">
+                  Services
+                  <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full transition-all duration-300 group-hover:w-full"></span>
+                </span>
+              </Link>
             </motion.div>
             <motion.div variants={itemVariants}>
-              <Link href="/career"><span className="py-4 px-2 text-white text-[20px] tracking-wider font- hover:text-medium_blue transition duration-300 cursor-pointer">Career</span></Link>
+              <Link href="/career">
+                <span className="relative group py-4 px-2 text-text_blue text-[20px] tracking-wider hover:text-medium_blue transition duration-300 cursor-pointer">
+                  Career
+                  <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full transition-all duration-300 group-hover:w-full"></span>
+                </span>
+              </Link>
             </motion.div>
             <motion.div variants={itemVariants}>
-              <Link href="/contact"><span className="py-4 px-2 text-white text-[20px] tracking-wider font- hover:text-medium_blue transition duration-300 cursor-pointer">Contact</span></Link>
+              <Link href="/contact">
+                <span className="relative group py-4 px-2 text-text_blue text-[20px] tracking-wider hover:text-medium_blue transition duration-300 cursor-pointer">
+                  Contact
+                  <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full transition-all duration-300 group-hover:w-full"></span>
+                </span>
+              </Link>
             </motion.div>
             <motion.div variants={itemVariants}>
               <Button button_link='/contact' customPaddingClass='py-[4px] px-[18.5px] tracking-widest mx-[20px]'>Talk to Experts</Button>

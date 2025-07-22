@@ -41,7 +41,7 @@ const DisplayCard = forwardRef(function DisplayCard(props, ref) {
         </div>
       ) : (
         <div
-          className="w-[260px] h-[60px] -mb-[10px] bg-[#F2FFFF] opacity-[83%] rounded-[5px] absolute z-30 bottom-0 left-0 flex align-middle justify-start  items-start flex-col backdrop-blur-sm md:pt-[12px] pt-[10px]"
+          className="w-[260px] h-[60px] -mb-[10px] bg-[#F2FFFF] opacity-[83%] rounded-b-[5px] absolute z-30 bottom-0 left-0 flex align-middle justify-start  items-start flex-col backdrop-blur-sm md:pt-[12px] pt-[10px]"
           onClick={() => router.push(data_detailed_link)}
         >
           <h3 className="text-text_blue text-[25px] md:font-semibold md:px-[14px] mx-auto px-[10px] text-center">

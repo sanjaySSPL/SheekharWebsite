@@ -1,9 +1,10 @@
 import React from 'react'
+import SaucesSnacksSection from '../SaucesSnacksSection'
 
-function index() {
+function page() {
   return (
-    <div>Sauces and Snacks</div>
+    <SaucesSnacksSection />
   )
 }
 
-export default index
+export default page;

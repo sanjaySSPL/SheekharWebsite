@@ -1,7 +1,7 @@
 const DairyProduct = [
     {
         title:'Paneer',
-        product : 'SC300',
+        product : 'SC900',
         description : 'SC900 is a specialized formulation designed to optimize the structure and performance of paneer. It enhances moisture binding, minimizes syneresis, and improves the firmness and uniformity of the final product.',
         description1 : 'Paneer made with SC900 retains its shape during cooking, remains soft on the palate, and offers better shelf stability. Ideal for commercial dairies and paneer processors, SC900 helps reduce processing loss and ensures batch-to-batch consistency without compromising traditional quality. It’s suitable for both block and crumble formats.',
         keybenefits:[
@@ -12,11 +12,11 @@ const DairyProduct = [
             "Suitable for frying, curries, and ready-to-cook formats",
             "Ideal for industrial and large-scale paneer processing"
         ],
-        image : 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751532218/paneer_1_ee1yhw.webp'
+        image : 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1753174571/unsplash_SGSJOJcEIL8_sguwbg.svg'
     },
     {
         title:'paneer/ chenna ',
-        product: 'N.a',
+        product: 'SC 600',
         description:'SC600 is a high-performance formulation created to enhance the process efficiency and product quality of fresh dairy solids like paneer and chhena. It improves curd formation, increases moisture binding, and helps achieve a smooth, elastic texture in the final product.',
         description1 : 'For paneer, SC600 ensures better sliceability, reduced crumbling, and consistent softness. For chhena, it supports smooth kneading and shaping—ideal for sweets like rasgulla, sandesh, and other Bengali desserts. The formulation minimizes syneresis, improves cooking performance, and enhances final product stability across shelf life.',
         keybenefits:[
@@ -31,7 +31,7 @@ const DairyProduct = [
     },
     {
         title:'flavored milk and milk-shakes ',
-        product: 'N.a',
+        product: 'Creamtec FM',
         description:'This range includes flavored milk for daily refreshment and milkshakes for a more indulgent experience. Both are formulated using standardized milk and carefully selected flavors, offering excellent consistency, shelf stability, and wide taste appeal.',
         description1 : 'Flavored milk delivers a lighter body with balanced sweetness—ideal for schools, retail bottles, and on-the-go formats. Milkshakes, on the other hand, offer a fuller, creamier texture suited for dessert menus, café counters, and premium chilled shelves. The formulations are heat- and cold-chain compatible, supporting both UHT and chilled supply models. Available in classic and fusion flavors like chocolate, vanilla, cardamom, strawberry, and more.',
         keybenefits:[
@@ -46,7 +46,7 @@ const DairyProduct = [
     },
     {
         title:'flavored yogurt ',
-        product: 'N.a',
+        product: 'Cream Tec CA',
         description:'This specialized stabilizer blend is designed to enhance the structure, body, and overall sensory profile of flavored yoghurt. It supports uniform texture, prevents whey separation, and allows for clean flavor delivery across fruit, vanilla, or dessert-inspired variants.',
         description1 :'The system works effectively in stirred or set yoghurt formats and offers excellent stability across chilled storage and distribution. It helps reduce syneresis while maintaining a creamy, spoonable body that meets both traditional and modern market expectations.',
         keybenefits:[
@@ -61,7 +61,7 @@ const DairyProduct = [
     },
     {
         title:'lassi, chaas & shrikhand ',
-        product: 'N.a',
+        product: 'CreamTec FFM',
         description:'This curated range celebrates the versatility of cultured dairy. Chaas is a light, spiced buttermilk known for its digestive properties and cooling effect—ideal for everyday consumption. Lassi offers a thicker, mildly sweet or flavored refreshment with a smooth, creamy mouthfeel. Shrikhand is a spoonable dessert made from strained curd, offering rich texture and festive flavors like saffron, mango, and cardamom.',
         description1:'Each product is crafted for consistency, clean taste, and stability under chilled storage. From single-serve packs to bulk formats, the range caters to both traditional and contemporary palates',
         keybenefits:[
@@ -79,6 +79,7 @@ const DairyBasedDessert = [
         title: "Cream",
         description: "CreamTec ST Pro is engineered for high-performance cream applications. It enables superior flavor delivery, smooth texture, and a full-bodied experience. Ideal for chefs and manufacturers alike, it enhances cream functionality without compromising taste or clean-label demands.",
         description1:'',
+        product:'Cream Tec DC',
         keybenefits: [
             "Delivers superior texture in whipped and cooking cream",
             "Enhances flavor release and mouth-coating effect",
@@ -93,6 +94,7 @@ const DairyBasedDessert = [
         title: "Gulab Jamun",
         description: " This formulation is crafted for manufacturers who demand more from their paneer — smoother textures, whiter blocks, and a noticeably creamier bite. It simplifies production whThis solution has been carefully developed to support the production of soft, spongy, and perfectly shaped gulab jamuns that deliver a traditional melt-in-mouth experience.",
         description1:'It enhances the product’s ability to absorb syrup evenly while retaining its shape during frying and storage. The formulation minimizes surface cracking and oil absorption, allowing for clean, consistent results across batches. Whether used in sweet shops, large-scale catering, or packaged dessert manufacturing, it simplifies the process while maintaining authentic taste and texture.',
+        product: 'Tex Tec GJ',
         keybenefits: [
             "Produces soft, crack-free gulab jamuns with uniform shape",
             "Enhances syrup absorption and structural integrity",
@@ -107,6 +109,7 @@ const DairyBasedDessert = [
         title: "Rabdi",
         description: "Developed to meet the demands of both authenticity and efficiency, this formulation helps create rabdi with a dense, creamy body and signature caramelized flavor — without the need for prolonged boiling or constant stirring.",
         description1:'It simplifies production for sweet shops, food service, and industrial kitchens, enabling fast preparation with excellent texture and shelf stability. Whether served plain or used in modern dessert layering, it offers the perfect balance of richness, sweetness, and visual appeal.',
+        product:'Cream Tec R',
         keybenefits: [
             "Produces soft, crack-free gulab jamuns with uniform shape",
             "Enhances syrup absorption and structural integrity",
@@ -121,6 +124,7 @@ const DairyBasedDessert = [
         title:"Sweet Base",
         description:"Formulated for convenience without compromising quality, this Sweet Base streamlines the preparation of a variety of desserts like rasgulla, rabdi, kheer, and fruit-infused creations. ",
         description1:'It ensures a rich, smooth texture and holds well under heat or refrigeration, making it suitable for both hot and cold applications. Its neutral profile allows easy customization with fruits, syrups, nuts, or spices — perfect for chefs and manufacturers seeking consistency and efficiency in their recipes.',
+        product:'Cream Tec MA',
         keybenefits:[
             "Offers a smooth, balanced base for multiple dessert formats",
             "Works in both hot and cold preparation methods",
@@ -137,6 +141,7 @@ const AdvancedStabilizers = [
         title: "Ice Cream",
         description: "CreamTec IC Pro is designed for modern ice cream applications that demand superior texture, consistency, and shelf-life. It enhances air incorporation (overrun), prevents crystallization, and maintains a rich, indulgent mouthfeel even with reduced solids or fat.",
         description1:"Whether used in premium artisan formats or large-scale commercial production, it ensures excellent freezing behavior, better scoopability, and clean melt characteristics — making it ideal for both dairy and hybrid systems.",
+        product:'Cream Tec IC Pro',
         keybenefits: [
             "Improves overrun and texture without extra SNF or fat",
             "Enhances flavor release and mouth-coating effect",
@@ -151,6 +156,7 @@ const AdvancedStabilizers = [
         title: "Frozen dessert  ",
         description: "CreamTec FD Pro is a versatile stabilizing system developed to improve the body, smoothness, and stability of frozen desserts. It reduces iciness, supports aeration, and ensures consistent mouthfeel even in fat-reduced or plant-based recipes",
         description1:"Ideal for manufacturers seeking cost efficiency without compromising consumer experience, it performs reliably across formats including sticks, tubs, and soft packs.",
+        product:'Cream Tec FD Pro',
         keybenefits: [
             "Enhances creaminess with reduced fat or SNF.",
             "Improves texture and structure in dairy and vegan bases.",
@@ -165,6 +171,7 @@ const AdvancedStabilizers = [
         title: "Kulfi",
         description: "CreamTec FD Pro is a versatile stabilizing system developed to improve the body, smoothness, and stability of frozen desserts. It reduces iciness, supports aeration, and ensures consistent mouthfeel even in fat-reduced or plant-based recipes",
         description1:"Ideal for manufacturers seeking cost efficiency without compromising consumer experience, it performs reliably across formats including sticks, tubs, and soft packs.",
+        product:'Cream Tec KF Pro',
         keybenefits: [
             "Enhances creaminess with reduced fat or SNF.",
             "Improves texture and structure in dairy and vegan bases.",
@@ -179,6 +186,7 @@ const AdvancedStabilizers = [
         title:"Softy",
         description:"This stabilizer helps create light, creamy soft-serve with excellent swirl definition and smooth dispensing",
         description1:" It supports high overrun, melt resistance, and texture stability — perfect for vending, QSRs, and high-traffic frozen dessert formats.",
+        product:'Cream Tec ST Pro',
         keybenefits:["Supports high overrun and smooth body","Enhances creaminess without excess solids",
                     "Maintains swirl structure and reduces melt-drip",
                     "Performs well under continuous machine cycling",
@@ -192,6 +200,7 @@ const AdvancedStabilizers = [
         title:"Rabdi",
         description:"This Rabdi formulation integrates Sheekharr’s Advanced Stabilizers to deliver traditional richness combined with modern stability technology. The stabilizers control water migration and prevent phase separation, preserving the creamy, dense texture that defines authentic Rabdi.",
         description1:"Designed for industrial and commercial use, it maintains product integrity through processing, packaging, and storage while reducing spoilage and syneresis. The formulation supports consistent sensory quality with a smooth mouthfeel and a clean, indulgent finish.",
+        product:'',
         keybenefits:[
             "Maintains creamy, dense texture typical of authentic Rabdi",
             "Prevents whey separation and reduces syneresis during storage",
@@ -235,6 +244,7 @@ const SaucesSnacks = [
         title: "Mayonnaise ",
         description: "This mayonnaise formulation offers a balanced blend of oils, emulsifiers, and stabilizers to create a rich, creamy texture with a clean, tangy flavor profile. It ensures excellent emulsion stability and resistance to separation, making it suitable for sauces, dips, and snack applications.",
         description1:"Designed for commercial manufacturing, the mayonnaise maintains its texture and flavor under varied storage and usage conditions. It is adaptable for further customization with herbs, spices, and other flavorings, supporting diverse culinary needs in both retail and foodservice markets",
+        product:'GelTec XR',
         keybenefits: [
             "Consistent creamy texture and flavor",
             "Excellent emulsion and stability under various conditions",
@@ -248,6 +258,7 @@ const SaucesSnacks = [
         title:"Sauces",
         description:"These sauce bases are crafted to provide smooth consistency and stability during processing and storage. Suitable for a wide range of applications including dips, dressings, and snack toppings, they support flavor customization and maintain quality throughout shelf life.",
         description1:"Designed for commercial production, these sauces ensure reliable performance, enhancing both the sensory appeal and convenience of finished products",
+        product:'GelTec KS',
         keybenefits:[
             "Consistent flavor and smooth texture",
             "Stable during processing and storage",
@@ -255,12 +266,13 @@ const SaucesSnacks = [
             "Supports flavor customization",
             "Suitable for large-scale manufacturing"
         ],
-        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605107/unsplash_DYVVuq3J-Zg_zsaxgs.webp"
+        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1753176181/unsplash_DYVVuq3J-Zg_lyy1bh.svg"
     },
     {
         title:"Snacks",
         description:"Our snack-focused ingredient blends are developed to optimize texture, mouthfeel, and structural quality in a wide range of snack applications—such as chips, puffs, namkeen, and coated snacks. These systems support uniform crispiness, enhance seasoning adhesion, and contribute to a light, crunchy bite.",
         description1:"Engineered for high-performance in commercial production, they maintain product stability across various cooking and handling conditions. Whether the final product is fried, baked, or extruded, these ingredients ensure consistent results that meet consumer expectations",
+        product:'FlourTec B',
         keybenefits:[
             "Enhances crunch and lasting crispiness",
             "Reduces oil absorption in fried products",
@@ -269,7 +281,7 @@ const SaucesSnacks = [
             "Suitable for large-scale frying, baking, and extrusion",
             "Delivers consistent performance and product quality"
         ],
-        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605108/unsplash_L1ltnmBlA14_wfd62h.webp"
+        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1753176323/unsplash_L1ltnmBlA14_czrm2z.svg"
     }
 ];
 const Premixes = [
@@ -277,6 +289,7 @@ const Premixes = [
         title:"Mayonnaise",
         description:"This mayonnaise premix combines emulsifiers, stabilizers, and functional ingredients in an optimized ratio to streamline production and ensure batch-to-batch consistency. It delivers excellent emulsification, smooth body, and rich texture—ideal for classic mayonnaise, flavored variants, or creamy dips.",
         description1:"The premix offers versatility in oil ratios and flavor profiles, allowing easy customization while reducing formulation errors and processing time. It ensures product stability under varied storage and distribution conditions, making it suitable for both foodservice and retail applications.",
+        product:'',
         keybenefits:[
             "Ensures stable, creamy emulsion with consistent results",
             "Reduces formulation time and simplifies production",
@@ -291,6 +304,7 @@ const Premixes = [
         title:"Gulab Jamun",
         description:"This Gulab Jamun is formulated using premium dairy ingredients and stabilizers to achieve uniform softness, balanced sweetness, and excellent syrup retention. The texture remains spongy and moist over time, making it suitable for chilled, frozen, or ambient formats.",
         description1:"Crafted for industrial kitchens, sweet manufacturers, and large-scale dessert lines, it ensures consistent size, shape, and taste with every batch. Whether used in pre-packaged servings or bulk catering, it offers long shelf life without compromising on traditional quality and mouthfeel.",
+        product:'',
         keybenefits:[
             "Soft, spongy texture with excellent syrup absorption",
             "Consistent shape and size during cooking",
@@ -305,6 +319,7 @@ const Premixes = [
         title:"Rabdi",
         description:"Crafted from premium milk solids and functional ingredients, this rabdi delivers a thick, indulgent consistency with a naturally sweet, caramelized flavor. It maintains uniform texture without curdling or separation, even under chilled or ambient conditions.",
         description1:"Designed for commercial kitchens, dessert manufacturers, and sweet shops, it offers excellent handling properties, extended shelf life, and a homemade taste. Whether used in festive sweets, layered desserts, or ready-to-eat formats, it brings tradition and convenience together in every serving",
+        product:'',
         keybenefits:[
             "Thick, creamy texture with authentic flavor",
             "Stable under chilled and ambient conditions",
@@ -319,6 +334,7 @@ const Premixes = [
         title:"Creamy Sauces",
         description:"This creamy sauce formulation combines emulsifiers and stabilizers to create a rich, velvety mouthfeel with a consistent, pourable body. It resists separation and retains its smooth texture across heating, chilling, and holding conditions.",
         description1:"Perfect for commercial kitchens, QSRs, and processed food manufacturers, the sauce can be customized with flavors like garlic, cheese, or pepper. It blends well into various formats—whether served hot or cold—making it ideal for pasta bases, sandwich spreads, dips, or coating sauces.",
+        product:'',
         keybenefits:[
             "Smooth, creamy consistency with excellent mouthfeel",
             "Stable under heat, chill, and storage conditions",
@@ -332,6 +348,7 @@ const Premixes = [
         title:"ice cream",
         description:"This ice cream base is carefully developed with emulsifiers and stabilizers that support aeration, prevent ice crystal formation, and maintain a smooth, creamy mouthfeel throughout shelf life. It offers flexibility for a wide range of flavor profiles, inclusions, and fat contents — from classic vanilla to rich chocolate or fruit-based variants.",
         description1:"Perfect for high-volume production, this base delivers batch-to-batch consistency, excellent melt resistance, and a satisfying, clean finish. It performs well across gravity-fed and pressure-fed machines, making it suitable for packaged ice cream, scoops, tubs, and novelty formats.",
+        product:'',
         keybenefits:[
             "Smooth, creamy texture with excellent melt resistance",
             "Supports high overrun and uniform aeration",
@@ -346,6 +363,7 @@ const Premixes = [
         title:"Frozen Desserts",
         description:"This frozen dessert base combines specialty fats, emulsifiers, and stabilizers to achieve a creamy, scoopable texture with clean melt and extended shelf life. It offers excellent aeration, controls ice crystal formation, and delivers a satisfying eating experience similar to traditional ice cream.",
         description1:"Optimized for large-scale production, this base supports a variety of flavor additions, inclusions, and customization. Whether used in tubs, cones, or novelty formats, it ensures uniform quality and dependable processing under varied equipment and storage conditions.",
+        product:'',
         keybenefits:[
             "Smooth, creamy texture with high overrun",
             "Stable structure and clean melt",
@@ -360,6 +378,7 @@ const Premixes = [
         title:"Kulfy",
         description:"This kulfi formulation is made using a blend of premium milk solids, stabilizers, and emulsifiers to achieve a thick, creamy consistency and rich mouthfeel. It offers excellent shape retention and melt resistance, making it ideal for molded kulfis and stick formats.",
         description1:"Designed for commercial production, it supports consistent texture, clean finish, and authentic kulfi flavor. The base allows easy incorporation of traditional inclusions like cardamom, saffron, pistachio, or almond — and performs well across freezing, storage, and distribution.",
+        product:'',
         keybenefits:[
             "Dense, creamy texture with traditional taste",
             "Slow melt and excellent shape retention",
@@ -374,6 +393,7 @@ const Premixes = [
         title:"Softy",
         description:"This stabilizer formulation delivers consistent volume and silky texture in soft-serve ice creams. It enhances aeration, improves dispensing behavior, and maintains swirl stability under varied serving conditions",
         description1:"Suitable for use in both gravity-fed and pressure machines, it reduces melting and dripping while improving shelf performance.",
+        product:'',
         keybenefits:[
             "Supports high overrun and smooth body",
             "Enhances creaminess without excess solids",
@@ -388,6 +408,7 @@ const Premixes = [
         title:"Ketchup",
         description:"This ketchup formulation combines quality tomato concentrates, natural acids, and stabilizers to provide a balanced sweet-tangy flavor with a vibrant red hue. It maintains viscosity and prevents separation during storage and handling, making it suitable for retail and foodservice applications.",
         description1:"Customizable with spices and heat levels, the ketchup base supports a wide range of culinary uses and ensures consistent batch-to-batch quality in commercial production.",
+        product:'',
         keybenefits:[
             "Consistent tangy-sweet flavor and bright color",
             "Thick, smooth, and pourable texture",
@@ -403,6 +424,7 @@ const PlatingAgents = [
         title:"SorbTee B1 ",
         description:"Sorbtec B1 is a food-grade plating agent with superior oil-holding capacity, making it ideal for flavor encapsulation in spice blends and instant mixes. It ensures uniform absorption of liquid ingredients without clumping, improving blend consistency and shelf life",
         description1:"Its fine particle size and high surface area help retain flavor strength while allowing for smooth processing in automated systems.",
+        product:'',
         keybenefits:[
             "High oil and flavor absorption",
             "Converts liquids into dry, flowable powders",
@@ -416,6 +438,7 @@ const PlatingAgents = [
         title:"SorbTee BR1",
         description:"Sorbtec BR1 is specially formulated to handle high-viscosity or aromatic oils used in rich, complex seasoning systems. It provides even plating, minimizes segregation, and ensures that flavors are evenly distributed across the blend.",
         description1:"Its optimized particle structure supports stable, free-flowing powder formulations that are easy to handle, pack, and store.",
+        product:'',
         keybenefits:[
             "Handles dense oils and rich flavor systems",
             "Maintains dry flow and uniform dispersion",
@@ -429,6 +452,7 @@ const PlatingAgents = [
         title:"SorbTee NP1",
         description:"Sorbtec NP1 offers a neutral sensory profile, making it ideal for delicate flavor systems or color-sensitive applications. It absorbs a wide range of liquid ingredients—flavors, extracts, oils—while maintaining clarity and consistency in the final powder blend",
         description1:"NP1 is well-suited for clean-label and mild-flavored products where base interference must be minimal.",
+        product:'',
         keybenefits:[
             "Neutral taste and appearance",
             "Wide compatibility with liquid actives",
