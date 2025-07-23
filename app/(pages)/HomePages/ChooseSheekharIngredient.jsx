@@ -93,7 +93,7 @@ function ChooseSheekharIngredient() {
       src: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1752151408/unsplash_sw5qehkjlzI_1_c206ee.svg',
       alt: 'Premium Product',
       x: isMobile ? 30 : 30,
-      y: isMobile ? 220 : 180,
+      y: isMobile ? 220 : 230,
       color:"#feffef",
       ht:'179',
       wt:'238'
@@ -163,17 +163,17 @@ function ChooseSheekharIngredient() {
       </div>
 
       <div className="w-full md:w-[600px]  absolute z-10 top-1/3 -translate-y-[250px] md:left-1/2 md:top-1/2 md:-translate-y-1/2 transform md:-translate-x-1/2">
-        <h2 className="md:text-[36px] md:w-full sm:text-[20px] text-[30px] text-center text-text_blue font-inter italic mx-10 md:mt-[32px] mt-[50px] mb-[50px] md:mb-[40px]">
+        <h2 className="md:text-[36px] md:w-full sm:text-[20px] text-[30px] text-center text-text_blue font-semibold italic mx-10 md:mt-[32px] mt-[50px] mb-[50px] md:mb-[40px]">
           Why Choose Sheekharr Ingredient
         </h2>
 
-        <p className="text-end md:text-[20px] px-4">
+        <p className="text-end md:text-[20px] px-4 font-inter text-text_blue">
           Trusted by brands to improve quality, shelf life, and <br />
           profitability — all through smarter food solutions
         </p>
 
         <Button
-          button_link="https://google.com"
+          button_link="/contact"
           customPaddingClass="py-[4px] px-[18.5px] tracking-widest w-fit mt-[63px] mx-auto"
         >
           Get your customized soltuion

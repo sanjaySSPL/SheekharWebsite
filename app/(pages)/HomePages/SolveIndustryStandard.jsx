@@ -20,7 +20,7 @@ function SolveIndustryStandard() {
 
         <div className='w-full h-[1760px] md:h-[1454px] bg-bg_light_blue pt-1'>
 
-            <h2 className='text-[36px] md:texxt-[36px] text-text_blue font-semiBold font-inter md:text-start text-center italic md:ml-[90px] mt-[80px] md:mt-[120px]'>How We Solve Industry Challenges</h2>
+            <h2 className='text-[36px] sm:text-[32px] md:text-[36px] text-text_blue font-semibold font-inter md:text-start text-center italic md:ml-[90px] mt-[80px] md:mt-[120px]'>How We Solve Industry Challenges</h2>
 
             {/* This is the div having the 3 cards for the solving challenges */}
             <div className='mt-[80px] md:mt-[118px] md:pl-[91px] bg-green-300 relative'>
@@ -39,7 +39,7 @@ function SolveIndustryStandard() {
                         className=' mx-auto md:mx-0'
                     />
                     <div className='w-full md:w-[632px] h-[230px]  md:h-full flex align-middle justify-center items-center md:items-start flex-col'>
-                        <h2 className='text-[24px] text-text_blue font-semiBold font-inter italic md:text-start text-center'>The Challenge Behind Every Recipe</h2>
+                        <h2 className='text-[24px] text-text_blue font-semibold font-inter italic md:text-start text-center mb-5'>The Challenge Behind Every Recipe</h2>
                         <p className='md:text-[20px] font-inter text-text_blue'>
                             From poor texture to short shelf life, food brands face real <br className='md:flex hidden'/> product issues. Whether it’s dairy, beverages, or snacks — the <br className='md:flex hidden'/> problem is unique, and so is the solution it needs.
                         </p>
@@ -70,7 +70,7 @@ function SolveIndustryStandard() {
                         className=' mx-auto md:mx-0'
                     />
                     <div className='w-full md:w-[632px] h-[230px] md:h-full flex align-middle justify-center items-start md:items-start flex-col'>
-                        <h2 className='text-[24px] text-text_blue font-semiBold font-inter italic md:text-start text-center'>Crafted Solutions, Not Just Ingredients</h2>
+                        <h2 className='text-[24px] text-text_blue font-semibold font-inter italic md:text-start text-center mb-5'>Crafted Solutions, Not Just Ingredients</h2>
                         <p className='md:text-[20px] font-inter text-text_blue'>
                            Brands come to us with their challenges. We study the issue, create or customize the right ingredient, and fine-tune it to work perfectly in their process. No one-size-fits-all — just science that fits.
                         </p>
@@ -101,7 +101,8 @@ function SolveIndustryStandard() {
                         className=' mx-auto md:mx-0'
                     />
                     <div className='w-full md:w-[632px] h-[230px] md:h-full flex align-middle justify-center items-start md:items-start flex-col'>
-                        <h2 className='text-[24px] text-text_blue font-semiBold font-inter italic md:text-start text-center'>Results You Can Taste and Measure</h2>
+                            
+                            <h2 className='text-[24px] text-text_blue font-semibold font-inter italic md:text-start text-center mb-5'>Results You Can Taste and Measure</h2>
                         <p className='md:text-[20px] font-inter text-text_blue'>
                            The result? better texture, longer life, better yield — and a product that performs better in the market. Better ingredients lead to better business.
                         </p>

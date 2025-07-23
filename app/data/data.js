@@ -196,39 +196,40 @@ const AdvancedStabilizers = [
         ],
         image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605108/unsplash_p-cvyczoWco_d7k9sj.webp"
     },
-    {
-        title:"Rabdi",
-        description:"This Rabdi formulation integrates Sheekharr’s Advanced Stabilizers to deliver traditional richness combined with modern stability technology. The stabilizers control water migration and prevent phase separation, preserving the creamy, dense texture that defines authentic Rabdi.",
-        description1:"Designed for industrial and commercial use, it maintains product integrity through processing, packaging, and storage while reducing spoilage and syneresis. The formulation supports consistent sensory quality with a smooth mouthfeel and a clean, indulgent finish.",
-        product:'',
-        keybenefits:[
-            "Maintains creamy, dense texture typical of authentic Rabdi",
-            "Prevents whey separation and reduces syneresis during storage",
-            "Enhances shelf life and product stability in varied conditions",
-            "Supports consistent taste and mouthfeel batch after batch",
-            "Suitable for industrial scale production and retail packaging",
-            "Compatible with standard dairy processing methods"
-        ],
-        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751528176/rabdi_eyhe9d.webp"
-    },
-    {
-        title:"Sweet Base",
-        description:"The Sweet Base is crafted to deliver a smooth, creamy foundation with uniform sweetness and texture, suitable for a wide range of dairy desserts and confectionery products. It ensures excellent stability during processing and storage, minimizing crystallization and phase separation",
-        description1:"Formulated for industrial and commercial use, the sweet base supports consistent product quality and enhances the sensory experience of the final dessert. It can be easily adapted for different flavorings or mix-ins, making it a flexible ingredient for manufacturers seeking dependable and scalable sweet dessert solutions.",
-        keybenefits:[
-            "Provides consistent sweetness and creamy texture",
-            "Enhances stability and prevents crystallization",
-            "Suitable for diverse dairy dessert applications",
-            "Supports smooth processing and extended shelf life",
-            "Flexible for flavor customization and mix-ins",
-            "Ideal for commercial-scale production"
-        ],
-        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605109/unsplash_CBwoyP69nAU_ky42xe.webp"
-    },
+    // {
+    //     title:"Rabdi",
+    //     description:"This Rabdi formulation integrates Sheekharr’s Advanced Stabilizers to deliver traditional richness combined with modern stability technology. The stabilizers control water migration and prevent phase separation, preserving the creamy, dense texture that defines authentic Rabdi.",
+    //     description1:"Designed for industrial and commercial use, it maintains product integrity through processing, packaging, and storage while reducing spoilage and syneresis. The formulation supports consistent sensory quality with a smooth mouthfeel and a clean, indulgent finish.",
+    //     product:'',
+    //     keybenefits:[
+    //         "Maintains creamy, dense texture typical of authentic Rabdi",
+    //         "Prevents whey separation and reduces syneresis during storage",
+    //         "Enhances shelf life and product stability in varied conditions",
+    //         "Supports consistent taste and mouthfeel batch after batch",
+    //         "Suitable for industrial scale production and retail packaging",
+    //         "Compatible with standard dairy processing methods"
+    //     ],
+    //     image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751528176/rabdi_eyhe9d.webp"
+    // },
+    // {
+    //     title:"Sweet Base",
+    //     description:"The Sweet Base is crafted to deliver a smooth, creamy foundation with uniform sweetness and texture, suitable for a wide range of dairy desserts and confectionery products. It ensures excellent stability during processing and storage, minimizing crystallization and phase separation",
+    //     description1:"Formulated for industrial and commercial use, the sweet base supports consistent product quality and enhances the sensory experience of the final dessert. It can be easily adapted for different flavorings or mix-ins, making it a flexible ingredient for manufacturers seeking dependable and scalable sweet dessert solutions.",
+    //     keybenefits:[
+    //         "Provides consistent sweetness and creamy texture",
+    //         "Enhances stability and prevents crystallization",
+    //         "Suitable for diverse dairy dessert applications",
+    //         "Supports smooth processing and extended shelf life",
+    //         "Flexible for flavor customization and mix-ins",
+    //         "Ideal for commercial-scale production"
+    //     ],
+    //     image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605109/unsplash_CBwoyP69nAU_ky42xe.webp"
+    // },
     {
         title:"Sorbet",
         description:"This sorbet base is formulated to highlight bright, natural fruit flavors while providing a smooth, fine texture and excellent melt resistance. It offers a clean, refreshing taste that appeals to a wide range of consumers.",
         description1:"Designed for commercial production, the base maintains consistency during freezing and storage, preventing large ice crystal formation and ensuring superior scoopability. Its balanced formulation supports customization with various fruit purees and flavorings, making it a versatile choice for frozen dessert manufacturers.",
+        product:'IceTec SB',
         keybenefits:[
             "Enhances natural fruit flavors with a smooth, crisp texture",
             "Prevents large ice crystal formation for better scoopability",
@@ -422,8 +423,8 @@ const Premixes = [
 const PlatingAgents = [
     {
         title:"SorbTee B1 ",
-        description:"Sorbtec B1 is a food-grade plating agent with superior oil-holding capacity, making it ideal for flavor encapsulation in spice blends and instant mixes. It ensures uniform absorption of liquid ingredients without clumping, improving blend consistency and shelf life",
-        description1:"Its fine particle size and high surface area help retain flavor strength while allowing for smooth processing in automated systems.",
+        description:"A high-absorption plating agent ideal for converting liquid flavors, oils, and actives into free-flowing powders.",
+        description1:"Sorbtec B1 provides excellent flow, uniformity, and stability—perfect for seasoning blends and dry premixes.",
         product:'',
         keybenefits:[
             "High oil and flavor absorption",
@@ -432,12 +433,12 @@ const PlatingAgents = [
             "Enhances dispersion in seasonings and dry mixes",
             "Suitable for automated processing lines"
         ],
-        image:""
+        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1753269341/unsplash_hicsLTRz0DA_ne05sf.svg"
     },
     {
         title:"SorbTee BR1",
-        description:"Sorbtec BR1 is specially formulated to handle high-viscosity or aromatic oils used in rich, complex seasoning systems. It provides even plating, minimizes segregation, and ensures that flavors are evenly distributed across the blend.",
-        description1:"Its optimized particle structure supports stable, free-flowing powder formulations that are easy to handle, pack, and store.",
+        description:"We create viscosity control systems foA robust plating agent tailored for richer, heavier oils and dense flavor systems. Sorbtec BR1 offers reliable absorption, excellent dry flow, and enhanced stability for bold seasoning blends and complex premixes.r both cold and hot-fill sauces.",
+        description1:"They prevent water release and maintain smooth texture. Result: better pour, improved stability, and enhanced consumer experience",
         product:'',
         keybenefits:[
             "Handles dense oils and rich flavor systems",
@@ -446,7 +447,7 @@ const PlatingAgents = [
             "Improves performance in spice-heavy mixes",
             "Supports clean, consistent final appearance"
         ],
-        image:""
+        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1753269341/unsplash_wjepxrSgcpI_tr5lky.svg"
     },
     {
         title:"SorbTee NP1",
@@ -459,7 +460,8 @@ const PlatingAgents = [
             "Supports clean-label and mild formulations",
             "Stable and uniform powder output",
             "Ideal for delicate seasonings and flavored blends"
-        ]
+        ],
+        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1753269471/unsplash_WKQQPABDiCM_vkboyr.svg"
     }
 ]
 

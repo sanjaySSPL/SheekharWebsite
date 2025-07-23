@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="">
       {/* add max width */}
-      <main className="w-[100dvw] overflow-x-hidden ">
+      <main className="w-[100dvw] overflow-x-hidden">
         <HomePage1 />
         <ProductScroll />
         <SolveIndustryStandard />

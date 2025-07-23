@@ -32,7 +32,7 @@ function ContactForm2() {
             placeholder="Value"
           />
         </div>
-        <div className="flex flex-col gap-2">
+        {/* <div className="flex flex-col gap-2">
           <label htmlFor="surname" className="text-gray-800">Surname</label>
           <input
             id="surname"
@@ -40,7 +40,7 @@ function ContactForm2() {
             className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
             placeholder="Value"
           />
-        </div>
+        </div> */}
         <div className="flex flex-col gap-2">
           <label htmlFor="company" className="text-gray-800">Company Name<span className="text-red-500">*</span></label>
           <input

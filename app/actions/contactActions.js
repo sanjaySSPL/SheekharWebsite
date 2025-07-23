@@ -6,7 +6,7 @@ export async function submitContactForm(formData) {
   try {
     // Extract form data
     const name = formData.get('name');
-    const surname = formData.get('surname'); // optional
+    const surname = formData.get('surname' || ''); // optional
     const email = formData.get('email');
     const company = formData.get('company');
     const category = formData.get('category'); // optional

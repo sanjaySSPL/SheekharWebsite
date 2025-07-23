@@ -19,7 +19,7 @@ function ProductCard({
   return (
     <motion.div
       layout
-      className={`w-full md:w-full flex flex-col md:flex-row gap-0 border border-gray-200 rounded-lg bg-[#f9f8fe] p-3 md:p-6 mx-auto overflow-hidden flex-shrink-0 mb-2 md:mb-0 cursor-pointer ${
+      className={`w-full md:w-full flex flex-col md:flex-row gap-0 border border-gray-200 rounded-lg bg-[#ffffff] p-3 md:p-6 mx-auto overflow-hidden flex-shrink-0 mb-2 md:mb-0 cursor-pointer ${
         expanded ? 'h-auto' : 'h-[375px]'
       }`}
       onClick={isMobile ? undefined : onClick}
@@ -43,7 +43,7 @@ function ProductCard({
       {/* Right: Product Info */}
       <div className='w-full md:w-[55%] flex flex-col justify-start items-start md:pl-6 h-auto md:h-full md:pt-[10px]'>
         <div className='text-lg md:text-2xl font-bold italic text-[#3b4381] mb-2 md:mb-[20px]'>{title}</div>
-        {product && <div className='text-lg md:text-xl text-[#3b4381] mb-2 md:mb-[20px]'>{product}</div>}
+        {product && <div className='text-lg font-medium md:text-xl text-[#3b4381] mb-2 md:mb-[20px]'>{product}</div>}
         <div className='text-[#3b4381] text-sm md:text-base leading-relaxed whitespace-pre-line overflow-y-auto'>
           {description}
         </div>

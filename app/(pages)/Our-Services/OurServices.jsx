@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from '@/app/(components)/Card'
+import Link from 'next/link'
 
 function OurServices() {
 
@@ -34,9 +35,11 @@ function OurServices() {
 
   return (
     <div className='w-full h-[2350px] md:h-[1000px]  mb-[30px]'>
-        <div className=' md:h-[170px] md:w-[598px]  text-center mx-auto mt-20'>
-                <h2 className="text-[36px] mb-[40px] text-text_blue">Helping You Build Better Products,<br/> Every Step of the Way</h2>
+        <div className=' md:h-[170px] md:w-[698px] text-center mx-auto mt-20'>
+                <h2 className="font-semibold italic text-[36px] mb-[40px] text-text_blue">Helping You Build Better Products,<br className="md:block hidden"/> Every Step of the Way</h2>
+                <Link href="/contact">
                 <p className="text-medium_blue text-[20px]">Book a Free Consultation with Our Technologists</p>
+                </Link>
         </div>
         <div className="h-fit md:h-[650px] w-[full] mt-24 flex align-middle justify-center items-center flex-col gap-[30px] md:gap-[99px] ">
             <div className="  md:h-[279px] w-[100dvw] flex md:flex-row flex-col align-middle justify-center gap-[30px] md:gap-[54px] items-center">

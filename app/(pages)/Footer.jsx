@@ -17,13 +17,13 @@ const products = [
 ];
 
 const industry = [
-  { label: 'Dairy', href: '#' },
-  { label: 'Ice Cream', href: '#' },
-  { label: 'Bakery', href: '#' },
-  { label: 'Processed Foods', href: '#' },
+  { label: 'Dairy', href: '/products' },
+  { label: 'Ice Cream', href: '/products' },
+  { label: 'Bakery', href: '/products' },
+  // { label: 'Processed Foods', href: '#' },
   { label: 'Bevergaes', href: '#' },
   { label: 'Snacks', href: '#' },
-  { label: 'More', href: '#' },
+  // { label: 'More', href: '#' },
 ];
 
 function Footer() {

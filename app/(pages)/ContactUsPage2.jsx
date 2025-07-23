@@ -11,15 +11,15 @@ function ContactUsPage2() {
             </h2>
             <div className='flex flex-col gap-2 text-gray-500 mb-8'>
                 <p>Sheekharr Starch Private Limited</p>
-                <p>W-406, Rabale, MIDC, TTC Industrial Area,</p>
-                <p>Thane - Belapur Road, Navi Mumbai, <br/>Maharashtra 400701</p>
+                <p>Plot No. A , Rupa Solitaire Millenium Business Park, 14th Floor</p>
+                <p>Thane - Belapur Road, Navi Mumbai, <br/>Maharashtra 400710</p>
             </div>
 
             <h2 className='text-xl font-semibold mb-6'>
                 WORKING HOURS
             </h2>
             <div className='flex flex-col gap-2 text-gray-500 mb-8'>
-                <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
+                <p>Monday - Saturday: 9:00 AM - 6:00 PM</p>
                 <p>Sunday: Closed</p>
             </div>
             <h2 className='text-xl font-semibold mb-6'>

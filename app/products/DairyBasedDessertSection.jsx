@@ -13,7 +13,7 @@ function DairyBasedDessertSection() {
       id="dairy-based-dessert"
       className="w-full min-h-[500px] bg-white"
     >
-      <h2 className="text-[36px] font-semibold pl-[24px] pt-[32px] font-inter">Dairy Based Dessert</h2>
+      <h2 className="text-[36px] font-semibold pl-8 md:pl-32 pt-[32px] font-inter">Dairy Based Dessert</h2>
       <div className="w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-y-10 gap-x-8 px-4 py-8 items-stretch justify-items-center">
         {DairyBasedDessert.map((item, idx) => {
           const isExpanded = selectedIdx === idx;
@@ -23,7 +23,7 @@ function DairyBasedDessertSection() {
               className={
                 isExpanded
                   ? "col-span-full w-full max-w-5xl mx-auto my-2 z-20 transition-all duration-500"
-                  : "w-full max-w-[500px] my-2 z-10 transition-all duration-500"
+                  : "w-full max-w-[600px] my-2 z-10 transition-all duration-500"
               }
               style={{
                 position: isExpanded ? "relative" : "static",
