@@ -58,7 +58,7 @@ function ProductScroll() {
       data_image: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751089464/unsplash_5etk9qHwNNE_ttdtbc.svg',
       data_text: 'Creamy texture, neutral base — perfect for customizing savory or cheesy sauces. Built for smooth consistency and coatability',
       data_detailed_link: '',
-      title:'Soy'
+      title:'Creamy Sauce'
     },
   ]
 

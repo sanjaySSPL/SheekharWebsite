@@ -11,7 +11,7 @@ const quickLinks = [
 
 const products = [
   { label: 'Dairy Products', href: '/products/dairy-ingredients' },
-  { label: 'Advanced Stablilisers', href: '/products/advance-stabilizers' },
+  { label: 'Advanced Stabilizer', href: '/products/advance-stabilizers' },
   { label: 'Premixes', href: '/products/premixes'},
   { label: 'Plating Agents', href: '/products/plating-agents' },
 ];
@@ -21,7 +21,7 @@ const industry = [
   { label: 'Ice Cream', href: '/products' },
   { label: 'Bakery', href: '/products' },
   // { label: 'Processed Foods', href: '#' },
-  { label: 'Bevergaes', href: '#' },
+  { label: 'Beverage', href: '#' },
   { label: 'Snacks', href: '#' },
   // { label: 'More', href: '#' },
 ];
@@ -79,7 +79,7 @@ function Footer() {
             <a href="#" className="rounded-full border border-white p-3 text-white hover:bg-white hover:text-[#1E164B] transition-colors"><FaFacebookF size={22} /></a>
             <a href="#" className="rounded-full border border-white p-3 text-white hover:bg-white hover:text-[#1E164B] transition-colors"><FaInstagram size={22} /></a>
             <a href="#" className="rounded-full border border-white p-3 text-white hover:bg-white hover:text-[#1E164B] transition-colors"><FaXTwitter size={22} /></a>
-            <a href="#" className="rounded-full border border-white p-3 text-white hover:bg-white hover:text-[#1E164B] transition-colors"><FaLinkedinIn size={22} /></a>
+            <a href="https://www.linkedin.com/company/sheekharr-ingredients-pvt-ltd" className="rounded-full border border-white p-3 text-white hover:bg-white hover:text-[#1E164B] transition-colors"><FaLinkedinIn size={22} /></a>
           </div>
         </div>
       </div>
