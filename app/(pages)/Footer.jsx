@@ -12,7 +12,7 @@ const quickLinks = [
 const products = [
   { label: 'Dairy Products', href: '/products/dairy-ingredients' },
   { label: 'Advanced Stablilisers', href: '/products/advance-stabilizers' },
-  { label: 'Premixes', href: '/products/premixes' },
+  { label: 'Premixes', href: '/products/premixes'},
   { label: 'Plating Agents', href: '/products/plating-agents' },
 ];
 
