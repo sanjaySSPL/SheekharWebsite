@@ -23,13 +23,13 @@ function ContactForm2() {
     >
       <div className="flex flex-col gap-6">
         <div className="flex flex-col gap-2">
-          <label htmlFor="name" className="text-gray-800">Name<span className="text-red-500">*</span></label>
+          <label htmlFor="name" className="text-gray-800">Full Name<span className="text-red-500">*</span></label>
           <input
             id="name"
             name="name"
             required
             className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-            placeholder="Value"
+            placeholder="John Doe"
           />
         </div>
         {/* <div className="flex flex-col gap-2">
@@ -48,7 +48,7 @@ function ContactForm2() {
             name="company"
             required
             className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-            placeholder="Value"
+            placeholder="Company Pvt Ltd"
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -59,7 +59,7 @@ function ContactForm2() {
             type="email"
             required
             className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-            placeholder="Value"
+            placeholder="john.doe@example.com"
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -68,16 +68,16 @@ function ContactForm2() {
             id="contactNumber"
             name="contactNumber"
             className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-            placeholder="Value"
+            placeholder="Number"
           />
         </div>
         <div className="flex flex-col gap-2">
-          <label htmlFor="query" className="text-gray-800">Query</label>
+          <label htmlFor="query" className="text-gray-800">Query / Message</label>
           <textarea
             id="query"
             name="query"
             className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-            placeholder="Frontend developer"
+            placeholder="This is Query"
           />
         </div>
       </div>

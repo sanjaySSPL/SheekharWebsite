@@ -52,11 +52,11 @@ function SolveIndustryStandard() {
                     alt='hello world'
                     width={100}
                     height={100}
-                    className='absolute top-[400px] lg:left-[200px] md:left-[320px] md:top-[243px] mx-auto md:mx-0 md:flex hidden'
+                    className='absolute top-[400px] lg:left-[270px] md:left-[320px] md:top-[243px] mx-auto md:mx-0 md:flex hidden'
                     />
 
                 {/* Solving Challenge Number 2 */}
-                <motion.div className='h-[500px] w-[90%] md:w-[816px] md:h-[214px] flex-col md:flex-row md:flex align-middle justify-around md:justify-center items-center  md:gap-[20.17px] mx-auto md:mx-0 absolute top-[500px] lg:left-[200px] md:left-[320px] md:top-[423px] md:-translate-x-[0%] left-[25px] -translate-x-[50%]'
+                <motion.div className='h-[500px] w-[90%] md:w-[816px] md:h-[214px] flex-col md:flex-row md:flex align-middle justify-around md:justify-center items-center  md:gap-[20.17px] mx-auto md:mx-0 absolute top-[500px] lg:left-[270px] md:left-[320px] md:top-[423px] md:-translate-x-[0%] left-[25px] -translate-x-[50%]'
                     ref={card2Ref}
                     initial={{ opacity: 0, y: -50 }}
                     animate={card2InView ? { opacity: 1, y: 0 } : {}}
@@ -83,11 +83,11 @@ function SolveIndustryStandard() {
                     alt='hello world'
                     width={100}
                     height={100}
-                    className='absolute top-[400px] lg:left-[200px] md:left-[320px] md:top-[660px] mx-auto md:mx-0 md:flex hidden'
+                    className='absolute top-[400px] lg:left-[270px] md:left-[320px] md:top-[660px] mx-auto md:mx-0 md:flex hidden'
                     />
 
                 {/* Solving Challenge Number 3 */}
-                <motion.div className='h-[500px] w-[90%] md:w-[816px] md:h-[214px] flex-col md:flex-row md:flex align-middle justify-around md:justify-center items-center  md:gap-[20.17px] mx-auto md:mx-0 absolute top-[1000px] md:left-[105px] md:top-[845px] md:-translate-x-[0%] left-[25px] -translate-x-[50%]'
+                <motion.div className='h-[500px] w-[90%] md:w-[816px] md:h-[214px] flex-col md:flex-row md:flex align-middle justify-around md:justify-center items-center md:gap-[20.17px] mx-auto md:mx-0 absolute top-[1000px] md:left-[105px] md:top-[845px] md:-translate-x-[0%] left-[25px] -translate-x-[50%] md:translate-y-[0%] '
                     ref={card3Ref}
                     initial={{ opacity: 0, y: -50 }}
                     animate={card3InView ? { opacity: 1, y: 0 } : {}}

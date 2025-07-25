@@ -329,7 +329,7 @@ const Premixes = [
             "Consistent batch quality for commercial use",
             "Ready-to-use format reduces prep time"
         ],
-        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605046/unsplash_hsYpr6KcGZw_tpgkpp.webp"
+        image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751528176/rabdi_eyhe9d.webp"
     },
     {
         title:"Creamy Sauces",

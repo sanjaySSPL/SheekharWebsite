@@ -46,7 +46,7 @@ function ProductScroll() {
       data_image: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751089465/unsplash_cd1PW0FAi-E_txtvtx.svg',
       data_text: 'Designed for clean, fruit-forward sorbets with excellent clarity and natural taste. Helps balance flavor sharpness with smooth texture',
       data_detailed_link: '',
-      title:'Sorbet'
+      title:'Plating Agent'
     },
     {
       data_image: 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751089468/unsplash_wZjJYDw39o4_fzh67w.svg',

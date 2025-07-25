@@ -14,7 +14,7 @@ function DairyProductsSection() {
       id="dairy-products"
       className="w-full min-h-[500px] bg-bg_light_blue"
     >
-      <h2 className="text-[36px] font-semibold pl-8 md:pl-32 pt-[32px] font-inter">Dairy Products</h2>
+      <h2 className="text-[36px] font-semibold pl-8 pt-[32px] font-inter text-center text-text_blue ">Dairy Products</h2>
       <div className="w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-y-10 gap-x-8 px-4 py-8 items-stretch justify-items-center">
         {DairyProduct.map((item, idx) => {
           const isExpanded = selectedIdx === idx;

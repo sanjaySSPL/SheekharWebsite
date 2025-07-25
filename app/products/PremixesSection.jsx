@@ -13,7 +13,7 @@ function PremixesSection() {
       id="premixes"
       className="w-full min-h-[500px] bg-bg_light_blue"
     >
-      <h2 className="text-[36px] font-semibold pl-8 md:pl-32 pt-[32px] font-inter">Premixes</h2>
+      <h2 className="text-[36px] font-semibold pl-8 text-center text-text_blue pt-[32px] font-inter">Premixes</h2>
       <div className="w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-y-10 gap-x-8 px-4 py-8 items-stretch justify-items-center">
         {Premixes.map((item, idx) => {
           const isExpanded = selectedIdx === idx;

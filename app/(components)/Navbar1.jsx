@@ -84,18 +84,17 @@ function Navbar1() {
       }
     }
   };
-
   return (
     <motion.nav className='h-[100px] w-[100dvw] bg-white  fixed top-0 z-50 flex align-middle justify-center items-center'
     animate={{ height: isShrunk ? 75 : 100 }}
     transition={{ type: "spring", stiffness: 300, damping: 30 }} >
     <div className=" mx-auto w-full">
         
-        <div className="flex justify-between">
+        <div className="flex justify-between align-middle items-center">
           {/* Logo can go here */}
           {/* <h1 className='my-auto '>Logo</h1> */}
           {/* <Image src="/logo.png" alt="logo" width={50} height={50} /> */}
-          <Link href="/" className='flex items-center justify-center gap-[20px]'> 
+          <Link href="/" className='flex items-center justify-center gap-[20px] -mt-1'> 
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -145,12 +144,12 @@ function Navbar1() {
               <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-[500px] bg-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-200 z-50 p-6 flex flex-col">
                 <div className="grid grid-cols-2 gap-x-8 gap-y-3">
                   <Link href="/products"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">All Products</span></Link>
+                  <Link href="/products/advance-stabilizers"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Advanced Stabilizers</span></Link>
                   <Link href="/products#dairy-products"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Best Sellers</span></Link>
                   <Link href="/products/dairy-ingredients"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Dairy Products</span></Link>
                   <Link href="/products/premixes"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Premixes</span></Link>
                   <Link href="/products/dessert-ingredients"><span className="block px-2 py-2 rounded hover:bg-purple-100 cursor-pointer text-gray-800">Dairy Based Dessert</span></Link>
                   <Link href="/products/plating-agents"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Plating Agents</span></Link>
-                  <Link href="/products/advance-stabilizers"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Advanced Stabilizers</span></Link>
                   {/* <span className="block px-2 py-2 rounded text-gray-400 cursor-not-allowed">Menu item</span> */}
                   <Link href="/products/sauces-and-snacks"><span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">Sauces & Snacks</span></Link>
                   {/* <span className="block px-2 py-2 rounded text-gray-400 cursor-not-allowed">Menu item</span> */}
@@ -186,6 +185,9 @@ function Navbar1() {
               <Button button_link='/contact' customPaddingClass='py-[4px] px-[18.5px] tracking-widest mx-[20px]'>Talk to Experts</Button>
             </motion.div>
           </motion.div>
+
+{/* Make allign ment for baove only */}
+
           {/* Mobile menu button */}
           <motion.div 
             className="md:hidden flex items-center mr-4"

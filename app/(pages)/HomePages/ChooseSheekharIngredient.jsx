@@ -164,7 +164,7 @@ function ChooseSheekharIngredient() {
 
       <div className="w-full md:w-[600px]  absolute z-10 top-1/3 -translate-y-[250px] md:left-1/2 md:top-1/2 md:-translate-y-1/2 transform md:-translate-x-1/2">
         <h2 className="md:text-[36px] md:w-full sm:text-[20px] text-[30px] text-center text-text_blue font-semibold italic mx-10 md:mt-[32px] mt-[50px] mb-[50px] md:mb-[40px]">
-          Why Choose Sheekharr Ingredient
+          Why Choose Sheekharr Ingredient?
         </h2>
 
         <p className="text-end md:text-[20px] px-4 font-inter text-text_blue">
