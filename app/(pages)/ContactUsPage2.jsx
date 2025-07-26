@@ -26,7 +26,7 @@ function ContactUsPage2() {
                 CONTACT US
             </h2>
               <div className='flex flex-col gap-2 text-gray-500'>
-                <p>Phone: (+91) 9320381750</p>
+                <p>Phone: (+91) 7397950657</p>
                 <p>Email: info@sheekharr.in</p>
                 <p>Website: www.sheekharr.com</p>
             </div>

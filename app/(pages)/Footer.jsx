@@ -11,7 +11,9 @@ const quickLinks = [
 
 const products = [
   { label: 'Dairy Products', href: '/products/dairy-ingredients' },
+  {label:  `Dairy Based Dessert` , href: `/products/dessert-ingredients`},
   { label: 'Advanced Stabilizer', href: '/products/advance-stabilizers' },
+  { label: `Sauces & Snacks` , href: `/products/sauces-and-snacks`},
   { label: 'Premixes', href: '/products/premixes'},
   { label: 'Plating Agents', href: '/products/plating-agents' },
 ];
@@ -26,6 +28,8 @@ const industry = [
   // { label: 'More', href: '#' },
 ];
 
+    const hoverColor = 'text-blue-200'
+
 function Footer() {
   return (
     <footer className="w-full h-fit md:h-[497px] bg-[#1D4E7A] flex flex-col justify-between">
@@ -38,7 +42,7 @@ function Footer() {
               <li key={item.label}>
                 <a
                   href={item.href}
-                  className={`text-white text-base hover:text-yellow-300 transition-colors hover:underline`}
+                  className={`text-white text-base hover:${hoverColor} hover:scale-110 transition-colors hover:underline hover:underline-offset-4`}
                 >
                   {item.label}
                 </a>
@@ -52,7 +56,7 @@ function Footer() {
           <ul className="space-y-[20px]">
             {industry.map((item) => (
               <li key={item.label}>
-                <a href={item.href} className="text-white text-base hover:text-yellow-300 transition-colors hover:underline">
+                <a href={item.href} className={`text-white text-base hover:${hoverColor} hover:scale-110 transition-colors hover:underline hover:underline-offset-4`}>
                   {item.label}
                 </a>
               </li>
@@ -65,7 +69,7 @@ function Footer() {
           <ul className="space-y-[20px]">
             {products.map((item) => (
               <li key={item.label}>
-                <a href={item.href} className="text-white text-base hover:text-yellow-300 transition-colors hover:underline hover:underline-offset-4">
+                  <a href={item.href} className={`text-white text-base hover:${hoverColor} hover:scale-110 transition-colors hover:underline hover:underline-offset-4`}>
                   {item.label}
                 </a>
               </li>
@@ -86,7 +90,7 @@ function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/20 w-full px-6 py-4 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto">
         <span className="text-white text-sm text-center md:text-left">Copyright © {new Date().getFullYear()} <span className="font-bold">Sheekharr Ingredients Pvt. Ltd.</span> All Rights Reserved.</span>
-        <a href="#" className="text-white text-sm mt-2 md:mt-0 hover:underline">Privacy Policy</a>
+        <a href="#" className="text-white text-sm mt-2 md:mt-0 hover:underline hover:underline-offset-4">Privacy Policy</a>
       </div>
     </footer>
   );

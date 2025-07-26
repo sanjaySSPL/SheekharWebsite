@@ -39,26 +39,7 @@ export default function ContactForm() {
             placeholder="Enter your surname (optional)"
           />
         </div>
-        <div className="flex flex-col gap-2">
-          <label htmlFor="email" className="text-gray-800">Email<span className="text-red-500">*</span></label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            required
-            className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-            placeholder="Enter your email"
-          />
-        </div>
-        <div className="flex flex-col gap-2">
-          <label htmlFor="contactNumber" className="text-gray-800">Contact Number</label>
-          <input
-            id="contactNumber"
-            name="contactNumber"
-            className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-            placeholder="Enter your contact number (optional)"
-          />
-        </div>
+        
         <div className="flex flex-col gap-2">
           <label htmlFor="company" className="text-gray-800">Company Name<span className="text-red-500">*</span></label>
           <input
@@ -76,6 +57,26 @@ export default function ContactForm() {
             name="category"
             className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
             placeholder="Enter category (optional)"
+          />
+        </div>
+        <div className="flex flex-col gap-2">
+          <label htmlFor="contactNumber" className="text-gray-800">Contact Number</label>
+          <input
+            id="contactNumber"
+            name="contactNumber"
+            className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            placeholder="Enter your contact number (optional)"
+          />
+        </div>
+        <div className="flex flex-col gap-2">
+          <label htmlFor="email" className="text-gray-800">Email<span className="text-red-500">*</span></label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            placeholder="Enter your email"
           />
         </div>
         

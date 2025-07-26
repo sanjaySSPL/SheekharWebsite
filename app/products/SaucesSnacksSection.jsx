@@ -3,15 +3,19 @@ import React, { useState } from 'react';
 import { SaucesSnacks } from '../data/data';
 import ProductCard from '../(components)/ProductCard';
 import { useMediaQuery } from 'react-responsive';
+import { usePathname } from 'next/navigation';
+
+
 
 function SaucesSnacksSection() {
   const [selectedIdx, setSelectedIdx] = useState(null);
   const isMobile = useMediaQuery({ maxWidth: 767 });
+  const pathname = usePathname();
 
   return (
     <section
       id="sauces-snacks"
-      className="w-full min-h-[500px] bg-white"
+      className={`w-full min-h-[500px] ${pathname === '/products/sauces-and-snacks' ? 'bg-bg_light_blue' : 'bg-white'}`}
     >
       <h2 className="text-[36px] font-semibold pl-8 text-center text-text_blue pt-[32px] font-inter">Sauces & Snacks</h2>
       <div className="w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-y-10 gap-x-8 px-4 py-8 items-stretch justify-items-center">

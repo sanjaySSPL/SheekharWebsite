@@ -3,15 +3,15 @@ import React, { useState } from 'react';
 import { PlatingAgents } from '../data/data';
 import ProductCard from '../(components)/ProductCard';
 import { useMediaQuery } from 'react-responsive';
-
+import { usePathname } from 'next/navigation';
 function PlatingAgentsSection() {
   const [selectedIdx, setSelectedIdx] = useState(null);
   const isMobile = useMediaQuery({ maxWidth: 767 });
-
+  const pathname = usePathname();
   return (
     <section
       id="plating-agents"
-      className="w-full min-h-[500px] bg-white"
+      className={`w-full min-h-[500px] ${pathname === '/products/plating-agents' ? 'bg-bg_light_blue' : 'bg-white'}`}
     >
       <h2 className="text-[36px] font-semibold pl-8 text-center text-text_blue pt-[32px] font-inter">Plating Agents</h2>
       <div className="w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-y-10 gap-x-8 px-4 py-8 items-stretch justify-items-center">
