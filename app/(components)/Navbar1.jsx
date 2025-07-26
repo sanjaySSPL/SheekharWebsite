@@ -7,9 +7,10 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { usePathname } from "next/navigation";
 import Button from "./Button";
 import { useAnimation } from "./AnimationContext";
+import PropTypes from 'prop-types';
 
 
-function Navbar1() {
+function Navbar1({ setShowExportOverlay }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isShrunk, setIsShrunk] = useState(false);
   const { showNavbarName } = useAnimation();
@@ -242,13 +243,14 @@ function Navbar1() {
               </Link>
             </motion.div>
             <motion.div variants={itemVariants}>
-              <Button
+              <button
                 button_link="#"
                 customPaddingClass="py-[4px] px-[18.5px] tracking-widest mx-[20px]"
-                onClick={() => setShowOverlay(true)}
+                onClick={() => setShowExportOverlay(true)}
+                className="bg-blue-500 text-white text-[20px] px-4 py-2 rounded-md mr-4"
               >
                 Talk to Experts
-              </Button>
+              </button>
             </motion.div>
           </motion.div>
 
@@ -354,5 +356,9 @@ function Navbar1() {
     </motion.nav>
   );
 }
+
+Navbar1.propTypes = {
+  setShowExportOverlay: PropTypes.func.isRequired,
+};
 
 export default Navbar1;
