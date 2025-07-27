@@ -29,7 +29,6 @@ const industry = [
   // { label: 'More', href: '#' },
 ];
 
-    const hoverColor = 'text-red-200'
 
 function Footer() {
   return (
