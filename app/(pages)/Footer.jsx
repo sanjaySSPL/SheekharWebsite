@@ -1,11 +1,12 @@
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaXTwitter, FaLinkedinIn } from 'react-icons/fa6';
+import {  FaInstagram, FaXTwitter, FaLinkedinIn } from 'react-icons/fa6';
+// import { FaFacebookF } from 'react-icons/fa';
 
 const quickLinks = [
   { label: 'Home', href: '/' },
   { label: 'About Us', href: '/aboutus ' },
-  { label: 'Ingredients', href: '/ingredients' },
-  { label: 'Services', href: '/services' },
+  { label: 'Ingredients', href: '/products' },
+  { label: 'Services', href: '/our-service' },
   { label: 'Career', href: '/career' },
 ];
 
@@ -28,7 +29,7 @@ const industry = [
   // { label: 'More', href: '#' },
 ];
 
-    const hoverColor = 'text-blue-200'
+    const hoverColor = 'text-red-200'
 
 function Footer() {
   return (
@@ -42,7 +43,7 @@ function Footer() {
               <li key={item.label}>
                 <a
                   href={item.href}
-                  className={`text-white text-base hover:${hoverColor} hover:scale-110 transition-colors hover:underline hover:underline-offset-4`}
+                  className={`text-white text-base hover:text-blue-100 hover:scale-110 transition-colors hover:underline hover:underline-offset-4`}
                 >
                   {item.label}
                 </a>
@@ -56,7 +57,7 @@ function Footer() {
           <ul className="space-y-[20px]">
             {industry.map((item) => (
               <li key={item.label}>
-                <a href={item.href} className={`text-white text-base hover:${hoverColor} hover:scale-110 transition-colors hover:underline hover:underline-offset-4`}>
+                <a href={item.href} className={`text-white text-base hover:text-blue-100 hover:scale-110 transition-colors hover:underline hover:underline-offset-4`}>
                   {item.label}
                 </a>
               </li>
@@ -69,7 +70,7 @@ function Footer() {
           <ul className="space-y-[20px]">
             {products.map((item) => (
               <li key={item.label}>
-                  <a href={item.href} className={`text-white text-base hover:${hoverColor} hover:scale-110 transition-colors hover:underline hover:underline-offset-4`}>
+                  <a href={item.href} className={`text-white text-base hover:text-blue-100 hover:scale-110 transition-colors hover:underline hover:underline-offset-4`}>
                   {item.label}
                 </a>
               </li>
@@ -80,7 +81,7 @@ function Footer() {
         <div className="col-span-2 flex flex-col items-start md:items-end mt-2 md:mt-0">
           <h3 className="text-white text-lg font-bold mb-4">Follow Us On</h3>
           <div className="flex gap-4 mb-2 md:mb-0">
-            <a href="#" className="rounded-full border border-white p-3 text-white hover:bg-white hover:text-[#1E164B] transition-colors"><FaFacebookF size={22} /></a>
+            {/* <a href="#" className="rounded-full border border-white p-3 text-white hover:bg-white hover:text-[#1E164B] transition-colors"><FaFacebookF size={22} /></a> */}
             <a href="#" className="rounded-full border border-white p-3 text-white hover:bg-white hover:text-[#1E164B] transition-colors"><FaInstagram size={22} /></a>
             <a href="#" className="rounded-full border border-white p-3 text-white hover:bg-white hover:text-[#1E164B] transition-colors"><FaXTwitter size={22} /></a>
             <a href="https://www.linkedin.com/company/sheekharr-ingredients-pvt-ltd" className="rounded-full border border-white p-3 text-white hover:bg-white hover:text-[#1E164B] transition-colors"><FaLinkedinIn size={22} /></a>

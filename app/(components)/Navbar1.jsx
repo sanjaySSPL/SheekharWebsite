@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 import Button from "./Button";
 import { useAnimation } from "./AnimationContext";
 import PropTypes from 'prop-types';
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 
 function Navbar1({ setShowExportOverlay }) {
@@ -15,6 +16,7 @@ function Navbar1({ setShowExportOverlay }) {
   const [isShrunk, setIsShrunk] = useState(false);
   const { showNavbarName } = useAnimation();
   const pathname = usePathname();
+  const [isProductsOpen, setIsProductsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -165,49 +167,61 @@ function Navbar1({ setShowExportOverlay }) {
               <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-[500px] bg-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-200 z-50 p-6 flex flex-col">
                 <div className="grid grid-cols-2 gap-x-8 gap-y-3">
                   <Link href="/products">
-                    <span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">
+                    <span className={`block px-2 py-2 rounded hover:bg-purple-100 cursor-pointer text-gray-800 ${
+                      pathname === "/products" ? "bg-purple-100 font-semibold" : ""
+                    }`}>
                       All Products
                     </span>
                   </Link>
                   <Link href="/products/advance-stabilizers">
-                    <span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">
+                    <span className={`block px-2 py-2 rounded hover:bg-purple-100 cursor-pointer text-gray-800 ${
+                      pathname === "/products/advance-stabilizers" ? "bg-purple-100 font-semibold" : ""
+                    }`}>
                       Advanced Stabilizers
                     </span>
                   </Link>
                   <Link href="/products#dairy-products">
-                    <span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">
+                    <span className={`block px-2 py-2 rounded hover:bg-purple-100 cursor-pointer text-gray-800 ${
+                      (pathname === "/products" && typeof window !== "undefined" && window.location.hash === "#dairy-products") ? "bg-purple-100 font-semibold" : ""
+                    }`}>
                       Best Sellers
                     </span>
                   </Link>
                   <Link href="/products/sauces-and-snacks">
-                    <span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">
+                    <span className={`block px-2 py-2 rounded hover:bg-purple-100 cursor-pointer text-gray-800 ${
+                      pathname === "/products/sauces-and-snacks" ? "bg-purple-100 font-semibold" : ""
+                    }`}>
                       Sauces & Snacks
                     </span>
                   </Link>
-                  
                   <Link href="/products/dessert-ingredients">
-                    <span className="block px-2 py-2 rounded hover:bg-purple-100 cursor-pointer text-gray-800">
+                    <span className={`block px-2 py-2 rounded hover:bg-purple-100 cursor-pointer text-gray-800 ${
+                      pathname === "/products/dessert-ingredients" ? "bg-purple-100 font-semibold" : ""
+                    }`}>
                       Dairy Based Dessert
                     </span>
                   </Link>
                   <Link href="/products/premixes">
-                    <span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">
+                    <span className={`block px-2 py-2 rounded hover:bg-purple-100 cursor-pointer text-gray-800 ${
+                      pathname === "/products/premixes" ? "bg-purple-100 font-semibold" : ""
+                    }`}>
                       Premixes
                     </span>
                   </Link>
                   <Link href="/products/dairy-ingredients">
-                    <span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">
+                    <span className={`block px-2 py-2 rounded hover:bg-purple-100 cursor-pointer text-gray-800 ${
+                      pathname === "/products/dairy-ingredients" ? "bg-purple-100 font-semibold" : ""
+                    }`}>
                       Dairy Products
                     </span>
                   </Link>
                   <Link href="/products/plating-agents">
-                    <span className="block px-2 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-800">
+                    <span className={`block px-2 py-2 rounded hover:bg-purple-100 cursor-pointer text-gray-800 ${
+                      pathname === "/products/plating-agents" ? "bg-purple-100 font-semibold" : ""
+                    }`}>
                       Plating Agents
                     </span>
                   </Link>
-                  {/* <span className="block px-2 py-2 rounded text-gray-400 cursor-not-allowed">Menu item</span> */}
-                  
-                  {/* <span className="block px-2 py-2 rounded text-gray-400 cursor-not-allowed">Menu item</span> */}
                 </div>
               </div>
             </motion.div>
@@ -308,12 +322,59 @@ function Navbar1({ setShowExportOverlay }) {
             </Link>
           </motion.div>
           <motion.div variants={mobileItemVariants}>
-            <Link href="/products">
-              <div className={`block text-sm px-2 py-4 hover:text-medium_blue transition duration-300 cursor-pointer
-                ${pathname.startsWith("/products") ? "text-blue-600 font-semibold" : ""}`}>
+            <div
+              className="flex items-center justify-between px-2 py-4 cursor-pointer hover:text-medium_blue transition duration-300"
+              onClick={() => setIsProductsOpen((prev) => !prev)}
+            >
+              <span className={`${pathname.startsWith("/products") ? "text-blue-600 font-semibold" : ""}`}>
                 Products
+              </span>
+              {isProductsOpen ? <FaChevronUp size={16} /> : <FaChevronDown size={16} />}
+            </div>
+            {isProductsOpen && (
+              <div className="pl-6 flex flex-col gap-1">
+                <Link href="/products">
+                  <span className={`block py-2 text-sm hover:text-blue-500 ${
+                    pathname === "/products" ? "text-blue-600 font-semibold bg-blue-50 rounded" : ""
+                  }`}>All Products</span>
+                </Link>
+                <Link href="/products/advance-stabilizers">
+                  <span className={`block py-2 text-sm hover:text-blue-500 ${
+                    pathname === "/products/advance-stabilizers" ? "text-blue-600 font-semibold bg-blue-50 rounded" : ""
+                  }`}>Advanced Stabilizers</span>
+                </Link>
+                <Link href="/products#dairy-products">
+                  <span className={`block py-2 text-sm hover:text-blue-500 ${
+                    (pathname === "/products" && typeof window !== "undefined" && window.location.hash === "#dairy-products") ? "text-blue-600 font-semibold bg-blue-50 rounded" : ""
+                  }`}>Best Sellers</span>
+                </Link>
+                <Link href="/products/sauces-and-snacks">
+                  <span className={`block py-2 text-sm hover:text-blue-500 ${
+                    pathname === "/products/sauces-and-snacks" ? "text-blue-600 font-semibold bg-blue-50 rounded" : ""
+                  }`}>Sauces & Snacks</span>
+                </Link>
+                <Link href="/products/dessert-ingredients">
+                  <span className={`block py-2 text-sm hover:text-blue-500 ${
+                    pathname === "/products/dessert-ingredients" ? "text-blue-600 font-semibold bg-blue-50 rounded" : ""
+                  }`}>Dairy Based Dessert</span>
+                </Link>
+                <Link href="/products/premixes">
+                  <span className={`block py-2 text-sm hover:text-blue-500 ${
+                    pathname === "/products/premixes" ? "text-blue-600 font-semibold bg-blue-50 rounded" : ""
+                  }`}>Premixes</span>
+                </Link>
+                <Link href="/products/dairy-ingredients">
+                  <span className={`block py-2 text-sm hover:text-blue-500 ${
+                    pathname === "/products/dairy-ingredients" ? "text-blue-600 font-semibold bg-blue-50 rounded" : ""
+                  }`}>Dairy Products</span>
+                </Link>
+                <Link href="/products/plating-agents">
+                  <span className={`block py-2 text-sm hover:text-blue-500 ${
+                    pathname === "/products/plating-agents" ? "text-blue-600 font-semibold bg-blue-50 rounded" : ""
+                  }`}>Plating Agents</span>
+                </Link>
               </div>
-            </Link>
+            )}
           </motion.div>
           <motion.div variants={mobileItemVariants}>
             <Link href="/our-service">

@@ -346,7 +346,7 @@ const Premixes = [
         image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605045/unsplash_5etk9qHwNNE_c6n4mu.webp"
     },
     {
-        title:"ice cream",
+        title:"Ice cream",
         description:"This ice cream base is carefully developed with emulsifiers and stabilizers that support aeration, prevent ice crystal formation, and maintain a smooth, creamy mouthfeel throughout shelf life. It offers flexibility for a wide range of flavor profiles, inclusions, and fat contents — from classic vanilla to rich chocolate or fruit-based variants.",
         description1:"Perfect for high-volume production, this base delivers batch-to-batch consistency, excellent melt resistance, and a satisfying, clean finish. It performs well across gravity-fed and pressure-fed machines, making it suitable for packaged ice cream, scoops, tubs, and novelty formats.",
         product:'',
@@ -376,7 +376,7 @@ const Premixes = [
         image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1751605045/unsplash_H2O9ARmAsIg_lcwidn.webp"
     },
     {
-        title:"Kulfy",
+        title:"Kulfi",
         description:"This kulfi formulation is made using a blend of premium milk solids, stabilizers, and emulsifiers to achieve a thick, creamy consistency and rich mouthfeel. It offers excellent shape retention and melt resistance, making it ideal for molded kulfis and stick formats.",
         description1:"Designed for commercial production, it supports consistent texture, clean finish, and authentic kulfi flavor. The base allows easy incorporation of traditional inclusions like cardamom, saffron, pistachio, or almond — and performs well across freezing, storage, and distribution.",
         product:'',
@@ -422,7 +422,7 @@ const Premixes = [
 ]
 const PlatingAgents = [
     {
-        title:"SorbTee B1 ",
+        title:"SorbTec B1 ",
         description:"A high-absorption plating agent ideal for converting liquid flavors, oils, and actives into free-flowing powders.",
         description1:"Sorbtec B1 provides excellent flow, uniformity, and stability—perfect for seasoning blends and dry premixes.",
         product:'',
@@ -436,7 +436,7 @@ const PlatingAgents = [
         image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1753269341/unsplash_hicsLTRz0DA_ne05sf.svg"
     },
     {
-        title:"SorbTee BR1",
+        title:"SorbTec BR1",
         description:"We create viscosity control systems foA robust plating agent tailored for richer, heavier oils and dense flavor systems. Sorbtec BR1 offers reliable absorption, excellent dry flow, and enhanced stability for bold seasoning blends and complex premixes.r both cold and hot-fill sauces.",
         description1:"They prevent water release and maintain smooth texture. Result: better pour, improved stability, and enhanced consumer experience",
         product:'',
@@ -450,7 +450,7 @@ const PlatingAgents = [
         image:"https://res.cloudinary.com/dipc3ow9z/image/upload/v1753269341/unsplash_wjepxrSgcpI_tr5lky.svg"
     },
     {
-        title:"SorbTee NP1",
+        title:"SorbTec NP1",
         description:"Sorbtec NP1 offers a neutral sensory profile, making it ideal for delicate flavor systems or color-sensitive applications. It absorbs a wide range of liquid ingredients—flavors, extracts, oils—while maintaining clarity and consistency in the final powder blend",
         description1:"NP1 is well-suited for clean-label and mild-flavored products where base interference must be minimal.",
         product:'',

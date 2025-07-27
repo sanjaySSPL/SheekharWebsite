@@ -20,7 +20,7 @@ function ProductCard({
     <motion.div
       layout
       className={`w-full md:w-full flex flex-col md:flex-row gap-0 border border-gray-200 rounded-lg bg-[#ffffff] p-3 md:p-6 mx-auto overflow-hidden flex-shrink-0 mb-2 md:mb-0 cursor-pointer ${
-        expanded ? 'h-auto' : 'h-[375px]'
+        expanded ? 'h-auto' : 'min-h-[374px] h-fit md:h-[374px]'
       }`}
       onClick={isMobile ? undefined : onClick}
       whileHover={!isMobile ? { scale: 1.02 } : {}}
