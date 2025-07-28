@@ -136,7 +136,7 @@ function Navbar1({ setShowExportOverlay }) {
             <motion.div variants={itemVariants}>
               <Link href="/">
                 <span
-                  className={`relative group py-4 px-2 text-[20px] tracking-wider hover:text-medium_blue transition duration-300 cursor-pointer
+                  className={`relative group py-4 px-2 text-[18px] tracking-wider hover:text-medium_blue transition duration-300 cursor-pointer
                     ${pathname === "/" ? "text-blue-600" : "text-text_blue"}`}
                 >
                   Home
@@ -147,7 +147,7 @@ function Navbar1({ setShowExportOverlay }) {
             </motion.div>
             <motion.div variants={itemVariants}>
               <Link href="/aboutus">
-                <span className={`relative group py-4 px-2 text-[20px] tracking-wider hover:text-medium_blue transition duration-300 cursor-pointer
+                <span className={`relative group py-4 px-2 text-[18px] tracking-wider hover:text-medium_blue transition duration-300 cursor-pointer
                   ${pathname === "/aboutus" ? "text-blue-600" : "text-text_blue"}`}>
                   About Us
                   <span className={`absolute left-0 -bottom-0.5 h-[2px] rounded-full transition-all duration-300
@@ -157,7 +157,7 @@ function Navbar1({ setShowExportOverlay }) {
             </motion.div>
             {/* Products Dropdown */}
             <motion.div className="relative group" variants={itemVariants}>
-              <span className={`relative group py-4 px-2 text-[20px] tracking-widest transition duration-300 cursor-pointer group-hover:text-medium_blue group-hover:bg-white group-focus:bg-white rounded
+              <span className={`relative group py-4 px-2 text-[18px] tracking-widest transition duration-300 cursor-pointer group-hover:text-medium_blue group-hover:bg-white group-focus:bg-white rounded
                 ${pathname.startsWith("/products") ? "text-blue-600" : "text-text_blue"}`}>
                 Ingredients
                 <span className={`absolute left-0 -bottom-0.5 h-[2px] rounded-full transition-all duration-300
@@ -228,7 +228,7 @@ function Navbar1({ setShowExportOverlay }) {
             {/* End Products Dropdown */}
             <motion.div variants={itemVariants}>
               <Link href="/our-service">
-                <span className={`relative group py-4 px-2 text-[20px] tracking-wider hover:text-medium_blue transition duration-300 cursor-pointer
+                <span className={`relative group py-4 px-2 text-[18px] tracking-wider hover:text-medium_blue transition duration-300 cursor-pointer
                   ${pathname === "/our-service" ? "text-blue-600" : "text-text_blue"}`}>
                   Services
                   <span className={`absolute left-0 -bottom-0.5 h-[2px] rounded-full transition-all duration-300
@@ -238,7 +238,7 @@ function Navbar1({ setShowExportOverlay }) {
             </motion.div>
             <motion.div variants={itemVariants}>
               <Link href="/career">
-                <span className={`relative group py-4 px-2 text-[20px] tracking-wider hover:text-medium_blue transition duration-300 cursor-pointer
+                <span className={`relative group py-4 px-2 text-[18px] tracking-wider hover:text-medium_blue transition duration-300 cursor-pointer
                   ${pathname === "/career" ? "text-blue-600" : "text-text_blue"}`}>
                   Career
                   <span className={`absolute left-0 -bottom-0.5 h-[2px] rounded-full transition-all duration-300
@@ -248,7 +248,7 @@ function Navbar1({ setShowExportOverlay }) {
             </motion.div>
             <motion.div variants={itemVariants}>
               <Link href="/contact">
-                <span className={`relative group py-4 px-2 text-[20px] tracking-wider hover:text-medium_blue transition duration-300 cursor-pointer
+                <span className={`relative group py-4 px-2 text-[18px] tracking-wider hover:text-medium_blue transition duration-300 cursor-pointer
                   ${pathname === "/contact" ? "text-blue-600" : "text-text_blue"}`}>
                   Contact
                   <span className={`absolute left-0 -bottom-0.5 h-[2px] rounded-full transition-all duration-300
@@ -261,7 +261,9 @@ function Navbar1({ setShowExportOverlay }) {
                 button_link="#"
                 customPaddingClass="py-[4px] px-[18.5px] tracking-widest mx-[20px]"
                 onClick={() => setShowExportOverlay(true)}
-                className="bg-blue-500 text-white text-[20px] px-4 py-2 rounded-md mr-4"
+                
+                
+                className="bg-blue-500 text-white text-[18px] px-4 py-2 rounded-md mr-4"
               >
                 Talk to Experts
               </button>
