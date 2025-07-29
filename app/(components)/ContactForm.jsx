@@ -21,7 +21,9 @@ export default function ContactForm() {
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="flex flex-col gap-2">
-          <label htmlFor="name" className="text-gray-800">Name<span className="text-red-500">*</span></label>
+          <label htmlFor="name" className="text-gray-800">
+            Name<span className="text-red-500">*</span>
+          </label>
           <input
             id="name"
             name="name"
@@ -31,7 +33,9 @@ export default function ContactForm() {
           />
         </div>
         <div className="flex flex-col gap-2">
-          <label htmlFor="surname" className="text-gray-800">Surname</label>
+          <label htmlFor="surname" className="text-gray-800">
+            Surname
+          </label>
           <input
             id="surname"
             name="surname"
@@ -39,9 +43,11 @@ export default function ContactForm() {
             placeholder="Enter your surname (optional)"
           />
         </div>
-        
+
         <div className="flex flex-col gap-2">
-          <label htmlFor="company" className="text-gray-800">Company Name<span className="text-red-500">*</span></label>
+          <label htmlFor="company" className="text-gray-800">
+            Company Name<span className="text-red-500">*</span>
+          </label>
           <input
             id="company"
             name="company"
@@ -51,7 +57,9 @@ export default function ContactForm() {
           />
         </div>
         <div className="flex flex-col gap-2">
-          <label htmlFor="category" className="text-gray-800">Category</label>
+          <label htmlFor="category" className="text-gray-800">
+            Category
+          </label>
           <input
             id="category"
             name="category"
@@ -60,6 +68,7 @@ export default function ContactForm() {
           />
         </div>
         <div className="flex flex-col gap-2">
+          {/*  <<------Original Contact Form-------- >>
           <label htmlFor="contactNumber" className="text-gray-800">Contact Number</label>
           <input
             id="contactNumber"
@@ -67,9 +76,31 @@ export default function ContactForm() {
             className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
             placeholder="Enter your contact number (optional)"
           />
+          */}
+          <label className="text-gray-800">Contact Number</label>
+          <div className="flex border border-gray-300 rounded-lg focus-within:ring-2 focus-within:ring-blue-400 overflow-hidden">
+            <input
+              type="text"
+              name="countryCode"
+              id="countryCode"
+              defaultValue="+91"
+              className="w-1/4 p-3 focus:outline-none border-r border-gray-300 bg-gray-50"
+              placeholder="+91"
+            />
+            <input
+              type="tel"
+              name="contactNumber"
+              id="contactNumber"
+              className="w-3/4 p-3 focus:outline-none"
+              placeholder="Enter your phone number"
+            />
+          </div>
         </div>
+
         <div className="flex flex-col gap-2">
-          <label htmlFor="email" className="text-gray-800">Email<span className="text-red-500">*</span></label>
+          <label htmlFor="email" className="text-gray-800">
+            Email<span className="text-red-500">*</span>
+          </label>
           <input
             id="email"
             name="email"
@@ -79,10 +110,11 @@ export default function ContactForm() {
             placeholder="Enter your email"
           />
         </div>
-        
       </div>
       <div className="flex flex-col gap-2">
-        <label htmlFor="query" className="text-gray-800">Query</label>
+        <label htmlFor="query" className="text-gray-800">
+          Query
+        </label>
         <textarea
           id="query"
           name="query"
@@ -97,7 +129,11 @@ export default function ContactForm() {
         Submit
       </button>
       {result && (
-        <div className={`mt-4 text-center ${result.success ? 'text-green-600' : 'text-red-600'}`}>{result.message}</div>
+        <div
+          className={`mt-4 text-center ${result.success ? "text-green-600" : "text-red-600"}`}
+        >
+          {result.message}
+        </div>
       )}
     </form>
   );

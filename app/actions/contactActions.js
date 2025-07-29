@@ -10,7 +10,8 @@ export async function submitContactForm(formData) {
     const email = formData.get('email');
     const company = formData.get('company');
     const category = formData.get('category'); // optional
-    const contactNumber = formData.get('contactNumber'); // optional
+    const contactNumber = formData.get('contactNumber'); 
+    const countryCode = formData.get('countryCode')// optional
     const query = formData.get('query'); // optional
 
     // Validate required fields
@@ -31,7 +32,16 @@ export async function submitContactForm(formData) {
     }
 
     // Send email using the email service
-    const emailResult = await sendContactEmail(formData);
+    const emailResult = await sendContactEmail({
+      name,
+      surname,
+      email,
+      company,
+      category,
+      contactNumber,
+      countryCode,
+      query,
+    });
     
     if (!emailResult.success) {
       return {
@@ -48,6 +58,7 @@ export async function submitContactForm(formData) {
       company,
       category,
       contactNumber,
+      countryCode,
       query,
       timestamp: new Date().toISOString()
     });

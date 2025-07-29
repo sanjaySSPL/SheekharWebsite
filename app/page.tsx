@@ -7,6 +7,7 @@ import Footer from './(pages)/Footer';
 import Certificate from './(ui)/Certificate';
 import HomePage1 from './(pages)/HomePages/HomePage1';
 import AboutUsSection from './(pages)/AboutUs/AboutUsSection';
+import Footer2 from './(pages)/Footer2';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <ContactUsPage />
         <Certificate />
         <Footer />
+        <Footer2 />
       </main>
     </div>
   );

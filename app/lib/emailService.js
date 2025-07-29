@@ -10,15 +10,8 @@ console.log('==================================');
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function sendContactEmail(formData) {
+export async function sendContactEmail({ name, surname, email, company, category, contactNumber, countryCode, query }) {
   try {
-    // Extract form data
-    const name = formData.get('name') || formData.name;
-    const surname = formData.get('surname') || formData.surname;
-    const email = formData.get('email') || formData.email;
-    const company = formData.get('company') || formData.company;
-    const query = formData.get('query') || formData.query;
-
     // Create email content
     const emailContent = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -31,6 +24,8 @@ export async function sendContactEmail(formData) {
           <p><strong>Name:</strong> ${name} ${surname || ''}</p>
           <p><strong>Email:</strong> ${email}</p>
           <p><strong>Company:</strong> ${company}</p>
+          ${category ? `<p><strong>Category:</strong> ${category}</p>` : ''}
+          ${countryCode || contactNumber ? `<p><strong>Contact Number:</strong> ${countryCode ? countryCode + ' ' : ''}${contactNumber || ''}</p>` : ''}
           ${query ? `<p><strong>Query:</strong> ${query}</p>` : ''}
         </div>
         
