@@ -15,7 +15,7 @@ const DairyProduct = [
         image : 'https://res.cloudinary.com/dipc3ow9z/image/upload/v1753174571/unsplash_SGSJOJcEIL8_sguwbg.svg'
     },
     {
-        title:'paneer/ chenna ',
+        title:'Paneer/ Chenna ',
         product: 'SC 600',
         description:'SC600 is a high-performance formulation created to enhance the process efficiency and product quality of fresh dairy solids like paneer and chhena. It improves curd formation, increases moisture binding, and helps achieve a smooth, elastic texture in the final product.',
         description1 : 'For paneer, SC600 ensures better sliceability, reduced crumbling, and consistent softness. For chhena, it supports smooth kneading and shaping—ideal for sweets like rasgulla, sandesh, and other Bengali desserts. The formulation minimizes syneresis, improves cooking performance, and enhances final product stability across shelf life.',
@@ -30,7 +30,7 @@ const DairyProduct = [
         image:'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751532219/paneer-cheena_szv30t.webp'
     },
     {
-        title:'flavored milk and milk-shakes ',
+        title:'Flavored milk and milk-shakes ',
         product: 'Creamtec FM',
         description:'This range includes flavored milk for daily refreshment and milkshakes for a more indulgent experience. Both are formulated using standardized milk and carefully selected flavors, offering excellent consistency, shelf stability, and wide taste appeal.',
         description1 : 'Flavored milk delivers a lighter body with balanced sweetness—ideal for schools, retail bottles, and on-the-go formats. Milkshakes, on the other hand, offer a fuller, creamier texture suited for dessert menus, café counters, and premium chilled shelves. The formulations are heat- and cold-chain compatible, supporting both UHT and chilled supply models. Available in classic and fusion flavors like chocolate, vanilla, cardamom, strawberry, and more.',
@@ -45,7 +45,7 @@ const DairyProduct = [
         image:'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751532219/flaovored-milk-milk-shakes_xlzy3l.webp'
     },
     {
-        title:'flavored yogurt ',
+        title:'Flavored yogurt ',
         product: 'Cream Tec CA',
         description:'This specialized stabilizer blend is designed to enhance the structure, body, and overall sensory profile of flavored yoghurt. It supports uniform texture, prevents whey separation, and allows for clean flavor delivery across fruit, vanilla, or dessert-inspired variants.',
         description1 :'The system works effectively in stirred or set yoghurt formats and offers excellent stability across chilled storage and distribution. It helps reduce syneresis while maintaining a creamy, spoonable body that meets both traditional and modern market expectations.',
@@ -60,7 +60,7 @@ const DairyProduct = [
         image:'https://res.cloudinary.com/dipc3ow9z/image/upload/v1751532218/flavoured-yoghurt_gwygjs.webp'
     },
     {
-        title:'lassi, chaas & shrikhand ',
+        title:'Lassi, Chaas & Shrikhand ',
         product: 'CreamTec FFM',
         description:'This curated range celebrates the versatility of cultured dairy. Chaas is a light, spiced buttermilk known for its digestive properties and cooling effect—ideal for everyday consumption. Lassi offers a thicker, mildly sweet or flavored refreshment with a smooth, creamy mouthfeel. Shrikhand is a spoonable dessert made from strained curd, offering rich texture and festive flavors like saffron, mango, and cardamom.',
         description1:'Each product is crafted for consistency, clean taste, and stability under chilled storage. From single-serve packs to bulk formats, the range caters to both traditional and contemporary palates',
