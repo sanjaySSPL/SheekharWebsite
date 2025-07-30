@@ -3,7 +3,9 @@ import SecondHeroSection from '../(pages)/SecondHeroSection'
 import AboutSheekharr from '../(pages)/AboutUs/AboutSheekharr'
 import WhatWeDo from '../(pages)/AboutUs/WhatWeDo'
 // import OurOffice from "../(pages)/AboutUs/OurOffice"
-import Footer from "../(pages)/Footer"
+import Footer2 from "../(pages)/Footer2"
+// import Globe  from "../(components)/Globe"
+import Globe2 from "../(components)/Globe2"
 
 function page() {
   return (
@@ -11,8 +13,10 @@ function page() {
       <SecondHeroSection />
       <AboutSheekharr />
       <WhatWeDo />
+      {/* <Globe /> */}
+      <Globe2 />
       {/* <OurOffice /> */}
-      <Footer />
+      <Footer2  />
     </div>
   )
 }

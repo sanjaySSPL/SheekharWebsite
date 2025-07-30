@@ -1,6 +1,8 @@
 'use client'
 import React from 'react'
 import {motion} from 'framer-motion'
+import Globe from '../../components/Globe'
+
 function TestPage() {
   return (
 
@@ -33,6 +35,10 @@ function TestPage() {
                 Scroll-in Animation
         </motion.div>
 
+        {/* 3D Interactive Globe */}
+        <div className="h-[400px] w-full mt-8">
+            <Globe />
+        </div>
 
     </div>
     )

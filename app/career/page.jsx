@@ -1,7 +1,7 @@
 import React from 'react'
 import SecondHeroSection from '../(pages)/SecondHeroSection'
 import CareerContactFormServerAction from '../(components)/CareerContactFormServerAction'
-import Footer from '../(pages)/Footer'
+import Footer2 from '../(pages)/Footer2'
 import career from '../data/careerOpportunity'
 import CareerCard from '../(components)/CareerCard'
 
@@ -32,7 +32,7 @@ function page() {
 
 
       </div>
-      <Footer />
+      <Footer2 />
     </div>
   )
 }

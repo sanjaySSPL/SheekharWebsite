@@ -2,7 +2,7 @@ import React from 'react'
 import SecondHeroSection from '../(pages)/SecondHeroSection'
 import MapComponent from '../(components)/MapComponent'
 import ContactUsPage2 from '../(pages)/ContactUsPage2'
-import Footer from '../(pages)/Footer'
+import Footer2 from '../(pages)/Footer2'
 
 function page() {
   return (
@@ -10,7 +10,7 @@ function page() {
       <SecondHeroSection />
       <MapComponent />
       <ContactUsPage2 />
-      <Footer />
+      <Footer2 />
       
     </div>
   )
