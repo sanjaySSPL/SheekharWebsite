@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function AboutSheekharr() {
   return (
-    <div className="h-[750px] md:h-[400px] w-full relative pt-1">
+    <div className="h-[750px] md:h-[480px] w-full relative pt-1 bg-[#eef7ff]">
       <div className="h-[284px] w-[100dvw] pt-[20px] md:pt-0 mt-[20px] md:mt-[56px]  md:ml-[55px]">
         <h2 className="text-[40px] italic font-bold font-inter text-text_blue md:text-start text-center mb-[30px] md:mb-[20px]">
           About Sheekharr
