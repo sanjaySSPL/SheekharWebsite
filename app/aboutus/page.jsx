@@ -6,6 +6,9 @@ import WhatWeDo from '../(pages)/AboutUs/WhatWeDo'
 import Footer2 from "../(pages)/Footer2"
 // import Globe  from "../(components)/Globe"
 import Globe2 from "../(components)/Globe2"
+import OurVision from '../(pages)/AboutUs/OurVision'
+import OurMission from '../(pages)/AboutUs/OurMission'
+import OurEthicsLoyalty from '../(pages)/AboutUs/OurEthicsLoyalty'
 
 function page() {
   return (
@@ -13,6 +16,9 @@ function page() {
       <SecondHeroSection />
       <AboutSheekharr />
       <WhatWeDo />
+      <OurVision />
+      <OurMission />
+      <OurEthicsLoyalty />
       {/* <Globe /> */}
       <Globe2 />
       {/* <OurOffice /> */}
