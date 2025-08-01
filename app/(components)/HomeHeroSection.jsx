@@ -88,7 +88,7 @@ function HomeHeroSection() {
                   fill="black"
                   style={{ letterSpacing: '1' }}
                 >
-                  starch
+                  Ingredients
                 </text>
               </mask>
             </defs>
