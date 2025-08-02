@@ -36,7 +36,7 @@ function HomeHeroSection() {
         /> */}
         <video
           className="w-full h-full object-cover absolute inset-0"
-          src="https://res.cloudinary.com/dipc3ow9z/video/upload/v1752736135/website_video_hc9zod.mp4"
+          src="https://res.cloudinary.com/dipc3ow9z/video/upload/v1754114971/sheekharr_intro_1_2_ialygw.mp4"
           autoPlay
           loop
           muted
@@ -44,7 +44,8 @@ function HomeHeroSection() {
           preload="metadata" // Add this to load only the metadata initially
         >
           <source
-            src="https://res.cloudinary.com/dipc3ow9z/video/upload/v1752736135/website_video_hc9zod.mp4"
+            src="https://res.cloudinary.com/dipc3ow9z/video/upload/v1754114971/sheekharr_intro_1_2_ialygw.mp4
+            "
             type="video/mp4"
           />
           Your browser does not support the video tag.

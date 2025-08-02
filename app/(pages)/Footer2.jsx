@@ -49,43 +49,44 @@ function Footer2() {
               accessibility and all round security.
             </p>
           </div>
+          <div className="md:col-span-2 grid grid-cols-2 md:grid-cols-3 gap-8">
+            {/* Quick Links */}
+            <div className="flex flex-col items-start md:ml-[120px] md:w-auto w-fit">
+              <h3 className="text-gray-800 font-bold text-lg mb-4">
+                Quick Links
+              </h3>
+              <ul className="space-y-2">
+                {quickLinks.map((item) => (
+                  <li key={item.label}>
+                    <a
+                      href={item.href}
+                      className="text-gray-600 hover:text-[#1D4E7A] hover:font-semibold transition-colors duration-200 text-sm"
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-          {/* Quick Links */}
-          <div className=" flex align-middle justify-center flex-col items-start md:ml-[120px]">
-            <h3 className="text-gray-800 font-bold text-lg mb-4">
-              Quick Links
-            </h3>
-            <ul className="space-y-2">
-              {quickLinks.map((item) => (
-                <li key={item.label}>
-                  <a
-                    href={item.href}
-                    className="text-gray-600 hover:text-[#1D4E7A] hover:font-semibold transition-colors duration-200 text-sm"
-                  >
-                    {item.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Legal Links */}
-          <div className="flex align-middle justify-center flex-col items-start md:ml-20">
-            <h3 className="text-gray-800 font-bold text-lg mb-4 text start">
-              Ingredients
-            </h3>
-            <ul className="space-y-2">
-              {legalLinks.map((item) => (
-                <li key={item.label}>
-                  <a
-                    href={item.href}
-                    className="text-gray-600 hover:text-[#1D4E7A] hover:font-semibold transition-colors duration-200 text-sm"
-                  >
-                    {item.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            {/* Legal Links */}
+            <div className="flex flex-col items-start md:ml-20 md:w-auto w-fit">
+              <h3 className="text-gray-800 font-bold text-lg mb-4">
+                Ingredients
+              </h3>
+              <ul className="space-y-2">
+                {legalLinks.map((item) => (
+                  <li key={item.label}>
+                    <a
+                      href={item.href}
+                      className="text-gray-600 hover:text-[#1D4E7A] hover:font-semibold transition-colors duration-200 text-sm"
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           {/* Support Contact */}

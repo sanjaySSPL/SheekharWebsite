@@ -90,7 +90,7 @@ function Navbar1({ setShowExportOverlay }) {
   };
   return (
     <motion.nav
-      className="h-[100px] w-[100dvw] bg-white  fixed top-0 z-50 flex align-middle justify-center items-center"
+      className="h-[100px] w-[100dvw] bg-white px-4 fixed top-0 z-50 flex align-middle justify-center items-center"
       animate={{ height: isShrunk ? 75 : 100 }}
       transition={{ type: "spring", stiffness: 300, damping: 30 }}
     >
@@ -111,15 +111,15 @@ function Navbar1({ setShowExportOverlay }) {
               <Image
                 src="/logo_only_no_background.png"
                 alt="logo"
-                width={50}
-                height={50}
+                width={80}
+                height={80}
               />
             </motion.div>
 
             {showNavbarName && (
               <motion.span
                 layoutId="brand-name"
-                className="text-text_blue text-[20px] tracking-wider font-semibold"
+                className="text-text_blue text-[20px] hiddden tracking-wider font-semibold"
               >
                 Sheekharr Ingredients Pvt Ltd
               </motion.span>
