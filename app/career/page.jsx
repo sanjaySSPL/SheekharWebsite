@@ -1,9 +1,10 @@
 import React from 'react'
 import SecondHeroSection from '../(pages)/SecondHeroSection'
 import CareerContactFormServerAction from '../(components)/CareerContactFormServerAction'
-import Footer2 from '../(pages)/Footer2'
+// import Footer2 from '../(pages)/Footer2'
 import career from '../data/careerOpportunity'
 import CareerCard from '../(components)/CareerCard'
+import Footer from '../(pages)/Footer'
 
 function page() {
   return (
@@ -32,7 +33,8 @@ function page() {
 
 
       </div>
-      <Footer2 />
+      {/* <Footer2 /> */}
+      <Footer />
     </div>
   )
 }
