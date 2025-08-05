@@ -7,6 +7,7 @@ import Footer from './(pages)/Footer';
 import Certificate from './(ui)/Certificate';
 import HomePage1 from './(pages)/HomePages/HomePage1';
 import AboutUsSection from './(pages)/AboutUs/AboutUsSection';
+import DiamondInteractive from './(components)/DiamondInteractive';
 // import Footer2 from './(pages)/Footer2';
 
 
@@ -20,6 +21,8 @@ export default function Home() {
         <SolveIndustryStandard />
         <AboutUsSection />
         <ChooseSheekharIngredient />
+        <DiamondInteractive />
+        {/* <Test /> */}
         <ContactUsPage />
         <Certificate />
         <Footer />
