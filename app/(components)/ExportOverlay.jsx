@@ -36,7 +36,7 @@ function ExportOverlay({ show, onClose }) {
               </div>
               {/* Download Brochure */}
               <a
-                href="/brochure.pdf" // Replace with actual path
+                href="/Sheekharr_Brochure.pdf" // Replace with actual path
                 download
                 className="bg-gray-100 text-green-600 border  hover:bg-white font-semibold px-4 py-3 rounded shadow hover:bg-gray-100 transition"
               >
