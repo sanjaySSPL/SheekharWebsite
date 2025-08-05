@@ -157,7 +157,7 @@ const DiamondInteractive = () => {
               <div className={`transition-all duration-300 ${
                 hoveredDiamond === item.id ? 'opacity-100 visible' : 'opacity-0 invisible'
               }`}>
-                <div className="mt-3 p-3 bg-white border-2 bg-red-400 w-[300px] border-gray-400 rounded-md shadow-xl">
+                <div className="mt-3 p-3 bg-white border-2  w-[300px] border-gray-400 rounded-md shadow-xl">
                   <p className="text-xs text-gray-700 leading-relaxed">
                     {item.description}
                   </p>
