@@ -10,7 +10,6 @@ import AboutUsSection from './(pages)/AboutUs/AboutUsSection';
 import DiamondInteractive from './(components)/DiamondInteractive';
 // import Footer2 from './(pages)/Footer2';
 
-
 export default function Home() {
   return (
     <div className="">
@@ -20,7 +19,7 @@ export default function Home() {
         <ProductScroll />
         <SolveIndustryStandard />
         <AboutUsSection />
-        <ChooseSheekharIngredient />
+        {/* <ChooseSheekharIngredient /> */}
         <DiamondInteractive />
         {/* <Test /> */}
         <ContactUsPage />
