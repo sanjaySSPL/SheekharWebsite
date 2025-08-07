@@ -2,7 +2,7 @@ import React from 'react'
 
 function AboutUsSection() {
   return (
-    <div className='md:w-full md:h-[400px] h-auto py-[60px] bg-bg_light_blue px-20 my-10'>
+    <div className='md:w-full md:h-[400px] h-auto py-[60px] bg-bg_light_blue px-5 md:px-20 my-10'>
 
         <h1 className='text-start text-text_blue text-[34px] italic my-5 font-semibold'>About Us</h1>
 

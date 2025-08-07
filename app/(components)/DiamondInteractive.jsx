@@ -1,12 +1,7 @@
-// DiamondInteractive.jsx
 'use client'
 import React, { useState } from 'react';
 
-const DiamondInteractive = () => {
-  const [hoveredDiamond, setHoveredDiamond] = useState(null);
-
-  // Updated data with junction points for L-shaped lines
-  const diamondData = [
+const diamondData = [
     {
       id: 1,
       title: "Customized, Problem-Specific Solutions",
@@ -141,126 +136,158 @@ const DiamondInteractive = () => {
     }
   ];
 
+const DiamondInteractive = () => {
+  const [hoveredDiamond, setHoveredDiamond] = useState(null);
+  const [expandedCard, setExpandedCard] = useState(null); // For mobile
+
   return (
-    <div className="hidden md:block w-full h-fit bg-green-300 flex items-center justify-center overflow-hidden">
-      {/* Main Title */}
-      <div className="absolute top-8 left-1/2 transform -translate-x-1/2 z-10">
-        <h1 className="text-2xl font-bold text-black">Sheekhar Benefits</h1>
-      </div>
+    <>
+      {/* Desktop/Tablet View: Your original logic remains, with md:block */}
+      <div className="hidden md:block w-full h-fit flex items-center justify-center overflow-hidden relative">
+        {/* Main Title */}
+        {/* <div className="absolute top-8 left-1/2 transform -translate-x-1/2 z-10">
+          <h1 className="text-2xl font-bold text-black">Sheekhar Benefits</h1>
+        </div> */}
 
-      {/* Fixed Size Container */}
-      <div
-        className="relative mx-auto bg-red-400"
-        style={{
-          width: '900px',
-          height: '55 0px',
-          minWidth: '900px',
-          minHeight: '500px'
-        }}
-      >
-
-        {/* SVG for L-shaped connection lines with junction points */}
-        {/* <svg 
-          className="absolute top-0 left-0 pointer-events-none" 
-          width="900" 
-          height="700"
-          style={{ zIndex: 10 }}
-        > */}
-        {diamondData.map((item) => (
-          <>
-          <img src={item.line_image} 
-          className='absolute scale-[0.66]'
-           alt='' 
-           key={item.id}
-           style={{
-            top: `${item.line_top}px`,
-            left: `${item.line_left}px`,
+        {/* Fixed Size Container */}
+        <div
+          className="relative mx-auto"
+          style={{
+            width: '900px',
+            height: '550px',
+            minWidth: '900px',
+            minHeight: '500px'
           }}
-          />
-          
-                  {item.filler_line && <img src={item.filler_line} 
-                  className='absolute scale-[0.66]'
-                   alt='' 
-                   key={item.id}
-                   style={{
-                    top: `${item.filler_line_top}px`,
-                    left: `${item.filler_line_left}px`,
-                   }}
-                   />}
-          </>
-        ))}
-
-
-        {/* </svg> */}
-
-
-        {diamondData.map((item) => (
-          <div key={item.id}>
-
-            {/* Title Container - FIXED POSITION */}
-            <div
-              className="absolute text-center cursor-pointer"
-              style={{
-                top: `${item.titleTop}px`,
-                left: `${item.titleLeft}px`,
-                transform: 'translate(-50%, -50%)',
-                zIndex: hoveredDiamond === item.id ? 50 : 20,
-                width: '420px'
-              }}
-
-            >
-              {/* Title Text - Always Visible */}
-              <div className="mb-2 cursor-pointer"
-                onMouseEnter={() => setHoveredDiamond(item.id)}
-              onMouseLeave={() => setHoveredDiamond(null)}
-              >
-                <h3 className="text-[19px] font-medium text-[#343884]  leading-tight">
-                  {item.title}
-                </h3>
-
-              </div>
-
-              {/* Description - Only Visible on Hover */}
-              <div className={`transition-all duration-300 ${hoveredDiamond === item.id ? 'opacity-100 visible' : 'opacity-0 invisible'
-                }`}>
-                <div className="mt-3 p-3 bg-white w-[300px] w-full border-gray-400 rounded-md ">
-                  <p className="text-[15px] text-start text-gray-700 leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* SVG Diamond from Public Folder - Hover Target */}
-            <div
-              className="absolute cursor-pointer"
-              style={{
-                top: `${item.diamondTop}px`,
-                left: `${item.diamondLeft}px`,
-                transform: 'translate(-50%, -50%)',
-                zIndex: 30
-              }}
-              onMouseEnter={() => setHoveredDiamond(item.id)}
-              onMouseLeave={() => setHoveredDiamond(null)}
-            >
-              {/* Using SVG from public/Diamond.svg */}
+        >
+          {/* L-Shaped Connection Lines */}
+          {diamondData.map((item) => (
+            <React.Fragment key={`line-${item.id}`}>
               <img
-                src="/Diamond.svg"
-                alt="diamond"
-                className={`w-8 h-12 scale-[2.5] transition-all duration-200 ${hoveredDiamond === item.id ? 'scale-110' : 'hover:scale-105'
-                  }`}
+                src={item.line_image}
+                className="absolute scale-[0.66]"
+                alt=""
                 style={{
-                  filter: hoveredDiamond === item.id
-                    ? item.hoverFilter
-                    : 'none'
+                  top: `${item.line_top}px`,
+                  left: `${item.line_left}px`,
                 }}
               />
-            </div>
+              {item.filler_line && (
+                <img
+                  src={item.filler_line}
+                  className="absolute scale-[0.66]"
+                  alt=""
+                  style={{
+                    top: `${item.filler_line_top}px`,
+                    left: `${item.filler_line_left}px`,
+                  }}
+                />
+              )}
+            </React.Fragment>
+          ))}
 
-          </div>
-        ))}
+          {/* Diamonds + Titles */}
+          {diamondData.map((item) => (
+            <div key={item.id}>
+              {/* Title Box */}
+              <div
+                className="absolute text-center cursor-pointer"
+                style={{
+                  top: `${item.titleTop}px`,
+                  left: `${item.titleLeft}px`,
+                  transform: 'translate(-50%, -50%)',
+                  zIndex: hoveredDiamond === item.id ? 50 : 20,
+                  width: '420px',
+                }}
+              >
+                <div
+                  className="mb-2 cursor-pointer"
+                  onMouseEnter={() => setHoveredDiamond(item.id)}
+                  onMouseLeave={() => setHoveredDiamond(null)}
+                >
+                  <h3 className="text-[19px] font-medium text-[#343884] leading-tight">
+                    {item.title}
+                  </h3>
+                </div>
+                <div
+                  className={`transition-all duration-300 ${hoveredDiamond === item.id ? 'opacity-100 visible' : 'opacity-0 invisible'
+                    }`}
+                >
+                  <div className="mt-3 p-3 bg-white w-[300px] w-full border-gray-400 rounded-md ">
+                    <p className="text-[15px] text-start text-gray-700 leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {/* Diamond Icon */}
+              <div
+                className="absolute cursor-pointer"
+                style={{
+                  top: `${item.diamondTop}px`,
+                  left: `${item.diamondLeft}px`,
+                  transform: 'translate(-50%, -50%)',
+                  zIndex: 30,
+                }}
+                onMouseEnter={() => setHoveredDiamond(item.id)}
+                onMouseLeave={() => setHoveredDiamond(null)}
+              >
+                <img
+                  src="/Diamond.svg"
+                  alt="diamond"
+                  className={`w-8 h-12 scale-[2.5] transition-all duration-200 ${hoveredDiamond === item.id ? 'scale-110' : 'hover:scale-105'
+                    }`}
+                  style={{
+                    filter: hoveredDiamond === item.id
+                      ? item.hoverFilter
+                      : 'none'
+                  }}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+
+      {/* Mobile View: Touch-friendly stacked accordion */}
+      <div className="block md:hidden w-full px-2 py-6">
+        <h1 className="text-lg font-bold text-black text-center mb-5">Sheekhar Benefits</h1>
+        <div className="space-y-3">
+          {diamondData.map((item) => (
+            <div
+              key={item.id}
+              className="rounded-lg border border-gray-200 bg-white px-4 py-4 shadow-sm"
+              onClick={() => setExpandedCard(expandedCard === item.id ? null : item.id)}
+              style={{ cursor: 'pointer' }}
+            >
+              <div className="flex items-center">
+                <img
+                  src="/Diamond.svg"
+                  alt="diamond"
+                  className="w-7 h-7 mr-3"
+                  style={{
+                    filter: expandedCard === item.id ? item.hoverFilter : 'none'
+                  }}
+                />
+                <h3 className="text-base font-semibold text-[#343884] flex-grow">
+                  {item.title}
+                </h3>
+                <svg
+                  className={`w-5 h-5 ml-2 transition-transform ${expandedCard === item.id ? 'rotate-180' : ''}`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+              {expandedCard === item.id && (
+                <div className="mt-3 text-sm text-gray-700">{item.description}</div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
   );
 };
 
