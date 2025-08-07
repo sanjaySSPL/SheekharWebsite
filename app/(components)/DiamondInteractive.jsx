@@ -145,13 +145,13 @@ const DiamondInteractive = () => {
       {/* Desktop/Tablet View: Your original logic remains, with md:block */}
       <div className="hidden md:block w-full h-fit flex items-center justify-center overflow-hidden relative">
         {/* Main Title */}
-        {/* <div className="absolute top-8 left-1/2 transform -translate-x-1/2 z-10">
-          <h1 className="text-2xl font-bold text-black">Sheekhar Benefits</h1>
-        </div> */}
+        <div className="absolute top-8 left-1/2 transform -translate-x-1/2 z-10">
+          <h1 className="text-2xl font-bold text-black text-[20px] md:text-[36px] text-blue-900">Why Choose Sheekharr</h1>
+        </div>
 
         {/* Fixed Size Container */}
         <div
-          className="relative mx-auto"
+          className="relative mx-auto mt-36 "
           style={{
             width: '900px',
             height: '550px',
@@ -250,7 +250,7 @@ const DiamondInteractive = () => {
 
       {/* Mobile View: Touch-friendly stacked accordion */}
       <div className="block md:hidden w-full px-2 py-6">
-        <h1 className="text-lg font-bold text-black text-center mb-5">Sheekhar Benefits</h1>
+        <h1 className="text-[34px] text-blue-900 font-bold text-black text-center mb-5">Why Choose Sheekharr?</h1>
         <div className="space-y-3">
           {diamondData.map((item) => (
             <div
