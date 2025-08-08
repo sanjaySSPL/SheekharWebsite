@@ -77,7 +77,8 @@ function Footer() {
           </ul>
         </div>
         {/* Social (on mobile, span both columns at the bottom) */}
-        <div className="col-span-2 flex flex-col items-start md:items-end mt-2 md:mt-0">
+        <div className="col-span-2 flex flex-col items-start md:items-end mt-2 md:mt-0 ">
+     
           <h3 className="text-white text-lg font-bold mb-4">Follow Us On</h3>
           <div className="flex gap-4 mb-2 md:mb-0">
             {/* <a href="#" className="rounded-full border border-white p-3 text-white hover:bg-white hover:text-[#1E164B] transition-colors"><FaFacebookF size={22} /></a> */}

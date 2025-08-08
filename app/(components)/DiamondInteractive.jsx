@@ -93,7 +93,7 @@ const diamondData = [
     {
       id: 5,
       title: "Improved Stability & Appearance",
-      description: "At Sheekhar, we make sure our products always give the same good results, no matter where or how they're used. We focus on strong shelf life, reliable texture, and stable performance—so you don't have to worry about changes in the final product.",
+      description: "At Sheekharr, we make sure our products always give the same good results, no matter where or how they're used. We focus on strong shelf life, reliable texture, and stable performance—so you don't have to worry about changes in the final product.",
       diamondTop: 298,
       diamondLeft: 536,
       titleTop: 315,
@@ -115,7 +115,7 @@ const diamondData = [
     {
       id: 6,
       title: "Good Quality",
-      description: "With Sheekhar's ingredients, you can get more output and reduce waste. We help you improve things like water retention, fat holding, and consistency—so that you waste less material and get more product from the same amount of raw material.",
+      description: "With Sheekharr's ingredients, you can get more output and reduce waste. We help you improve things like water retention, fat holding, and consistency—so that you waste less material and get more product from the same amount of raw material.",
       diamondTop: 298,
       diamondLeft: 450,
       titleTop: 453,

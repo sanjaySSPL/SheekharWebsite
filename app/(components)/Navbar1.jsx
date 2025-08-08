@@ -198,7 +198,7 @@ function Navbar1({ setShowExportOverlay }) {
                     <span className={`block px-2 py-2 rounded hover:bg-purple-100 cursor-pointer text-gray-800 ${
                       pathname === "/products/dessert-ingredients" ? "bg-purple-100 font-semibold" : ""
                     }`}>
-                      Dairy Based Dessert
+                      Dairy Based Desserts
                     </span>
                   </Link>
                   <Link href="/products/premixes">
