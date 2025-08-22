@@ -17,7 +17,7 @@ function CareerCard({
   location = 'Navi mumbai, India',
   experience = '2–5 Years',
   employment = 'Full-time',
-  description = "We’re hiring a Sales Coordinator to support our growing B2B operations at Sheekharr. You'll manage client communication, order processing, and coordination between sales, logistics, and accounts teams. If you're organized, proactive, and great with follow-ups, this role is for you.",
+  description = "We're hiring a Sales Coordinator to support our growing B2B operations at Neyohm. You'll manage client communication, order processing, and coordination between sales, logistics, and accounts teams. If you're organized, proactive, and great with follow-ups, this role is for you.",
   buttonLink = '/career/form',
   buttonText = 'Apply',
 }) {

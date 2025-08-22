@@ -36,17 +36,17 @@ function ExportOverlay({ show, onClose }) {
               </div>
               {/* Download Brochure */}
               <a
-                href="/Sheekharr_Brochure.pdf" // Replace with actual path
+                href="/Neyohm_Brochure.pdf" // Replace with actual path
                 download
                 className="bg-gray-100 text-green-600 border  hover:bg-white font-semibold px-4 py-3 rounded shadow hover:bg-gray-100 transition"
               >
                 Download Brochure
               </a>
               <a
-                href="mailto:info@sheekharr.com"
+                href="mailto:info@neyohm.com"
                 className="bg-gray-100 hover:bg-white text-blue-700 font-semibold px-4 py-3 rounded shadow hover:bg-gray-100 transition"
               >
-                info@sheekharr.com
+                info@neyohm.com
               </a>
               {/* WhatsApp Button */}
               <a
@@ -64,7 +64,7 @@ function ExportOverlay({ show, onClose }) {
                  
                  
                  <a
-                   href="https://maps.google.com/?q=Sheekharr+Starch+Private+Limited+Plot+No+A+Rupa+Solitaire+Millenium+Business+Park+14th+Floor+Thane+Belapur+Road+Navi+Mumbai+Maharashtra+400710"
+                   href="https://maps.google.com/?q=Neyohm+Starch+Private+Limited+Plot+No+A+Rupa+Solitaire+Millenium+Business+Park+14th+Floor+Thane+Belapur+Road+Navi+Mumbai+Maharashtra+400710"
                    target="_blank"
                    rel="noopener noreferrer"
                    className="  font-semibold px-6 py-3 rounded shadow bg-gray-100 text-blue-600 hover:bg-white hover:text-blue-600 transition flex items-center gap-2"
@@ -77,7 +77,7 @@ function ExportOverlay({ show, onClose }) {
                  </a>
                  <span className="text-lg font-semibold text-gray-800 mt-5">Address:</span>
                  <div className="bg-white p-4 rounded-lg mt-1 shadow-md border-l-4 border-blue-500">
-                   <div className="font-semibold text-gray-900 mb-1">Sheekharr Starch Private Limited</div>
+                   <div className="font-semibold text-gray-900 mb-1">Neyohm Innovations</div>
                    <div className="text-gray-700 text-sm leading-relaxed">
                      Plot No. A, Rupa Solitaire Millenium Business Park, 14th Floor<br />
                      Thane Belapur Road, Navi Mumbai,<br />

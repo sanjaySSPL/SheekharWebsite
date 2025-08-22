@@ -15,8 +15,8 @@ function Logo({ startAnimation = false }) {
     }
   };
 
-  // Animation variants for SHEEKHARR text (comes from above)
-  const sheekharrVariants = {
+  // Animation variants for NEYOHM text (comes from above)
+const neyohmVariants = {
     hidden: { 
       opacity: 0, 
       y: 50,  // Start 50px above
@@ -49,7 +49,7 @@ function Logo({ startAnimation = false }) {
       transition: {
         duration: 0.5,
         ease: "easeOut",
-        delay: 0.6 // Start after SHEEKHARR animation
+        delay: 0.6 // Start after NEYOHM animation
       }
     }
   };
@@ -79,17 +79,17 @@ function Logo({ startAnimation = false }) {
       initial="hidden"
       animate={startAnimation ? "visible" : "hidden"}
     >
-      {/* SHEEKHARR Text - comes from above */}
+              {/* NEYOHM Text - comes from above */}
       <motion.h2 
         className='font-abhaya-extraBold text-[70px] md:text-[152px] text-white m-0 text-center'
-        variants={sheekharrVariants}
+        variants={neyohmVariants}
         initial="hidden"
         animate={startAnimation ? "visible" : "hidden"}
         style={{ 
           textShadow: "0 0 20px rgba(255,255,255,0.3)"
         }}
       >
-        Sheekharr
+        Neyohm
       </motion.h2>
 
       {/* Punchline - comes from below */}

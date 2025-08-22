@@ -1,7 +1,7 @@
-# 🎬 Animation Timeline Guide - Sheekharr Website
+# 🎬 Animation Timeline Guide - Neyohm Website
 
 ## Overview
-This guide explains the sophisticated animation timeline implemented in the Sheekharr website using Framer Motion. The animations are coordinated to create a seamless, professional entrance experience.
+This guide explains the sophisticated animation timeline implemented in the Neyohm website using Framer Motion. The animations are coordinated to create a seamless, professional entrance experience.
 
 ## 🕐 Animation Timeline
 
@@ -23,7 +23,7 @@ delayChildren: 0.2,   // 0.2 second delay before first child starts
 ### Phase 2: Logo Typewriter Effect (1.4-2.8s)
 **Duration**: 1.4 seconds total
 - **1.4s**: Animation starts after navbar completes
-- **1.4-2.8s**: SHEEKHARR text types out letter by letter
+- **1.4-2.8s**: NEYOHM text types out letter by letter
   - Each letter appears with 150ms delay
   - Blinking cursor during typing
   - Final flourish animation when complete
@@ -32,7 +32,7 @@ delayChildren: 0.2,   // 0.2 second delay before first child starts
 ```javascript
 // Typewriter timing
 const timer = setTimeout(() => {
-  setDisplayText(prev => prev + sheekharrText[currentIndex]);
+  setDisplayText(prev => prev + neyohmText[currentIndex]);
   setCurrentIndex(prev => prev + 1);
 }, 150); // 150ms between each letter
 ```
@@ -45,7 +45,7 @@ const timer = setTimeout(() => {
 **Components**: `Logo.jsx`
 ```javascript
 // Tagline timing
-delay: 1.5 // Start after SHEEKHARR animation
+delay: 1.5 // Start after NEYOHM animation
 // Highlight timing
 delay: 2.2 // Start after tagline
 ```

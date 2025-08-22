@@ -1,11 +1,16 @@
 'use client';
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { submitCareerApplication } from '../actions/careerActions';
 
 export default function CareerContactFormServerAction() {
-  const formRef = useRef();
+  const formRef = useRef(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState('');
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const handleSubmit = async (formData) => {
     setIsSubmitting(true);
@@ -16,7 +21,9 @@ export default function CareerContactFormServerAction() {
       
       if (result.success) {
         setMessage(result.message);
-        formRef.current?.reset();
+        if (formRef.current) {
+          formRef.current.reset();
+        }
       } else {
         setMessage(result.message);
       }
@@ -28,12 +35,21 @@ export default function CareerContactFormServerAction() {
     }
   };
 
+  if (!isMounted) {
+    return (
+      <div className="w-[90vw] max-w-[605px] h-auto min-h-[456px] bg-white rounded-[10px] p-6 flex flex-col gap-6 md:w-[605px] md:h-auto justify-center mx-auto border border-gray-300 shadow-lg">
+        <div className="flex items-center justify-center h-full">
+          <div className="animate-pulse">Loading form...</div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <form
       ref={formRef}
       action={handleSubmit}
       className="w-[90vw] max-w-[605px] h-auto min-h-[456px] bg-white rounded-[10px] p-6 flex flex-col gap-6 md:w-[605px] md:h-auto justify-center mx-auto border border-gray-300 shadow-lg"
-      encType="multipart/form-data"
     >
       <div className="flex flex-col gap-6">
         <div className="flex flex-col gap-2">
@@ -44,7 +60,7 @@ export default function CareerContactFormServerAction() {
             name="name"
             required
             className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-            placeholder="Value"
+            placeholder="John"
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -55,7 +71,7 @@ export default function CareerContactFormServerAction() {
             name="surname"
             required
             className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-            placeholder="Value"
+            placeholder="Doe"
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -66,7 +82,7 @@ export default function CareerContactFormServerAction() {
             name="email"
             required
             className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-            placeholder="Value"
+            placeholder="john.doe@example.com"
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -77,7 +93,7 @@ export default function CareerContactFormServerAction() {
             name="designation"
             required
             className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-            placeholder="Frontend developer"
+            placeholder="AI Engineer"
           />
         </div>
         <div className="flex flex-col gap-2">

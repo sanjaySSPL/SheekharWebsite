@@ -15,7 +15,7 @@ function page() {
       <div className="container mx-auto px-4  md:py-16">
         {/* Title */}
         <h1 className="text-[40px] md:text-[40px] lg:text-[40px] font-bold italic text-center text-blue-900 mt-[84px] mb-[70px]">
-          Planning to work with Sheekharr?
+          Planning to work with Neyohm?
         </h1>
         
         {/* Contact Form */}

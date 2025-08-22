@@ -34,18 +34,18 @@ function Footer2() {
               </div> */}
               <Image
                 src="https://res.cloudinary.com/dipc3ow9z/image/upload/v1752209735/sheekharr_logo_cbulsm.jpg"
-                alt="Sheekharr Logo"
+                alt="Neyohm Logo"
                 width={160}
                 height={160}
                 className="rounded-sm"
               />
               <div>
-                <h1 className="text-[#1D4E7A] font-bold text-xl">SHEEKHARR</h1>
-                <p className="text-gray-600 text-xs">Ingredients Pvt. Ltd.</p>
+                <h1 className="text-[#1D4E7A] font-bold text-xl">NEYOHM</h1>
+                <p className="text-gray-600 text-xs">Innovations</p>
               </div>
             </div>
             <p className="text-gray-600 text-sm leading-relaxed">
-              At Sheekharr we simplify the mode of ingredients by providing 24/7
+              At Neyohm we simplify the mode of ingredients by providing 24/7
               accessibility and all round security.
             </p>
           </div>
@@ -124,7 +124,7 @@ function Footer2() {
                 <FaXTwitter size={18} />
               </a>
               <a
-                href="https://www.linkedin.com/company/sheekharr-ingredients-pvt-ltd"
+                href="https://www.linkedin.com/company/neyohm-ingredients-pvt-ltd"
                 className="p-2 text-gray-600 hover:text-[#1D4E7A] hover:bg-gray-100 rounded-full transition-all duration-200"
               >
                 <FaLinkedinIn size={18} />
@@ -132,7 +132,7 @@ function Footer2() {
             </div>
             <div className="">
               <div className="text-gray-600 text-sm">
-                Copyright © {new Date().getFullYear()} Sheekharr Ingredients
+                Copyright © {new Date().getFullYear()} Neyohm Ingredients
                 Pvt Ltd. All Rights Reserved.
               </div>
             </div>

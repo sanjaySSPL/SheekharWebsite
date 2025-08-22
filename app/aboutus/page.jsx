@@ -2,7 +2,7 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
 import SecondHeroSection from '../(pages)/SecondHeroSection'
-import AboutSheekharr from '../(pages)/AboutUs/AboutSheekharr'
+import AboutNeyohm from '../(pages)/AboutUs/AboutNeyohm'
 import WhatWeDo from '../(pages)/AboutUs/WhatWeDo'
 // import OurOffice from "../(pages)/AboutUs/OurOffice"
 // import Footer2 from "../(pages)/Footer2"
@@ -23,7 +23,7 @@ function page() {
   return (
     <div className='w-full h-full relative'>
       <SecondHeroSection />
-      <AboutSheekharr />
+              <AboutNeyohm />
       <WhatWeDo />
       <OurVision />
       <OurMission />

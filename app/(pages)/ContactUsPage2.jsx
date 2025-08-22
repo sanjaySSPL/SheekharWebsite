@@ -10,7 +10,7 @@ function ContactUsPage2() {
                 OFFICE ADDRESS
             </h2>
             <div className='flex flex-col gap-2 text-gray-500 mb-8'>
-                <p>Sheekharr Starch Private Limited</p>
+                <p>Neyohm Innovations</p>
                 <p>Plot No. A , Rupa Solitaire Millenium Business Park, 14th Floor</p>
                 <p>Thane - Belapur Road, Navi Mumbai, <br/>Maharashtra 400710</p>
             </div>
@@ -27,8 +27,8 @@ function ContactUsPage2() {
             </h2>
               <div className='flex flex-col gap-2 text-gray-500'>
                 <p>Phone: (+91) 7397950657</p>
-                <p>Email: info@sheekharr.in</p>
-                <p>Website: www.sheekharr.com</p>
+                        <p>Email: info@neyohm.com</p>
+        <p>Website: www.neyohm.com</p>
             </div>
         </div>
         <div className='w-full md:w-1/2 flex justify-center'>

@@ -77,7 +77,7 @@ function HomeHeroSection() {
                   fill="black"
                   style={{ letterSpacing: '1px' }}
                 >
-                  sheekharr
+                  neyohm
                 </text>
                 <text
                   x="95"
@@ -118,7 +118,7 @@ function HomeHeroSection() {
           }}
           transition={{ duration: 0.7, ease: "easeInOut" }}
         >
-          Sheekharr Starch
+          Neyohm Innovations
         </motion.span>
       )}
       {/* Particle Effect */}

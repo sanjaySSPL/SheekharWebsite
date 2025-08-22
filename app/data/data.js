@@ -198,7 +198,7 @@ const AdvancedStabilizers = [
     },
     // {
     //     title:"Rabdi",
-    //     description:"This Rabdi formulation integrates Sheekharr’s Advanced Stabilizers to deliver traditional richness combined with modern stability technology. The stabilizers control water migration and prevent phase separation, preserving the creamy, dense texture that defines authentic Rabdi.",
+    //     description:"This Rabdi formulation integrates Neyohm's Advanced Stabilizers to deliver traditional richness combined with modern stability technology. The stabilizers control water migration and prevent phase separation, preserving the creamy, dense texture that defines authentic Rabdi.",
     //     description1:"Designed for industrial and commercial use, it maintains product integrity through processing, packaging, and storage while reducing spoilage and syneresis. The formulation supports consistent sensory quality with a smooth mouthfeel and a clean, indulgent finish.",
     //     product:'',
     //     keybenefits:[

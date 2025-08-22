@@ -7,7 +7,7 @@ function StaticLogo() {
         className='font-abhaya-extraBold text-[70px] md:text-[152px] text-white m-0 text-center'
         style={{ textShadow: '0 0 20px rgba(255,255,255,0.3)' }}
       >
-        Sheekharr
+        Neyohm
       </h2>
       <p className='text-[20px] md:text-[40px] text-white text-center -mt-8 md:-mt-16 font-abhaya-extraBold'>
         Your{' '}

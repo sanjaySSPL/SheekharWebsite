@@ -136,7 +136,7 @@ function Navbar1({ setShowExportOverlay }) {
                 layoutId="brand-name"
                 className="text-text_blue text-[20px] hiddden tracking-wider font-semibold"
               >
-                Sheekharr Ingredients Pvt Ltd
+                Neyohm Innovations
               </motion.span>
             )}
           </Link>

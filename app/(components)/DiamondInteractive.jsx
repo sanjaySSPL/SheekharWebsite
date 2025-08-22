@@ -93,7 +93,7 @@ const diamondData = [
     {
       id: 5,
       title: "Improved Stability & Appearance",
-      description: "At Sheekharr, we make sure our products always give the same good results, no matter where or how they're used. We focus on strong shelf life, reliable texture, and stable performance—so you don't have to worry about changes in the final product.",
+        description: "At Neyohm, we make sure our products always give the same good results, no matter where or how they're used. We focus on strong shelf life, reliable texture, and stable performance—so you don't have to worry about changes in the final product.",
       diamondTop: 298,
       diamondLeft: 536,
       titleTop: 315,
@@ -115,7 +115,7 @@ const diamondData = [
     {
       id: 6,
       title: "Good Quality",
-      description: "With Sheekharr's ingredients, you can get more output and reduce waste. We help you improve things like water retention, fat holding, and consistency—so that you waste less material and get more product from the same amount of raw material.",
+        description: "With Neyohm's ingredients, you can get more output and reduce waste. We help you improve things like water retention, fat holding, and consistency—so that you waste less material and get more product from the same amount of raw material.",
       diamondTop: 298,
       diamondLeft: 450,
       titleTop: 453,
@@ -146,7 +146,7 @@ const DiamondInteractive = () => {
       <div className="hidden md:block w-full h-fit flex items-center justify-center overflow-hidden relative">
         {/* Main Title */}
         <div className="absolute top-8 left-1/2 transform -translate-x-1/2 z-10">
-          <h1 className="text-2xl font-bold text-black text-[20px] md:text-[36px] text-blue-900">Why Choose Sheekharr</h1>
+          <h1 className="text-2xl font-bold text-black text-[20px] md:text-[36px] text-blue-900">Why Choose Neyohm</h1>
         </div>
 
         {/* Fixed Size Container */}
@@ -250,7 +250,7 @@ const DiamondInteractive = () => {
 
       {/* Mobile View: Touch-friendly stacked accordion */}
       <div className="block md:hidden w-full px-2 py-6">
-        <h1 className="text-[34px] text-blue-900 font-bold text-black text-center mb-5">Why Choose Sheekharr?</h1>
+        <h1 className="text-[34px] text-blue-900 font-bold text-black text-center mb-5">Why Choose Neyohm?</h1>
         <div className="space-y-3">
           {diamondData.map((item) => (
             <div

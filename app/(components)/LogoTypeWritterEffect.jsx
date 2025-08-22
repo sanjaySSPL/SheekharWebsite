@@ -6,22 +6,22 @@ function Logo({ startAnimation = false }) {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [typewriterComplete, setTypewriterComplete] = useState(false);
-  const sheekharrText = "SHEEKHARR";
+  const neyohmText = "NEYOHM";
 
   // Typewriter effect
   useEffect(() => {
-    if (startAnimation && currentIndex < sheekharrText.length) {
+    if (startAnimation && currentIndex < neyohmText.length) {
       const timer = setTimeout(() => {
-        setDisplayText(prev => prev + sheekharrText[currentIndex]);
+        setDisplayText(prev => prev + neyohmText[currentIndex]);
         setCurrentIndex(prev => prev + 1);
       }, 150); // 350ms between each letter
 
       return () => clearTimeout(timer);
-    } else if (startAnimation && currentIndex === sheekharrText.length) {
+    } else if (startAnimation && currentIndex === neyohmText.length) {
       // Typewriter is complete
       setTypewriterComplete(true);
     }
-  }, [startAnimation, currentIndex, sheekharrText]);
+      }, [startAnimation, currentIndex, neyohmText]);
 
   // Reset when animation starts
   useEffect(() => {
@@ -58,7 +58,7 @@ function Logo({ startAnimation = false }) {
       transition: {
         duration: 0.6,
         ease: "easeOut",
-        delay: 1.5 // Start after SHEEKHARR animation
+        delay: 1.5 // Start after NEYOHM animation
       }
     }
   };
@@ -120,7 +120,7 @@ function Logo({ startAnimation = false }) {
       initial="hidden"
       animate={startAnimation ? "visible" : "hidden"}
     >
-      {/* SHEEKHARR Text with typewriter effect */}
+              {/* NEYOHM Text with typewriter effect */}
       <motion.h2 
         className='font-abhaya-extraBold text-[70px] md:text-[152px] text-white m-0 flex justify-center items-center'
         variants={typewriterComplete ? finalFlourishVariants : {}}
@@ -147,7 +147,7 @@ function Logo({ startAnimation = false }) {
             </motion.span>
           ))}
           {/* Blinking cursor */}
-          {startAnimation && currentIndex < sheekharrText.length && (
+          {startAnimation && currentIndex < neyohmText.length && (
             <motion.span
               className="inline-block w-[4px] h-[70px] md:h-[152px] bg-white ml-1"
               variants={cursorVariants}

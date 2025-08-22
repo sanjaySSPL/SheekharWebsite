@@ -84,13 +84,13 @@ function Footer() {
             {/* <a href="#" className="rounded-full border border-white p-3 text-white hover:bg-white hover:text-[#1E164B] transition-colors"><FaFacebookF size={22} /></a> */}
             <a href="#" className="rounded-full border border-white p-3 text-white hover:bg-white hover:text-[#1E164B] transition-colors"><FaInstagram size={22} /></a>
             <a href="#" className="rounded-full border border-white p-3 text-white hover:bg-white hover:text-[#1E164B] transition-colors"><FaXTwitter size={22} /></a>
-            <a href="https://www.linkedin.com/company/sheekharr-ingredients-pvt-ltd" className="rounded-full border border-white p-3 text-white hover:bg-white hover:text-[#1E164B] transition-colors"><FaLinkedinIn size={22} /></a>
+            <a href="https://www.linkedin.com/company/neyohm-ingredients-pvt-ltd" className="rounded-full border border-white p-3 text-white hover:bg-white hover:text-[#1E164B] transition-colors"><FaLinkedinIn size={22} /></a>
           </div>
         </div>
       </div>
       {/* Bottom bar */}
       <div className="border-t border-white/20 w-full px-6 py-4 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto">
-        <span className="text-white text-sm text-center md:text-left">Copyright © {new Date().getFullYear()} <span className="font-bold">Sheekharr Ingredients Pvt. Ltd.</span> All Rights Reserved.</span>
+        <span className="text-white text-sm text-center md:text-left">Copyright © {new Date().getFullYear()} <span className="font-bold">Neyohm Innovations</span> All Rights Reserved.</span>
         <a href="#" className="text-white text-sm mt-2 md:mt-0 hover:underline hover:underline-offset-4">Privacy Policy</a>
       </div>
     </footer>

@@ -31,7 +31,7 @@ export async function sendContactEmail({ name, surname, email, company, category
         
         <div style="background-color: #e9ecef; padding: 15px; border-radius: 5px; font-size: 12px; color: #6c757d;">
           <p><strong>Submitted:</strong> ${new Date().toLocaleString()}</p>
-          <p><strong>Source:</strong> Sheekharr Website Contact Form</p>
+          <p><strong>Source:</strong> Neyohm Website Contact Form</p>
         </div>
       </div>
     `;
@@ -90,7 +90,7 @@ export async function sendCareerEmail(formData, resume) {
         
         <div style="background-color: #e9ecef; padding: 15px; border-radius: 5px; font-size: 12px; color: #6c757d;">
           <p><strong>Submitted:</strong> ${new Date().toLocaleString()}</p>
-          <p><strong>Source:</strong> Sheekharr Website Career Form</p>
+          <p><strong>Source:</strong> Neyohm Website Career Form</p>
         </div>
       </div>
     `;
@@ -122,7 +122,7 @@ export async function sendTestEmail() {
     const data = await resend.emails.send({
       from: 'onboarding@resend.dev',
       to: 'it1@sheekharr.com',
-      subject: 'Test Email from Sheekharr Contact Form',
+      subject: 'Test Email from Neyohm Contact Form',
       html: '<p>This is a test email to verify the email service is working correctly.</p>',
     });
 

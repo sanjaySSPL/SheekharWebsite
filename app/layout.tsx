@@ -12,8 +12,8 @@ const geistSans = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Sheekharr Starch Private Limited",
-  description: "Sheekharr is a leading manufacturer of starch products for the food and beverage industry.",
+      title: "Neyohm Innovations",
+    description: "Neyohm is a leading manufacturer of starch products for the food and beverage industry.",
 };
 
 export default function RootLayout({
