@@ -124,7 +124,7 @@ function Navbar1({ setShowExportOverlay }) {
               transition={{ duration: 0.5, delay: 0.1 }}
             >
               <Image
-                src="/logo_only_no_background.png"
+                src="https://res.cloudinary.com/dipc3ow9z/image/upload/v1755868223/Generated_Image_August_22__2025_-_6_05PM-removebg-preview_1_-Picsart-AiImageEnhancer-Picsart-AiImageEnhancer-Picsart-AiImageEnhancer-Picsart-AiImageEnhancer-Picsart-AiImageEnhancer_xbelra.jpg"
                 alt="logo"
                 width={80}
                 height={80}
