@@ -30,7 +30,7 @@ function NightEarth() {
   });
 
   return (
-    <mesh ref={meshRef} position={[0, -2.8, 0]} rotation={[-0.8, 3.26, 0]}>
+    <mesh ref={meshRef} position={[0, -2.8, 0]} rotation={[-0.8, 3.36, 0]}>
       <sphereGeometry args={[4.5, 64, 64]} />
       <meshStandardMaterial
         map={textureLoaded ? nightTexture : null}
@@ -39,46 +39,6 @@ function NightEarth() {
         roughness={0.8}
         transparent={false}
         opacity={1}
-      />
-    </mesh>
-  );
-}
-
-// Simple India marker - positioned on the surface of the globe
-function IndiaMarker() {
-  const meshRef = useRef();
-  
-  useFrame(() => {
-    if (meshRef.current) {
-      // Revolve around the globe's center at the same speed as the globe rotates
-      // This keeps the marker positioned over India as the globe turns
-      meshRef.current.position.x = Math.sin(Date.now() * 0.00025) * 4.5;
-      meshRef.current.position.z = Math.cos(Date.now() * 0.00025) * 4.5;
-      meshRef.current.position.y = 1; // Keep the same Y position as the globe
-    }
-  });
-
-  return (
-    <mesh ref={meshRef} position={[0, -2.8, 4.5]} rotation={[-0.8, 1.36, 0]}>
-      <sphereGeometry args={[0.3, 16, 16]} />
-      <meshStandardMaterial
-        color="#FF0000"
-        emissive="#FF0000"
-        emissiveIntensity={1}
-      />
-    </mesh>
-  );
-}
-
-// Debug marker at origin to help troubleshoot
-function DebugMarker() {
-  return (
-    <mesh position={[0, 0, 0]}>
-      <sphereGeometry args={[0.2, 8, 8]} />
-      <meshStandardMaterial
-        color="#00FF00"
-        emissive="#00FF00"
-        emissiveIntensity={1}
       />
     </mesh>
   );
@@ -122,8 +82,6 @@ function Globe2() {
         {/* Globe components */}
         <Suspense fallback={<LoadingFallback />}>
           <NightEarth />
-          <IndiaMarker />
-          <DebugMarker />
         </Suspense>
         
         {/* Controls with restricted movement */}

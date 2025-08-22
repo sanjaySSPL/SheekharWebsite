@@ -16,7 +16,6 @@ export default function ContactForm() {
     <form
       ref={formRef}
       action={action}
-      method="POST"
       className="w-[95vw] max-w-4xl bg-white border border-gray-300 p-6 rounded-lg shadow-md flex flex-col gap-6 mx-auto"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

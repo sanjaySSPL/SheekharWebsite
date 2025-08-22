@@ -20,7 +20,7 @@ function AboutSheekharr() {
               and last longer.
             </p>
             <br />
-            <p classname="">
+            <p >
               Since 2012, we have worked closely with businesses across the
               food, beverage, personal care, and industrial sectors, delivering
               clean-label, non-GMO, gluten-free, and health-forward ingredient

@@ -41,7 +41,7 @@ function SolveIndustryStandard() {
                     <div className='w-full md:w-[632px] h-[230px]  md:h-full flex align-middle justify-center items-center md:items-start flex-col'>
                         <h2 className='text-[24px] text-text_blue font-semibold font-inter italic md:text-start text-center mb-5'>The Challenge Behind Every Recipe</h2>
                         <p className='md:text-[20px] font-inter text-text_blue'>
-                            From poor texture to short shelf life, food brands face real <br className='md:flex hidden'/> product issues. Whether it’s dairy, beverages, or snacks — the <br className='md:flex hidden'/> problem is unique, and so is the solution it needs.
+                            From texture to short shelf life , food brands face real <br className='md:flex hidden'/> product issues. Whether it’s dairy, beverages, or snacks — the <br className='md:flex hidden'/> problem is unique, so is the solution it needs.
                         </p>
                     </div>
                 </motion.div>
@@ -72,7 +72,7 @@ function SolveIndustryStandard() {
                     <div className='w-full md:w-[632px] h-[230px] md:h-full flex align-middle justify-center items-start md:items-start flex-col'>
                         <h2 className='text-[24px] text-text_blue font-semibold font-inter italic md:text-start text-center mb-5'>Crafted Solutions, Not Just Ingredients</h2>
                         <p className='md:text-[20px] font-inter text-text_blue'>
-                           Brands come to us with their challenges. We study the issue, create or customize the right ingredient, and fine-tune it to work perfectly in their process. No one-size-fits-all — just science that fits.
+                           Brands come to us with their challenges. We study the issue, <span className='text-text_blue font-bold'>Innovate</span> the right ingredient, and fine-tune it to work perfectly in your process. No one-size-fits-all — just <span className='text-text_blue font-bold'>Science</span> that fits.
                         </p>
                     </div>
                 </motion.div>
@@ -104,7 +104,7 @@ function SolveIndustryStandard() {
                             
                             <h2 className='text-[24px] text-text_blue font-semibold font-inter italic md:text-start text-center mb-5'>Results You Can Taste and Measure</h2>
                         <p className='md:text-[20px] font-inter text-text_blue'>
-                           The result? better texture, longer life, better yield — and a product that performs better in the market. Better ingredients lead to better business.
+                           The result ? better texture, longer life, better yield — and a product that performs better in the market. Better ingredients lead to better business.
                         </p>
                     </div>
                 </motion.div>

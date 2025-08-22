@@ -17,13 +17,28 @@ function Navbar1({ setShowExportOverlay }) {
   const { showNavbarName } = useAnimation();
   const pathname = usePathname();
   const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+  const [currentHash, setCurrentHash] = useState('');
 
   useEffect(() => {
+    setIsClient(true);
+    setCurrentHash(window.location.hash);
+    
     const handleScroll = () => {
       setIsShrunk(window.scrollY > 50);
     };
+    
+    const handleHashChange = () => {
+      setCurrentHash(window.location.hash);
+    };
+    
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("hashchange", handleHashChange);
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("hashchange", handleHashChange);
+    };
   }, []);
 
   // Animation variants for staggering effect
@@ -182,7 +197,7 @@ function Navbar1({ setShowExportOverlay }) {
                   </Link>
                   <Link href="/products#dairy-products">
                     <span className={`block px-2 py-2 rounded hover:bg-purple-100 cursor-pointer text-gray-800 ${
-                      (pathname === "/products" && typeof window !== "undefined" && window.location.hash === "#dairy-products") ? "bg-purple-100 font-semibold" : ""
+                      (pathname === "/products" && isClient && currentHash === "#dairy-products") ? "bg-purple-100 font-semibold" : ""
                     }`}>
                       Best Sellers
                     </span>
@@ -259,7 +274,7 @@ function Navbar1({ setShowExportOverlay }) {
             <motion.div variants={itemVariants}>
               <button
                 button_link="#"
-                customPaddingClass="py-[4px] px-[18.5px] tracking-widest mx-[20px]"
+                // className="py-[4px] px-[18.5px] tracking-widest mx-[20px]"
                 onClick={() => setShowExportOverlay(true)}
                 
                 
@@ -347,7 +362,7 @@ function Navbar1({ setShowExportOverlay }) {
                 </Link>
                 <Link href="/products#dairy-products">
                   <span className={`block py-2 text-sm hover:text-blue-500 ${
-                    (pathname === "/products" && typeof window !== "undefined" && window.location.hash === "#dairy-products") ? "text-blue-600 font-semibold bg-blue-50 rounded" : ""
+                    (pathname === "/products" && isClient && currentHash === "#dairy-products") ? "text-blue-600 font-semibold bg-blue-50 rounded" : ""
                   }`}>Best Sellers</span>
                 </Link>
                 <Link href="/products/sauces-and-snacks">
