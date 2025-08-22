@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const diamondData = [
     {
@@ -162,20 +163,24 @@ const DiamondInteractive = () => {
           {/* L-Shaped Connection Lines */}
           {diamondData.map((item) => (
             <React.Fragment key={`line-${item.id}`}>
-              <img
+              <Image
                 src={item.line_image}
-                className="absolute scale-[0.66]"
                 alt=""
+                width={200}
+                height={100}
+                className="absolute scale-[0.66]"
                 style={{
                   top: `${item.line_top}px`,
                   left: `${item.line_left}px`,
                 }}
               />
               {item.filler_line && (
-                <img
+                <Image
                   src={item.filler_line}
-                  className="absolute scale-[0.66]"
                   alt=""
+                  width={200}
+                  height={100}
+                  className="absolute scale-[0.66]"
                   style={{
                     top: `${item.filler_line_top}px`,
                     left: `${item.filler_line_left}px`,
@@ -231,9 +236,11 @@ const DiamondInteractive = () => {
                 onMouseEnter={() => setHoveredDiamond(item.id)}
                 onMouseLeave={() => setHoveredDiamond(null)}
               >
-                <img
+                <Image
                   src="/Diamond.svg"
                   alt="diamond"
+                  width={32}
+                  height={48}
                   className={`w-8 h-12 scale-[2.5] transition-all duration-200 ${hoveredDiamond === item.id ? 'scale-110' : 'hover:scale-105'
                     }`}
                   style={{
@@ -260,9 +267,11 @@ const DiamondInteractive = () => {
               style={{ cursor: 'pointer' }}
             >
               <div className="flex items-center">
-                <img
+                <Image
                   src="/Diamond.svg"
                   alt="diamond"
+                  width={28}
+                  height={28}
                   className="w-7 h-7 mr-3"
                   style={{
                     filter: expandedCard === item.id ? item.hoverFilter : 'none'

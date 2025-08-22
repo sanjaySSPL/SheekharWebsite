@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import dynamic from 'next/dynamic'
+// import dynamic from 'next/dynamic'
 import SecondHeroSection from '../(pages)/SecondHeroSection'
 import AboutNeyohm from '../(pages)/AboutUs/AboutNeyohm'
 import WhatWeDo from '../(pages)/AboutUs/WhatWeDo'

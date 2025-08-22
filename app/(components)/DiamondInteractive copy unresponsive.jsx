@@ -1,6 +1,7 @@
 // DiamondInteractive.jsx
 'use client'
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const DiamondInteractive = () => {
   const [hoveredDiamond, setHoveredDiamond] = useState(null);
@@ -165,9 +166,11 @@ const DiamondInteractive = () => {
               onMouseLeave={() => setHoveredDiamond(null)}
             >
               {/* Using SVG from public/Diamond.svg */}
-              <img 
+              <Image 
                 src="/Diamond.svg" 
                 alt="diamond" 
+                width={32}
+                height={48}
                 className={`w-8 h-12 scale-[1.8] transition-all duration-200 ${
                   hoveredDiamond === item.id ? 'scale-110' : 'hover:scale-105'
                 }`}
