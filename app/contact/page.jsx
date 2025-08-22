@@ -1,6 +1,6 @@
 import React from 'react'
 import SecondHeroSection from '../(pages)/SecondHeroSection'
-import MapComponent from '../(components)/MapComponent'
+// import MapComponent from '../(components)/MapComponent'
 import ContactUsPage2 from '../(pages)/ContactUsPage2'
 //  import Footer2 from '../(pages)/Footer2'
 import Footer from '../(pages)/Footer'
@@ -9,7 +9,7 @@ function page() {
   return (
     <div className='w-full h-full'>
       <SecondHeroSection />
-      <MapComponent />
+      {/* <MapComponent /> */}
       <ContactUsPage2 />
       {/* <Footer2 /> */}
       <Footer />

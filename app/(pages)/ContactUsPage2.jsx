@@ -11,8 +11,10 @@ function ContactUsPage2() {
             </h2>
             <div className='flex flex-col gap-2 text-gray-500 mb-8'>
                 <p>Neyohm Innovations</p>
-                <p>Plot No. A , Rupa Solitaire Millenium Business Park, 14th Floor</p>
-                <p>Thane - Belapur Road, Navi Mumbai, <br/>Maharashtra 400710</p>
+                <p>Premises No. 9WA 138-SO-08</p>
+                <p>Floor Number : First Floor</p>
+                <p>Building Name : 9WA</p>
+                <p>Area Name : Dubai Airport Freezone</p>
             </div>
 
             <h2 className='text-xl font-semibold mb-6'>
