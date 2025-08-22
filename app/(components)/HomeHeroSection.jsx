@@ -36,7 +36,7 @@ function HomeHeroSection() {
         /> */}
         <video
           className="w-full h-full object-cover absolute inset-0"
-          src="https://res.cloudinary.com/dipc3ow9z/video/upload/v1754114971/sheekharr_intro_1_2_ialygw.mp4"
+          src="https://res.cloudinary.com/dipc3ow9z/video/upload/v1755865768/Untitled_video_-_Made_with_Clipchamp_1_oqbtur.mp4"
           autoPlay
           loop
           muted
